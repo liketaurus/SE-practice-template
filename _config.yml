@@ -11,3 +11,9 @@ description: "Репозиторій з матеріалами для практ
 show_downloads: false
 
 exclude: [README.md]
+
+header_pages:
+  - about.md
+  - college.md
+  - author.md
+  
