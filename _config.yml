@@ -10,4 +10,4 @@ description: "Репозиторій з матеріалами для практ
 
 show_downloads: false
 
-exclude: ['./README.md']
+exclude: [README.md]
