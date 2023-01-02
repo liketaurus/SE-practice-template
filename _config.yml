@@ -13,6 +13,7 @@ show_downloads: false
 exclude: [README.md]
 
 header_pages:
+  - tools.md
   - about.md
   - college.md
   - author.md
