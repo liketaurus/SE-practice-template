@@ -13,4 +13,4 @@
 
 Для керування проектом використовуємо [Projects](https://github.com/liketaurus/SE-practice-template/projects) (знову ж таки - у тандемі з Issues).
 
-Не забуваємо також про релізи, [дискусії](https://github.com/liketaurus/SE-practice-template/discussions) та [вікі](https://github.com/liketaurus/SE-practice-template/wiki)!
+Не забуваємо також про [релізи](https://github.com/liketaurus/SE-practice-template/releases), [дискусії](https://github.com/liketaurus/SE-practice-template/discussions) та [вікі](https://github.com/liketaurus/SE-practice-template/wiki)!
