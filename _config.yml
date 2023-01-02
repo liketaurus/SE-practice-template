@@ -9,3 +9,5 @@ author: Alexander Babich
 description: "Репозиторій з матеріалами для практики з 'Технологій розробки програмного забезпечення'"
 
 show_downloads: false
+
+exclude: ['./README.md']
