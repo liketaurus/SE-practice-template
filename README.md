@@ -3,13 +3,13 @@
 Репозиторій з матеріалами для практики з "Технологій розробки програмного забезпечення" 
 
 Структура репозиторію:
-* docs - документація
+* docs - проектна документація для всіх етапів
 * src - вихідний код проекту
-* misc - додаткові файли
+* misc - додаткові файли, які безпосередньо не стосуються коду чи документації
 
 Веб-сайт репозиторію знаходиться у гілці [web](https://github.com/liketaurus/SE-practice-template/tree/web)
 
-Календарний план і статус проекту переглядаємо з використанням [GanttLab](https://github.com/ganttlab/ganttlab) - [перейти](https://app.ganttlab.com/). Завдання, відображені у плані беруться з [Issues](https://github.com/liketaurus/SE-practice-template/issues). 
+Календарний план і статус проекту [переглядаємо](https://app.ganttlab.com/) з використанням [GanttLab](https://github.com/ganttlab/ganttlab). Завдання, відображені у плані беруться з [Issues](https://github.com/liketaurus/SE-practice-template/issues). 
 
 Для керування проектом використовуємо [Projects](https://github.com/liketaurus/SE-practice-template/projects) (знову ж таки - у тандемі з Issues).
 
