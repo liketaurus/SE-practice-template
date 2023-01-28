@@ -7,7 +7,7 @@
 
 :one: [Етап **аналізу** (Envisioning)](/docs/1.Envisioning/README.md)
 
-:two: Етап **планування** (Planning)
+:two: [Етап **планування** (Planning)](/docs/2.Planning/README.md)
 
 :three: Етап **розробки** (Developing)
 
