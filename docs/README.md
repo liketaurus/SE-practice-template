@@ -9,7 +9,7 @@
 
 :two: [Етап **планування** (Planning)](/docs/2.Planning/README.md)
 
-:three: Етап **розробки** (Developing)
+:three: [Етап **розробки** (Developing)](/docs/3.Developing/README.md)
 
 :four: Етап **тестування** (Stabilizing)
 
