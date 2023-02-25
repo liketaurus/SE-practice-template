@@ -11,7 +11,7 @@
 
 :three: [Етап **розробки** (Developing)](/docs/3.Developing/README.md)
 
-:four: Етап **тестування** (Stabilizing)
+:four: [Етап **тестування** (Stabilizing)](/docs/4.Stabilizing/README.md)
 
 :five: Етап **впровадження** (Deploying)
 
