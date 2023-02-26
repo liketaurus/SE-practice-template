@@ -13,7 +13,7 @@
 
 :four: [Етап **тестування** (Stabilizing)](/docs/4.Stabilizing/README.md)
 
-:five: Етап **впровадження** (Deploying)
+:five: [Етап **впровадження** (Deploying)](/docs/5.Deploying/README.md)
 
 ---
 :house: [Повернутись до кореня репозиторію](/README.md)
