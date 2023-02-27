@@ -1,6 +1,6 @@
 # Практика ТРПЗ
 
-<img src="" style="float:right;"/>
+<img src="https://raw.githubusercontent.com/liketaurus/SE-practice-template/main/docs/images/resources/PPC-SE.jpg" style="float:right;"/>
 
 Репозиторій з матеріалами для практики з "Технологій розробки програмного забезпечення" (ІІ семестр 3 курсу навчання на спеціальності "Інженерія програмного забезпечення" (спеціалізація "Розробка програмного забезпечення") [ВСП "ППФК НТУ "ХПІ"](https://sites.google.com/polytechnic.co.cc/main))
 
