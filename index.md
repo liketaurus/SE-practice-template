@@ -1,9 +1,9 @@
 # Ласкаво просимо!
 
-Це сайт репозиторію з матеріалами для студентів 3 курсу [ВСП "ППФК НТУ "ХПІ"](https://www.polytechnic.poltava.ua/), які проходять **практику з Технологій розробки програмного забезпечення**.
+Це сайт [репозиторію](https://github.com/liketaurus/SE-practice-template) з матеріалами для студентів 3 курсу [ВСП "ППФК НТУ "ХПІ"](https://www.polytechnic.poltava.ua/), які проходять **практику з Технологій розробки програмного забезпечення**.
 
 Ви можете скористатись вмістом цього репозиторію в такий спосіб:
-1. зробіть [**форк**](https://docs.github.com/en/get-started/quickstart/fork-a-repo) репозиторію
+1. зробіть [**форк htgjpbnjhs.**](https://github.com/liketaurus/SE-practice-template/fork).  <br>Детальніше про створення форків ви можете почитати [тут](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 2. додайте *членів вашої команди та керівників практики* як [**колабораторів**](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 3. в ході практики **ви працюєте разом над файлами з цього репозиторію і всі результати своєї роботи зберігаєте тільки в ньому!**
 
