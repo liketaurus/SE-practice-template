@@ -12,3 +12,7 @@
   * [**Git for Windows**](https://gitforwindows.org/) - система контролю версій
   * [**Markdown All in One**](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - інструменти для роботи з Markdown-документами 
 * [**Spck Code Editor/Git Client**](https://www.google.com/url?sa=t&source=web&rct=j&url=https://play.google.com/store/apps/details%3Fid%3Dio.spck%26hl%3Den_IN&ved=2ahUKEwiiuJzwjrj9AhWEjqQKHYR9CKwQjjh6BAgMEAE&usg=AOvVaw27IIIlgi7v0kfiTFCLh6-3) - найкращий редактор коду для Android
+
+---
+
+⤴️ [Повернутись до головної сторінки](index.md)
