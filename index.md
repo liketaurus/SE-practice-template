@@ -2,6 +2,7 @@
 
 Це сайт [репозиторію](https://github.com/liketaurus/SE-practice-template) з матеріалами для студентів 3 курсу [ВСП "ППФК НТУ "ХПІ"](https://www.polytechnic.poltava.ua/), які проходять **практику з Технологій розробки програмного забезпечення**.
 
+## Інструкція з використання
 Ви можете скористатись вмістом цього репозиторію в такий спосіб:
 
 1️⃣ зробіть [**форк репозиторію**](https://github.com/liketaurus/SE-practice-template/fork).  <br>Детальніше про створення форків ви можете почитати [тут](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
