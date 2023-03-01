@@ -1,4 +1,5 @@
-Рекомендовані інструменти для побудови UML-діаграм:
+## Рекомендовані інструменти для побудови UML-діаграм
+
 * [**Mermaid diagrams**](https://mermaid.live/edit) - діаграми такого виду ви можете створювати прямо в README та інших Markdown-документах
 * [**yUML**](https://yuml.me/diagram/scruffy/class/draw) - ще один варіант текстового синтаксису для діаграм
 * [**Plant UML**](https://www.planttext.com/) - конкурент двох попередніх рішень добре знайомий нам за практичними з ОПІ
@@ -7,7 +8,8 @@
 * [**Draw.io**](https://www.diagrams.net/) - клієнтський веб-застосунок для побудови діаграм будь-яких типів, широко використовуваний в ППК НТУ "ХПІ"
 * [**Gen my model**](https://www.genmymodel.com/) - сервіс для UML-моделювання, кодогенерації тощо, знайомий з часів вивчення ООП
 
-Редактори коду:
+## Редактори коду
+
 * [**Visual Studio Code**](https://code.visualstudio.com/) - редактор коду
   * [**Git for Windows**](https://gitforwindows.org/) - система контролю версій
   * [**Markdown All in One**](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - інструменти для роботи з Markdown-документами 
