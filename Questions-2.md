@@ -1,4 +1,4 @@
-# Вікторина - Програмна інженерія та спеціальність
+# Вікторина - спеціальність "Розробка програмного забезпечення" 
 
 <img src="https://raw.githubusercontent.com/liketaurus/SE-practice-template/web/images/SE-logo-transparent.png" width="200" align="right" style="float:right;">
 
