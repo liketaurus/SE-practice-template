@@ -1,4 +1,4 @@
-# Вікторина - Полтава, коледж та Полтавщина
+# Вікторина - Коледж та Полтавщина
 
 <img src="https://raw.githubusercontent.com/liketaurus/SE-practice-template/web/images/%D0%9F%D0%9F%D0%A4%D0%9A%20%D0%BB%D0%BE%D0%B3%D0%BE%20new1%20(1).png" width="200" align="right" style="float:right;">
 
