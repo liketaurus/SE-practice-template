@@ -1,5 +1,7 @@
 # Вікторина - Полтава, коледж та Полтавщина
 
+<img src="https://github.com/liketaurus/SE-practice-template/blob/web/images/%D0%9F%D0%9F%D0%A4%D0%9A%20%D0%BB%D0%BE%D0%B3%D0%BE%20new1%20(1).png" width="200" align="right" style="float:right;">
+
 ## Вітальний текст
 
 Ласкаво просимо до нашої вікторини! 

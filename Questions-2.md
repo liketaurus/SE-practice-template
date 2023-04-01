@@ -1,5 +1,7 @@
 # Вікторина - Програмна інженерія та спеціальність
 
+<img src="https://github.com/liketaurus/SE-practice-template/blob/web/images/SE-logo-transparent.png" width="200" align="right" style="float:right;">
+
 ## Вітальний текст
 
 Ласкаво просимо до нашої вікторини! 
