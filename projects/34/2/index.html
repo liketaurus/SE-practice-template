@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generator</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <div class="main-block">
+    <div class="header">
+      <img src="img/logo.png" class="logo" alt="" />
+      <p>Генерація запрошень на відвідання батьківськіх зборів</p>
+    </div>
+    <div class="wrapper">
+      <div class="generator">
+        <div class="form">
+          <div class="inputBox">
+            <input type="text" id="teach" required="required" />
+            <span class="span-teach">ПІБ керівника групи</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input type="number" class="group" id="grup" required="required" />
+            <span class="span-group">Введіть номер групи</span>
+            <i></i>
+          </div>
+          <div class="horizInput">
+            <div class="inputBox" style="width: 220px">
+              <input type="date" id="date" required="required" />
+              <div class="data-i">
+                <i class="fa fa-calendar " aria-hidden="true"></i>
+              </div>
+              <span class="span-date">Дата</span>
+              <i></i>
+            </div>
+            <div class="inputBox" style="width: 220px">
+              <input id="time" type="time" required="required" />
+              <div class="time-i">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              </div>
+              <span class="span-time">Час</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="inputBox">
+            <input type="text" class="group" id="surname" required="required" />
+            <span class="span-surname">Введіть прізвища батьків ( через кому )</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="agenda" type="text" required="required" />
+            <span>Переліки питань порядку денного ( через ; )</span>
+            <i></i>
+          </div>
+          <button id="acceptButton" type="submit">Згенерувати запрошення</button>
+          <button id="print-btn" type="submit">Роздрукувати</button>
+          <button id="download" type="submit">Завантажити зображення</button>
+        </div>
+        <div class="settings">
+          <img src="img/settings.svg" class="settingsIcon"
+            style="width: 50px; height: 50px; margin-top: 20px; cursor: pointer;" />
+          <div class="containerSetting">
+            <div class="backgroundColorImg bg"></div>
+            <button>
+              <div class="container-color">
+                <input type="color" id="color" value="#FFFFFF">
+              </div>
+              <label for="color" class="change-color" style="cursor: pointer;">Обрати колір</label>
+            </button><button>
+              <form enctype="multipart/form-data">
+                <div class="containet-input-image">
+                  <input type="file" id="image-input">
+                </div>
+                <label class="image-input-label" style="cursor: pointer;" for="image-input">Обрати зображення</label>
+              </form>
+            </button>
+            <button>
+              <div class="container-color">
+                <input type="color" id="color-text" value="#000000">
+              </div>
+              <label for="color-text" class="change-color-text" style="cursor: pointer;">Обрати колір тексту</label>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="print-container">
+
+    </div>
+  </div>
+  <script src="./js/html2canvas.min.js"></script>
+  <script src="js/adder.js"></script>
+
+  <!-- 
+
+
+
+
+      ▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀​▀▀▀▀▀▀▌
+   ▄▄██▌█ beep beep
+▄▄▄▌▐██▌█ It's a cola holiday
+███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄​▄▄▄▄▄▄▌
+▀(@)▀▀▀▀▀▀▀(@)(@)▀▀▀▀▀▀▀▀▀▀▀▀▀​▀▀▀▀(@)▀
+
+
+
+
+-->
+</body>
+
+</html>

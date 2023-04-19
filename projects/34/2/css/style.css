@@ -1,0 +1,607 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-block {
+  display: block;
+  width: 1440px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1440px;
+  height: 80px;
+  background-color: #8684c7;
+  font-family: Montserrat;
+}
+
+.header>p {
+  font-size: 24px;
+  color: #f6f6f6;
+}
+
+.logo {
+  position: absolute;
+  left: 50px;
+}
+
+.generator {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1440px;
+  height: 800px;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.form {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 600px;
+  padding: 30px 80px;
+}
+
+.inputBox {
+  position: relative;
+  width: 480px;
+  margin-top: 35px;
+  color: #2f2c7b;
+}
+
+.inputBox input {
+  position: relative;
+  width: calc(100% - 15px);
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #f6f6f6;
+  letter-spacing: 0.05em;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.inputBox span {
+  position: absolute;
+  left: -4px;
+  top: 8px;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+  color: #8684c7;
+  transform: translateX(-6px) translateY(-40px);
+  font-size: 16px;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.5px;
+  background: #8684c7;
+  border-radius: 0px;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputBox input:valid~i,
+.inputBox input:focus~i {
+  height: 43px;
+  border-radius: 4px;
+}
+
+.horizInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupList {
+  position: relative;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.inputBoxList {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding-left: 10px;
+  border-radius: 10px;
+  background: #8684c7;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+  font-size: 20px;
+}
+
+.inputClick {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.inputBoxList::placeholder {
+  color: #f6f6f6;
+}
+
+.dropBlockList {
+  display: none;
+  transition: 0.3s;
+}
+
+.dropBlockList.active {
+  display: block;
+  position: absolute;
+  width: 490px;
+  height: auto;
+  border-radius: 10px;
+  background: #8684c7;
+  z-index: 10;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.dropListElement {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  color: #f6f6f6;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#acceptButton {
+  width: 100%;
+  height: 50px;
+  background-color: #8684c7;
+  border: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.settings {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  right: -300px;
+  transition: 0.5s;
+}
+
+.settings img {
+  position: absolute;
+  left: 25px;
+  top: 0px;
+}
+
+.settings.activeMenu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 460px;
+  height: 100%;
+  background: rgba(134, 132, 199, 0.2);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  right: 0px;
+  transition: 0.5s;
+}
+
+.backgroundColorImg {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.containerSetting {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerSetting.active {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 470px;
+}
+
+.containerSetting>button {
+  width: 250px;
+  height: 50px;
+  background-color: #8684c7;
+  border: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  font-size: 18px;
+}
+
+.print-page {
+  width: 24%;
+  margin: 5px;
+}
+
+.lable-image {
+  padding: 13.5px 50px;
+  background-color: #8684c7;
+  border: none;
+  border-radius: 5px;
+  color: #424347;
+  font-size: 18px;
+}
+
+#image-input {
+  position: absolute;
+}
+
+.containet-input-image {
+  visibility: hidden;
+}
+
+.container-color {
+  visibility: hidden;
+}
+
+#color {
+  position: absolute;
+}
+
+#color-text {
+  position: absolute;
+}
+
+#date {
+  color: transparent;
+}
+
+#date:valid,
+#date:focus {
+  color: #f6f6f6;
+}
+
+#date::-webkit-inner-spin-button,
+#date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+#time {
+  color: transparent;
+}
+
+#time:valid,
+#time:focus {
+  color: #f6f6f6;
+}
+
+#time::-webkit-inner-spin-button,
+#time::-webkit-calendar-picker-indicator {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.print-page {
+  padding: 10px 5px;
+  border: 1px solid black;
+}
+
+.xz {
+  word-wrap: break-word;
+}
+
+.image-input-label {
+  padding: 12px 40px;
+}
+
+.change-color {
+  padding: 12px 65px;
+}
+
+.change-color-text {
+  padding: 12px 40px;
+}
+
+.make-photo {
+  width: 100%;
+  height: 50px;
+  background-color: #8684c7;
+  border: none;
+  border-radius: 5px;
+  color: #424347;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+
+
+.print-page {
+  padding: 27px 0;
+  margin: 10px 0;
+  flex: 0 0 calc(33.33% - 12.5px);
+}
+
+#print-container {
+  padding: 56px 24px 169px;
+  padding-bottom: 20px;
+  background-color: #8684c7;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-page {
+  margin: 5px 70px 27px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+
+.containet-text-page {
+  margin: 0 27px;
+}
+
+.containet-text-page p {
+  margin-bottom: 15px;
+}
+
+/* скриває всі елементи корім тих що треба для друку */
+@media print {
+  body * {
+    visibility: hidden;
+    display: none;
+  }
+
+  #print-container,
+  #print-container *,
+  .print-page,
+  .print-page * {
+    display: block;
+    visibility: visible;
+    position: relative;
+  }
+}
+
+/* стилізація для вікна друку */
+@media print {
+  #print-container {
+    background-color: #ffff;
+  }
+
+  .right {
+    margin-left: 60%;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  #print-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 160px;
+    padding-left: 90px;
+    margin-top: -140px;
+  }
+
+
+
+  .print-page {
+    padding-bottom: 0;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    flex: 0 0 calc(40% - 12.5px);
+    font-size: 100%;
+    line-height: 1.5;
+    border: 1px solid black;
+  }
+}
+
+#print-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #8684c7;
+  border: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#download {
+  width: 100%;
+  height: 50px;
+  background-color: #8684c7;
+  border: none;
+  border-radius: 5px;
+  color: #f6f6f6;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+#grup::-webkit-outer-spin-button,
+#grup::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+@media print {
+  .spaceBeet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .spaceBeet {
+    position: absolute;
+  }
+
+  .left {
+    margin-bottom: 0;
+    top: 20px;
+  }
+
+  .right {
+    margin-bottom: 0;
+    text-align: right;
+    bottom: 26px;
+  }
+
+  @page {
+    size: auto;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main-block {
+    width: 1100px;
+  }
+
+  .header {
+    width: 1100px;
+  }
+
+  .generator {
+    width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main-block {
+    width: 1050px;
+  }
+
+  .header {
+    width: 1050px;
+  }
+
+  .generator {
+    width: 1050px;
+  }
+
+  .form {
+    padding: 30px 50px;
+  }
+}
+
+.disp-none {
+  display: none;
+}
+
+.data-i {
+  position: absolute;
+  left: 200px;
+  bottom: 28px;
+  z-index: 1000;
+}
+
+.fa-calendar {
+  color: #8684c7;
+}
+
+.time-i {
+  position: absolute;
+  left: 200px;
+  bottom: 28px;
+  z-index: 1000;
+}
+
+.fa-clock-o {
+  color: #8684c7;
+}
+
+.color-fals {
+  color: #8684c7;
+}
+
+.color-true {
+  color: #f6f6f6;
+}
+
+.color-true-v {
+  color: #f6f6f6;
+}
+
+button {
+  cursor: pointer;
+}
+
+.fontSize {
+  font-size: 20px;
+
+}
+
+.spaceBeet p {
+  display: block;
+}
+
+.spaceBeet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right {
+  text-align: right;
+  max-width: 200px;
+
+}
+
+.m0 {
+  margin-bottom: 0;
+}
+input[type="image"] {
+  display: none;
+}
