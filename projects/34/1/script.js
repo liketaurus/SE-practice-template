@@ -7,6 +7,8 @@ $(".single-item").slick({
     slidesToScroll: 1,
 });
 
+let isFormSubmited = false;
+
 class Course {
     constructor() {
         this.title = document.getElementById('title').value.trim();
@@ -43,6 +45,12 @@ class studentsCount{
 }
 
 function chooseTemplate(event) {
+
+    if(!isFormSubmited) {
+        alert('Заповніть форму, та настисніть кнопку "Додати", перш ніж обирати шаблон')
+        return false;
+    }
+
     const selectedImage = document.querySelector('#temp .selected-image');
     const containerPreview = document.getElementById("container-preview");
 
@@ -99,7 +107,8 @@ function generateCertificate() {
     document.getElementsByClassName("duration-temp")[0].innerText = course.duration;
 
     showList();
-    alert("Дані записано, оберіть шаблон, якщо ще цього не зробили")
+    isFormSubmited = true;
+    alert("Дані записано, оберіть шаблон")
 }
 
 function showList () {

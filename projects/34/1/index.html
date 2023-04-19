@@ -30,10 +30,11 @@
         <h1 class="logo">Fungos</h1>
         <p class="about-site">
           Веб-застосунок, який призначений для зручного створення, завантаження або друку сертифікатів.
-        </p>
+        <a class="information" href="https://github.com/IlnitskijMaksim/SE-practice-1group/wiki" target="_blank">Довідка по використанню</a>
+      </p>
       </header>
       <div id="container-div">
-            <div class="card text-white bg-info my-3 py-2 text-center">
+      <div class="card text-white bg-info my-3 py-2 text-center">
         <div class="card-body">
           <p class="text-white m-0"><span class="font-weight-bold">УВАГА!</span> Введені вами дані в форму, ви зможете побачити на сертифікаті одразу як виберете шаблон</p>
         </div>
@@ -51,7 +52,7 @@
                   <label for="duration" class="col-form-label">Тривалість (Наприклад: 1 година):</label>
                   <input type="text" id="duration" class="form-control"/>
 
-                  <label for="surname-teacher" class="col-form-label">Прізвище та ініцали викладача:</label>
+                  <label for="surname-teacher" class="col-form-label">Прізвище та ініціали викладача, який проводив захід:</label>
                   <input type="text" id="surname-teacher" class="form-control"/>
 
                   <label for="students-count" class="col-form-label">Введіть кількість студентів для яких буде зроблено сертифікати:</label>
@@ -73,6 +74,11 @@
             <h2 class="card-title text-white">Оберіть шаблон</h2>
             <div class="content">
               <div class="slider single-item" onclick="chooseTemplate(event)">
+                <div>
+                  <div class="image">
+                    <img src="img/template6.png" data-src="img/template6.png" data-class="template6"/>
+                  </div>
+                </div>
                 <div>
                   <div class="image">
                     <img src="img/template1.png" data-src="img/template1.png" data-class="template1"/>

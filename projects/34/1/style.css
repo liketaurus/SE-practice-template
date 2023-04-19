@@ -20,7 +20,7 @@ header {
 }
 
 .about-site {
-  padding: 30px 40px 0 40px;
+  padding: 30px 0 0 10px;
   text-align: left;
   font-weight: 500;
   color: #fff;
@@ -225,19 +225,19 @@ header {
 }
 
 #template.print-to-pdf .teacher-temp{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #template.print-to-pdf .title-temp{
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #template.print-to-pdf .duration-temp{
-  font-size: 9px;
+  font-size: 12px;
 }
 
 #template.print-to-pdf .date-temp {
-  font-size: 8px;
+  font-size: 12px;
 }
 
 
@@ -249,14 +249,18 @@ header {
 
 .template1 .title-temp {
   position: absolute;
-  left: 48%;
+  left: 34%;
   bottom: 28%;
+  right: 32%;
+  text-align: center;
 }
 
 .template1 .teacher-temp {
   position: absolute;
-  left: 40%;
+  left: 36%;
   bottom: 13%;
+  right: 50%;
+  text-align: center;
 }
 
 .template1 .date-temp {
@@ -281,12 +285,16 @@ header {
   position: absolute;
   left: 36%;
   bottom: 42%;
+  right: 33%;
+  text-align: center;
 }
 
 .template2 .teacher-temp {
   position: absolute;
   left: 25%;
   bottom: 34%;
+  right: 19%;
+  text-align: center;
 }
 
 .template2 .date-temp {
@@ -310,13 +318,17 @@ header {
 .template3 .title-temp {
   position: absolute;
   left: 13%;
-  bottom: 33%;
+  bottom: 31%;
+  right: 25%;
+  text-align: center;
 }
 
 .template3 .teacher-temp {
   position: absolute;
-  left: 17%;
+  left: 15%;
   bottom: 18%;
+  right: 74%;
+  text-align: center;
 }
 
 .template3 .date-temp {
@@ -339,14 +351,18 @@ header {
 
 .template4 .title-temp {
   position: absolute;
-  left: 47.5%;
+  left: 38.5%;
   bottom: 38%;
+  right: 38%;
+  text-align: center;
 }
 
 .template4 .teacher-temp {
   position: absolute;
-  left: 40%;
-  bottom: 10%;
+  left: 47%;
+  bottom: 15%;
+  right: 38%;
+  text-align: center;
 }
 
 .template4 .date-temp {
@@ -371,12 +387,16 @@ header {
   position: absolute;
   left: 33%;
   bottom: 32%;
+  right: 35%;
+  text-align: center;
 }
 
 .template5 .teacher-temp {
   position: absolute;
-  left: 42%;
+  left: 40%;
   bottom: 18%;
+  right: 47%;
+  text-align: center;
 }
 
 .template5 .date-temp {
@@ -393,32 +413,42 @@ header {
 
 .template6 .student-temp {
   position: absolute;
-  left: 32%;
-  bottom: 49%
+  left: 21%;
+  bottom: 54%;
+  right: 68%;
+  text-align: center;
 }
 
 .template6 .title-temp {
   position: absolute;
-  left: 34%;
-  bottom: 41%;
+  left: 1%;
+  bottom: 36%;
+  right: 48%;
+  text-align: center;
 }
 
 .template6 .teacher-temp {
   position: absolute;
-  left: 57%;
-  bottom: 41%;
+  left: -6%;
+  bottom: 25.5%;
+  right: 22%;
+  text-align: center;
 }
 
 .template6 .date-temp {
   position: absolute;
-  left: 23%;
-  bottom: 25%;
+  left: 14%;
+  bottom: 9%;
+  right: 88%;
+  text-align: center;
 }
 
 .template6 .duration-temp {
   position: absolute;
   left: 44%;
-  bottom: 25%;
+  bottom: 9%;
+  right: 43%;
+  text-align: center;
 }
 
 .template7 .student-temp {
@@ -429,14 +459,18 @@ header {
 
 .template7 .title-temp {
   position: absolute;
-  left: 62%;
+  left: 49%;
   bottom: 38%;
+  right: 19%;
+  text-align: center;
 }
 
 .template7 .teacher-temp {
   position: absolute;
   left: 59%;
   bottom: 28.5%;
+  right: 15%;
+  text-align: center;
 }
 
 .template7 .date-temp {
@@ -460,13 +494,17 @@ header {
 .template8 .title-temp {
   position: absolute;
   left: 34%;
-  bottom: 35%;
+  bottom: 34%;
+  right: 32%;
+  text-align: center;
 }
 
 .template8 .teacher-temp {
   position: absolute;
   left: 26%;
   bottom: 41.5%;
+  right: 26%;
+  text-align: center;
 }
 
 .template8 .date-temp {
@@ -489,14 +527,18 @@ header {
 
 .template9 .title-temp {
   position: absolute;
-  left: 47%;
+  left: 34%;
   bottom: 28%;
+  right: 34%;
+  text-align: center;
 }
 
 .template9 .teacher-temp {
   position: absolute;
-  left: 40%;
+  left: 36%;
   bottom: 14%;
+  right: 50%;
+  text-align: center;
 }
 
 .template9 .date-temp {
@@ -521,4 +563,20 @@ header {
 
 #students-list {
   display: contents;
+}
+
+.information {
+  margin-top: 10px;
+  float: right;
+  margin-left: 45px;
+  background-color: #436C89;
+  border-radius: 5px;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+}
+
+.information:hover{
+  color: #FFF;
+  text-decoration: none;
 }
