@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Генератор сертифікатів</title>
+    <link rel="website icon" type="png" href="img/logo.png" />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-sZG5VVk41YqhJjYXgJFoRVd3d2AdDgy4oyIytQJMGx/Mizz1N+5bgKQBSCGfKQnP" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style type="text/css" media="print">
+      @page { size: landscape; }
+    </style>
+    <script src="roboto.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <header>
+        <h1 class="logo">Fungos</h1>
+        <p class="about-site">
+          Веб-застосунок, який призначений для зручного створення, завантаження або друку сертифікатів.
+        </p>
+      </header>
+      <div id="container-div">
+            <div class="card text-white bg-info my-3 py-2 text-center">
+        <div class="card-body">
+          <p class="text-white m-0"><span class="font-weight-bold">УВАГА!</span> Введені вами дані в форму, ви зможете побачити на сертифікаті одразу як виберете шаблон</p>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-6 mb-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <div id="error-message"></div>
+                <h2 class="card-title text-white">Введіть дані сертифікату:</h2>
+                <div class="form-group row">
+                  <label for="title" class="col-form-label">Назва заходу (участь в):</label>
+                  <input type="text" id="title" class="form-control"/>
+
+                  <label for="duration" class="col-form-label">Тривалість (Наприклад: 1 година):</label>
+                  <input type="text" id="duration" class="form-control"/>
+
+                  <label for="surname-teacher" class="col-form-label">Прізвище та ініцали викладача:</label>
+                  <input type="text" id="surname-teacher" class="form-control"/>
+
+                  <label for="students-count" class="col-form-label">Введіть кількість студентів для яких буде зроблено сертифікати:</label>
+                  <input type="number" min="1" id="students-count" class="form-control" />
+
+                  <label for="surname-student" class="col-form-label hidden">Введіть прізвища та ініціали для кожного студента:</label>
+
+                  <input type="text" id="surname-student" class="form-control hidden"/>
+                  <div id="students-list">
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button id="create" class="btn btn-block" onclick="generateCertificate()">Додати</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-6">
+            <h2 class="card-title text-white">Оберіть шаблон</h2>
+            <div class="content">
+              <div class="slider single-item" onclick="chooseTemplate(event)">
+                <div>
+                  <div class="image">
+                    <img src="img/template1.png" data-src="img/template1.png" data-class="template1"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template2.png" data-src="img/template2.png" data-class="template2"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template3.png" data-src="img/template3.png" data-class="template3"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template7.png" data-src="img/template7.png" data-class="template7"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template9.png" data-src="img/template9.png" data-class="template9"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template4.png" data-src="img/template4.png" data-class="template4"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template5.png" data-src="img/template5.png" data-class="template5"/>
+                  </div>
+                </div>
+                <div>
+                  <div class="image">
+                    <img src="img/template8.png" data-src="img/template8.png" data-class="template8"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="temp" class="hidden">
+        <div class="template" style="font-family: Roboto;">
+          <div class="selected-image"></div>
+          <div class="student-temp"></div>
+          <div class="title-temp"></div>
+          <div class="teacher-temp"></div>
+          <div class="date-temp"></div>
+          <div class="duration-temp"></div>
+        </div>
+      </div>
+      <div id="container-preview">
+        <link rel="stylesheet" href="style.css" />
+        <h2 class="card-title text-white">Готові сертифікати</h2>
+        <div id="template">
+        </div>
+        <div class="button-container">
+          <button id="print" class="button" onclick="printCertificate()">Друкувати</button>
+          <button id="export" class="button" onclick="downloadCertificate()">Експорт в PDF</button>
+        </div>
+      </div>
+      <footer class="py-5 bg-dark">
+        <div class="contact-info">
+          <div class="email">
+            <img src="img/email.png" alt="email-address" />
+            <a href="mailto:anurevakaterina@gmail.com">anurevakaterina@gmail.com</a>
+            <a href="mailto:valeriya.kawai65@gmail.com">valeriya.kawai65@gmail.com</a>
+          </div>
+          <div class="phone">
+            <img src="img/phone.png" alt="phone-numbers" />
+            <a href="tel:+380688121097">+380-68-812-10-97</a>
+            <a href="tel:+380504097206">+380-50-409-72-06</a>
+          </div>
+        </div>
+        <p class="m-0 text-center text-white">Copyright &copy; Fungos 2023</p>
+      </footer>
+    </div>
+    <div id="print-box" class="hidden print-content">
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

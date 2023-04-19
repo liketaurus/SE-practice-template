@@ -1,0 +1,524 @@
+body {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  background-color: #201D1D !important;
+}
+
+header {
+  width: 100%;
+  display:flex ;
+  background-color: #201D1D;
+}
+
+.logo {
+  padding: 5px 10px 0 10px;
+  text-align: left;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Island Moments', cursive;
+  font-size: 64px;
+}
+
+.about-site {
+  padding: 30px 40px 0 40px;
+  text-align: left;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+}
+
+.logo,
+.about-site {
+  display: inline-block;
+}
+
+#container-div {
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #7092AA;
+}
+
+.card-body,
+.card-footer,
+.row {
+  border: none;
+}
+
+.card {
+  border: none;
+  border-radius: 30px;
+}
+
+.card-body {
+  border: none;
+  background-color: #436C89;
+  border-radius: 30px;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #00417C;
+}
+
+.btn-block {
+  color: #fff;
+  background-color: #00417C;
+}
+
+.card-footer {
+  background-color: #436C89;
+  border: none;
+}
+
+.col-form-label {
+  color: white;
+  padding: 5px 10px 0 10px;
+}
+
+.card-title {
+  color: #FFF;
+}
+
+.form-control {
+  margin: 10px;
+  padding: 10px;
+}
+
+#container-preview {
+  display: none;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  font-weight: 500;
+  color: #000000;
+  height: 100%;
+  background-color: #2C5A7B;
+}
+
+.selected-image {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  border: none;
+  color: #000;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.bg-dark {
+  background-color: #201D1D !important;
+}
+
+.content {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.slick-slide .image {
+  padding: 10px;
+}
+
+.slick-slide img {
+  border: 5px solid #fff;
+  display: block;
+  width: 100%;
+}
+
+.slick-slide img.slick-loading {
+  border: 0;
+}
+
+.selected-image img {
+  max-width: 100%;
+  padding: 5px 10px 0 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.email, .phone {
+  margin: 10px;
+}
+
+.email img, .phone img {
+  display: block;
+  margin: 0 auto;
+}
+
+.email a, .phone a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.email a:hover, .phone a:hover {
+  color: #fff;
+}
+
+.template {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.print-content {
+  display: inline-block;
+  width: 100%;
+}
+
+.print-content .template {
+  margin: 10% 0;
+}
+
+.print-content .button-container,
+.print-content .card-title {
+  display: none !important;
+}
+
+#template .student-temp {
+  font-size: 1.5vw;
+}
+
+#template .teacher-temp, .title-temp {
+  font-size: 1.3vw
+}
+
+#template .duration-temp{
+  font-size: 1.1vw;
+}
+
+#template  .date-temp {
+  font-size: 1vw;
+}
+
+#template.print-to-pdf .student-temp {
+  font-size: 12px;
+}
+
+#template.print-to-pdf .teacher-temp{
+  font-size: 10px;
+}
+
+#template.print-to-pdf .title-temp{
+  font-size: 10px;
+}
+
+#template.print-to-pdf .duration-temp{
+  font-size: 9px;
+}
+
+#template.print-to-pdf .date-temp {
+  font-size: 8px;
+}
+
+
+.template1 .student-temp {
+  position: absolute;
+  left: 46%;
+  bottom: 45%;
+}
+
+.template1 .title-temp {
+  position: absolute;
+  left: 48%;
+  bottom: 28%;
+}
+
+.template1 .teacher-temp {
+  position: absolute;
+  left: 40%;
+  bottom: 13%;
+}
+
+.template1 .date-temp {
+  position: absolute;
+  left: 48%;
+  bottom: 5%;
+}
+
+.template1 .duration-temp {
+  position: absolute;
+  left: 62%;
+  bottom: 13%;
+}
+
+.template2 .student-temp {
+  position: absolute;
+  left: 21%;
+  bottom: 54%;
+}
+
+.template2 .title-temp {
+  position: absolute;
+  left: 36%;
+  bottom: 42%;
+}
+
+.template2 .teacher-temp {
+  position: absolute;
+  left: 25%;
+  bottom: 34%;
+}
+
+.template2 .date-temp {
+  position: absolute;
+  left: 20%;
+  bottom: 19%;
+}
+
+.template2 .duration-temp {
+  position: absolute;
+  left: 48%;
+  bottom: 19%;
+}
+
+.template3 .student-temp {
+  position: absolute;
+  left: 15%;
+  bottom: 51%;
+}
+
+.template3 .title-temp {
+  position: absolute;
+  left: 13%;
+  bottom: 33%;
+}
+
+.template3 .teacher-temp {
+  position: absolute;
+  left: 17%;
+  bottom: 18%;
+}
+
+.template3 .date-temp {
+  position: absolute;
+  left: 41%;
+  bottom: 16%;
+}
+
+.template3 .duration-temp {
+  position: absolute;
+  left: 65%;
+  bottom: 18%;
+}
+
+.template4 .student-temp {
+  position: absolute;
+  left: 45.5%;
+  bottom: 56%;
+}
+
+.template4 .title-temp {
+  position: absolute;
+  left: 47.5%;
+  bottom: 38%;
+}
+
+.template4 .teacher-temp {
+  position: absolute;
+  left: 40%;
+  bottom: 10%;
+}
+
+.template4 .date-temp {
+  position: absolute;
+  left: 57%;
+  bottom: 10%;
+}
+
+.template4 .duration-temp {
+  position: absolute;
+  left: 47%;
+  bottom: 27%;
+}
+
+.template5 .student-temp {
+  position: absolute;
+  left: 57%;
+  bottom: 51%;
+}
+
+.template5 .title-temp {
+  position: absolute;
+  left: 33%;
+  bottom: 32%;
+}
+
+.template5 .teacher-temp {
+  position: absolute;
+  left: 42%;
+  bottom: 18%;
+}
+
+.template5 .date-temp {
+  position: absolute;
+  left: 77%;
+  bottom: 33%;
+}
+
+.template5 .duration-temp {
+  position: absolute;
+  left: 75%;
+  bottom: 18%;
+}
+
+.template6 .student-temp {
+  position: absolute;
+  left: 32%;
+  bottom: 49%
+}
+
+.template6 .title-temp {
+  position: absolute;
+  left: 34%;
+  bottom: 41%;
+}
+
+.template6 .teacher-temp {
+  position: absolute;
+  left: 57%;
+  bottom: 41%;
+}
+
+.template6 .date-temp {
+  position: absolute;
+  left: 23%;
+  bottom: 25%;
+}
+
+.template6 .duration-temp {
+  position: absolute;
+  left: 44%;
+  bottom: 25%;
+}
+
+.template7 .student-temp {
+  position: absolute;
+  left: 61%;
+  bottom: 51%;
+}
+
+.template7 .title-temp {
+  position: absolute;
+  left: 62%;
+  bottom: 38%;
+}
+
+.template7 .teacher-temp {
+  position: absolute;
+  left: 59%;
+  bottom: 28.5%;
+}
+
+.template7 .date-temp {
+  position: absolute;
+  left: 51%;
+  bottom: 4%;
+}
+
+.template7 .duration-temp {
+  position: absolute;
+  left: 86%;
+  bottom: 4%;
+}
+
+.template8 .student-temp {
+  position: absolute;
+  left: 21%;
+  bottom: 54%;
+}
+
+.template8 .title-temp {
+  position: absolute;
+  left: 34%;
+  bottom: 35%;
+}
+
+.template8 .teacher-temp {
+  position: absolute;
+  left: 26%;
+  bottom: 41.5%;
+}
+
+.template8 .date-temp {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+}
+
+.template8 .duration-temp {
+  position: absolute;
+  left: 48%;
+  bottom: 20%;
+}
+
+.template9 .student-temp {
+  position: absolute;
+  left: 45%;
+  bottom: 45%;
+}
+
+.template9 .title-temp {
+  position: absolute;
+  left: 47%;
+  bottom: 28%;
+}
+
+.template9 .teacher-temp {
+  position: absolute;
+  left: 40%;
+  bottom: 14%;
+}
+
+.template9 .date-temp {
+  position: absolute;
+  left: 49%;
+  bottom: 5%;
+}
+
+.template9 .duration-temp {
+  position: absolute;
+  left: 62%;
+  bottom: 14%;
+}
+
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none;
+}
+
+#students-list {
+  display: contents;
+}
