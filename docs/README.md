@@ -5,15 +5,15 @@
 
 ## Документацяя окремих етапів
 
-:one: [Етап **аналізу** (Envisioning)](/docs/1.Envisioning/README.md)
+1️⃣ [Етап **аналізу** (Envisioning)](/docs/1.Envisioning/README.md)
 
-:two: [Етап **планування** (Planning)](/docs/2.Planning/README.md)
+2️⃣ [Етап **планування** (Planning)](/docs/2.Planning/README.md)
 
-:three: [Етап **розробки** (Developing)](/docs/3.Developing/README.md)
+3️⃣ [Етап **розробки** (Developing)](/docs/3.Developing/README.md)
 
-:four: [Етап **тестування** (Stabilizing)](/docs/4.Stabilizing/README.md)
+4️⃣ [Етап **тестування** (Stabilizing)](/docs/4.Stabilizing/README.md)
 
-:five: [Етап **впровадження** (Deploying)](/docs/5.Deploying/README.md)
+5️⃣ [Етап **впровадження** (Deploying)](/docs/5.Deploying/README.md)
 
 ---
 :house: [Повернутись до кореня репозиторію](/README.md)
