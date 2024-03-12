@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" modified="2024-03-11T16:14:00.319Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 OPR/107.0.0.0" etag="NXWTbFcxuHpWcm1zYNa8" version="24.0.4" type="device">
+  <diagram name="Страница — 1" id="G82pu99WHTn5ibExtDNm">
+    <mxGraphModel dx="1793" dy="789" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-8" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-3" y="369" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-9" value="Workstation" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="127" y="334" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-10" value="Browser" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="167" y="384" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-11" value="Keyboard/Monitor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="47" y="384" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-12" value="Web Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="103" y="544" width="248" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="27" y="409" as="sourcePoint" />
+            <mxPoint x="167" y="408.5799999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-14" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ZrYxauPHQGnBPbum4RT0-21" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="217" y="555" as="sourcePoint" />
+            <mxPoint x="216.57999999999998" y="434" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-15" value="HTTPS connection" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="204" y="484" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZrYxauPHQGnBPbum4RT0-21" value="Game Files" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="167" y="587" width="100" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
