@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://cneu1l0jfnksk"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_7wt4u"]
+[ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="2_oi3x8"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_7wt4u")
+
+[node name="MenuImage" type="Sprite2D" parent="."]
+position = Vector2(575, 322)
+scale = Vector2(0.299106, 0.299106)
+texture = ExtResource("2_oi3x8")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 192.0
+offset_right = 701.0
+offset_bottom = 285.0
+theme_override_font_sizes/font_size = 40
+text = "Play"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 328.0
+offset_right = 701.0
+offset_bottom = 421.0
+theme_override_font_sizes/font_size = 40
+text = "Quit"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
