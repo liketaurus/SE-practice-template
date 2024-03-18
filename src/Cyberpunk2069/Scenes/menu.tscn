@@ -3,8 +3,12 @@
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_7wt4u"]
 [ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="2_oi3x8"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78o4e"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhmlk"]
 bg_color = Color(0, 0, 0, 0.537255)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qh6s"]
@@ -22,17 +26,15 @@ scale = Vector2(0.299106, 0.299106)
 texture = ExtResource("2_oi3x8")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 336.0
-offset_top = 40.0
-offset_right = 817.0
-offset_bottom = 605.0
-theme_type_variation = &"GraphNodeTitleLabel"
-theme_override_colors/font_color = Color(0.705882, 0.556863, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_78o4e")
+offset_left = 330.0
+offset_top = 60.0
+offset_right = 816.0
+offset_bottom = 595.0
+theme_type_variation = &"HeaderMedium"
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhmlk")
 text = "Cyberpunk 2069"
 horizontal_alignment = 1
-visible_ratio = -0.0714286
 
 [node name="Play" type="Button" parent="."]
 offset_left = 448.0
