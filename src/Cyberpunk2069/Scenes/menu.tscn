@@ -1,15 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cneu1l0jfnksk"]
+[gd_scene load_steps=5 format=3 uid="uid://cneu1l0jfnksk"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_7wt4u"]
 [ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="2_oi3x8"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhmlk"]
-bg_color = Color(0, 0, 0, 0.537255)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qh6s"]
 bg_color = Color(0.352941, 0.501961, 0.752941, 0.854902)
@@ -24,17 +16,6 @@ script = ExtResource("1_7wt4u")
 position = Vector2(575, 322)
 scale = Vector2(0.299106, 0.299106)
 texture = ExtResource("2_oi3x8")
-
-[node name="Label" type="Label" parent="."]
-offset_left = 330.0
-offset_top = 60.0
-offset_right = 816.0
-offset_bottom = 595.0
-theme_type_variation = &"HeaderMedium"
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhmlk")
-text = "Cyberpunk 2069"
-horizontal_alignment = 1
 
 [node name="Play" type="Button" parent="."]
 offset_left = 448.0
