@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 func _on_continued_pressed():
 	get_tree().paused = false

@@ -5,3 +5,4 @@ res://Scripts/player.gd
 res://Scenes/Pause.tscn
 res://Scripts/pause.gd
 res://Scripts/settings.gd
+res://Scripts/main.gd

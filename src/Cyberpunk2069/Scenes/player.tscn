@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=8 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
 [ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
-[ext_resource type="PackedScene" uid="uid://la72en53q5gw" path="res://Scenes/pause.tscn" id="3_qjbvx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
 radius = 14.0
@@ -97,7 +96,3 @@ drag_bottom_margin = 0.05
 libraries = {
 "": SubResource("AnimationLibrary_8k0hu")
 }
-
-[node name="Pause" parent="." instance=ExtResource("3_qjbvx")]
-visible = false
-position = Vector2(-597, -120)

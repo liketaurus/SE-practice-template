@@ -5,8 +5,10 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_87fve"]
 bg_color = Color(0, 0, 0, 0.537255)
 
-[node name="Pause" type="Node2D"]
+[node name="Pause" type="Control"]
 process_mode = 1
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_bo3x3")
 
 [node name="Panel" type="Panel" parent="."]

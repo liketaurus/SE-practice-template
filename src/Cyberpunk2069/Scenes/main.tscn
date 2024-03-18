@@ -1,17 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cm68f2lyegqgo"]
+[gd_scene load_steps=5 format=3 uid="uid://cm68f2lyegqgo"]
 
 [ext_resource type="PackedScene" uid="uid://bpugttvk7s8va" path="res://Scenes/Environment.tscn" id="1_deff2"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_f4swj"]
 [ext_resource type="PackedScene" uid="uid://btb3mslexwkb0" path="res://Scenes/player.tscn" id="2_cm5n4"]
-
-[sub_resource type="GDScript" id="GDScript_dnbjt"]
-script/source = "extends Node2D
-
-func _ready():
-	Engine.max_fps = 90
-"
+[ext_resource type="PackedScene" uid="uid://la72en53q5gw" path="res://Scenes/Pause.tscn" id="3_ge0dc"]
 
 [node name="Main" type="Node2D"]
-script = SubResource("GDScript_dnbjt")
+script = ExtResource("1_f4swj")
 
 [node name="StaticBody2D" parent="." instance=ExtResource("1_deff2")]
 position = Vector2(0, 1)
@@ -19,3 +14,10 @@ position = Vector2(0, 1)
 [node name="Player" parent="." instance=ExtResource("2_cm5n4")]
 position = Vector2(-169, 45)
 scale = Vector2(1.18079, 1.18079)
+
+[node name="Pause" parent="." instance=ExtResource("3_ge0dc")]
+visible = false
+offset_left = -694.0
+offset_top = -19.0
+offset_right = -694.0
+offset_bottom = -19.0
