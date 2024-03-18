@@ -30,6 +30,7 @@ shape = SubResource("CircleShape2D_mmlqn")
 debug_color = Color(0.956863, 0, 0.529412, 0.419608)
 
 [node name="Label" type="Label" parent="dialogue"]
+visible = false
 offset_left = 62.0
 offset_top = 47.0
 offset_right = 172.0
