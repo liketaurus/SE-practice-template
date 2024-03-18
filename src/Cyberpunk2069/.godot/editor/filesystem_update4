@@ -1,5 +1,3 @@
-res://Scenes/settings.tscn
-res://Scenes/menu.tscn
+res://Scenes/player.tscn
 res://Scenes/main.tscn
-res://Scenes/Environment.tscn
-res://Scenes/Pause.tscn
+res://Scripts/player.gd
