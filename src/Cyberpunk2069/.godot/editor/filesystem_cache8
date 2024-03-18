@@ -1,9 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710803829
+::res://::1710804547
 default_bus_layout.tres::AudioBusLayout::6463009266295747810::1710796934::0::1::::<><>::
 icon.svg::CompressedTexture2D::7438081712965145412::1710788353::1710788353::1::::<><>::
-yep.gd::GDScript::-1::1710796944::0::1::::<>Node2D<>::
-::res://assets/::1710792678
+::res://assets/::1710805853
 2231.png::CompressedTexture2D::1447514990343395570::1710788353::1710788368::1::::<><>::
 Nigerian_Public_Domain_131.jpg::CompressedTexture2D::4530805177349331227::1710720201::1710791506::1::::<><>::
 Player.png::CompressedTexture2D::2709511620690905097::1710788353::1710788353::1::::<><>::
@@ -224,6 +223,29 @@ Tileset_48x48_16.png::CompressedTexture2D::2666068966367011183::1710791333::1710
 Character_2_16x16_RPGMAKER.png::CompressedTexture2D::5880454982542867169::1710791333::1710791970::1::::<><>::
 Character_2_32x32_RPGMAKER.png::CompressedTexture2D::1224800951313963968::1710791333::1710791970::1::::<><>::
 Character_2_48x48_RPGMAKER.png::CompressedTexture2D::9123813963364030465::1710791333::1710791970::1::::<><>::
+::res://assets/RF_Catacombs_v1.0/::1710805814
+candleA_01.png::CompressedTexture2D::8963776688920415857::1710805813::1710805857::1::::<><>::
+candleA_02.png::CompressedTexture2D::1673650371204120880::1710805813::1710805857::1::::<><>::
+candleA_03.png::CompressedTexture2D::1671366844352322479::1710805813::1710805857::1::::<><>::
+candleA_04.png::CompressedTexture2D::5380197252872575922::1710805813::1710805857::1::::<><>::
+candleB_01.png::CompressedTexture2D::3805884159592217385::1710805813::1710805857::1::::<><>::
+candleB_02.png::CompressedTexture2D::7227384252096114894::1710805813::1710805857::1::::<><>::
+candleB_03.png::CompressedTexture2D::2347262540351135003::1710805813::1710805857::1::::<><>::
+candleB_04.png::CompressedTexture2D::5829181436973585129::1710805813::1710805857::1::::<><>::
+decorative.png::CompressedTexture2D::3069298454562584882::1710805813::1710805857::1::::<><>::
+mainlevbuild.png::CompressedTexture2D::4496579465204693028::1710805813::1710805857::1::::<><>::
+public-license.txt::TextFile::-1::1710805813::0::1::::<><>::
+spike_0.png::CompressedTexture2D::2297017186986790894::1710805813::1710805857::1::::<><>::
+spike_1.png::CompressedTexture2D::829210652685464638::1710805813::1710805857::1::::<><>::
+spike_2.png::CompressedTexture2D::8638068553447868159::1710805813::1710805857::1::::<><>::
+spike_3.png::CompressedTexture2D::8303069694453744169::1710805813::1710805857::1::::<><>::
+spike_4.png::CompressedTexture2D::7218538821311231777::1710805814::1710805857::1::::<><>::
+torch_1.png::CompressedTexture2D::7905903904098123535::1710805814::1710805857::1::::<><>::
+torch_2.png::CompressedTexture2D::7095630176569417146::1710805814::1710805857::1::::<><>::
+torch_3.png::CompressedTexture2D::4694059855599423791::1710805814::1710805857::1::::<><>::
+torch_4.png::CompressedTexture2D::9012267287843825257::1710805814::1710805857::1::::<><>::
+::res://assets/RF_Catacombs_v1.0/PSD/::1710805813
+::res://assets/RF_Catacombs_v1.0/PSD/Anim/::1710805813
 ::res://assets/Tech Dungeon Roguelite - Asset Pack/::1710791507
 Read Me.txt::TextFile::-1::1710782027::0::1::::<><>::
 tileset x1.png::CompressedTexture2D::5053040013897394884::1710782027::1710791506::1::::<><>::
@@ -279,22 +301,23 @@ players red x3.png::CompressedTexture2D::6309464047482409458::1710782027::171079
 ui x1.png::CompressedTexture2D::105576511881250058::1710782027::1710791505::1::::<><>::
 ui x2.png::CompressedTexture2D::7004435288740634146::1710782027::1710791505::1::::<><>::
 ui x3.png::CompressedTexture2D::6710230901861205236::1710782027::1710791506::1::::<><>::
-::res://Scenes/::1710803829
+::res://Scenes/::1710804929
 Environment.tscn::PackedScene::3480940156267982942::1710788353::0::1::::<><>::uid://c428c883cpnkb::::res://Textures/Environment.png
-main.tscn::PackedScene::5681117227368614090::1710803684::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
+main.tscn::PackedScene::5681117227368614090::1710804574::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
 menu.tscn::PackedScene::5694815232986804398::1710796485::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg
-NPC.tscn::PackedScene::3322199610398732211::1710803815::0::1::::<><>::uid://cg1okgmagm47i::::res://Textures/NPC.png<>res://Scripts/dialogue.gd
+NPC.tscn::PackedScene::3322199610398732211::1710804574::0::1::::<><>::uid://cg52n6nq3n86y::::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/No Outlines/npc x1.png<>res://Scripts/dialogue.gd
 Pause.tscn::PackedScene::774068671799317146::1710788353::0::1::::<><>::res://Scripts/pause.gd
-player.tscn::PackedScene::3723795558520600771::1710803684::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://doj5q74cedgyt::::res://Textures/HP.png
+player.tscn::PackedScene::3723795558520600771::1710804574::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://doj5q74cedgyt::::res://Textures/HP.png
 settings.tscn::PackedScene::9030082917547479554::1710788353::0::1::::<><>::uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg<>res://Scripts/settings.gd
-yep.tscn::PackedScene::2758984683902403337::1710803860::0::1::::<><>::res://yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
-::res://Scripts/::1710803631
-dialogue.gd::GDScript::-1::1710803631::0::1::::<>Area2D<>::
+yep.tscn::PackedScene::2758984683902403337::1710804929::0::1::::<><>::res://Scripts/yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
+::res://Scripts/::1710804353
+dialogue.gd::GDScript::-1::1710804353::0::1::::<>Area2D<>::
 main.gd::GDScript::-1::1710788701::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1710795565::0::1::::<>Node2D<>::
 pause.gd::GDScript::-1::1710798413::0::1::::<>Control<>::
 player.gd::GDScript::-1::1710798697::0::1::::<>CharacterBody2D<>::
 settings.gd::GDScript::-1::1710788353::0::1::::<>Node2D<>::
+yep.gd::GDScript::-1::1710796944::0::1::::<>Node2D<>::
 ::res://Textures/::1710788368
 Environment.png::CompressedTexture2D::6866065050122428257::1710788353::1710788353::1::::<><>::
 HP.png::CompressedTexture2D::8162337069926641331::1710788353::1710788353::1::::<><>::
