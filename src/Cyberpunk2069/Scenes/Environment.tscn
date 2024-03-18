@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpugttvk7s8va"]
+[gd_scene load_steps=10 format=3 uid="uid://bpugttvk7s8va"]
 
 [ext_resource type="Texture2D" uid="uid://c428c883cpnkb" path="res://Textures/Environment.png" id="1_r0cbh"]
 
@@ -22,6 +22,9 @@ size = Vector2(41, 93)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h3ron"]
 size = Vector2(411, 40)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8vhse"]
+radius = 63.9531
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
@@ -78,3 +81,7 @@ shape = SubResource("RectangleShape2D_jm26j")
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="."]
 position = Vector2(936.5, 354)
 shape = SubResource("RectangleShape2D_h3ron")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="."]
+position = Vector2(976, 143)
+shape = SubResource("CircleShape2D_8vhse")
