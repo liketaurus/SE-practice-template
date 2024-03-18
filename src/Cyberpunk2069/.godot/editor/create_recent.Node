@@ -1,8 +1,8 @@
+TileMap
 Label
 CanvasLayer
 CollisionShape2D
 Area2D
-TileMap
 AnimatedSprite2D
 Control
 Node2D
