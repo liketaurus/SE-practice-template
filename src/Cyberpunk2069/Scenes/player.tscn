@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://doj5q74cedgyt" path="res://Textures/HP.png" id="4_4p3li"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
-radius = 14.0
-height = 38.0
+radius = 13.0
+height = 40.0
 
 [sub_resource type="Animation" id="Animation_dqw3i"]
 resource_name = "idle"
@@ -84,7 +84,7 @@ vframes = 3
 frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(362, 328)
+position = Vector2(369, 326)
 shape = SubResource("CapsuleShape2D_cnkmm")
 
 [node name="Camera2D" type="Camera2D" parent="."]

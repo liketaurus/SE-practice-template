@@ -56,4 +56,4 @@ position = Vector2(-169, 45)
 scale = Vector2(1.18079, 1.18079)
 
 [node name="Npc" parent="." instance=ExtResource("5_ab5ik")]
-position = Vector2(50, 2)
+position = Vector2(211, 173)

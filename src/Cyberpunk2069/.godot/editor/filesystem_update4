@@ -6,3 +6,5 @@ res://Scripts/main.gd
 res://Scenes/player.tscn
 res://Scenes/yep.tscn
 res://default_bus_layout.tres
+res://Scripts/menu.gd
+res://Scenes/yep.gd

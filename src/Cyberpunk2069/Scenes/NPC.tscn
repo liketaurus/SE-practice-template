@@ -3,9 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://cg1okgmagm47i" path="res://Textures/NPC.png" id="1_qoctu"]
 [ext_resource type="Script" path="res://Scripts/dialogue.gd" id="2_tg631"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mmlqn"]
-radius = 203.416
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3gvf2"]
 content_margin_left = 2.0
 bg_color = Color(0, 0, 0, 0.513726)
@@ -14,20 +11,18 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fds4s"]
+size = Vector2(311, 225)
+
 [node name="Npc" type="Node2D"]
 
 [node name="Npc" type="Sprite2D" parent="."]
-position = Vector2(199, 96)
+position = Vector2(1.19209e-07, -43)
 scale = Vector2(0.159625, 0.22975)
 texture = ExtResource("1_qoctu")
 
 [node name="dialogue" type="Area2D" parent="."]
 script = ExtResource("2_tg631")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="dialogue"]
-position = Vector2(240, 199)
-shape = SubResource("CircleShape2D_mmlqn")
-debug_color = Color(0.956863, 0, 0.529412, 0.419608)
 
 [node name="Label" type="Label" parent="dialogue"]
 visible = false
@@ -41,3 +36,8 @@ text = "Привіт, в мене є
 завдання для тебе!
 Тобі потрібно знайти 
 4 ключі"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-10.5, -18.5)
+shape = SubResource("RectangleShape2D_fds4s")
+debug_color = Color(0.956863, 0, 0.529412, 0.419608)
