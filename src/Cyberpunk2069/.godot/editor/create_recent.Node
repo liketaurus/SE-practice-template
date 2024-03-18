@@ -1,5 +1,7 @@
-CanvasLayer
 Node2D
+Window
+Node
+CanvasLayer
 Button
 Panel
 Camera2D

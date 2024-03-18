@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://sg0wev0kari1"]
+[gd_scene load_steps=3 format=3 uid="uid://la72en53q5gw"]
 
 [ext_resource type="Script" path="res://Scripts/pause.gd" id="1_bo3x3"]
 
@@ -9,14 +9,14 @@ bg_color = Color(0, 0, 0, 0.537255)
 process_mode = 1
 script = ExtResource("1_bo3x3")
 
-[node name="Panel2" type="Panel" parent="."]
-offset_left = 814.0
-offset_top = 316.0
-offset_right = 1098.0
-offset_bottom = 558.0
+[node name="Panel" type="Panel" parent="."]
+offset_left = 812.0
+offset_top = 308.0
+offset_right = 1096.0
+offset_bottom = 550.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_87fve")
 
-[node name="continued" type="Button" parent="Panel2"]
+[node name="continued" type="Button" parent="Panel"]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 60.0
@@ -27,7 +27,7 @@ theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Продовжити"
 
-[node name="end" type="Button" parent="Panel2"]
+[node name="end" type="Button" parent="Panel"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.543
@@ -41,5 +41,5 @@ offset_bottom = 549.241
 theme_override_font_sizes/font_size = 20
 text = "Головне меню"
 
-[connection signal="pressed" from="Panel2/continued" to="." method="_on_continued_pressed"]
-[connection signal="pressed" from="Panel2/end" to="." method="_on_end_pressed"]
+[connection signal="pressed" from="Panel/continued" to="." method="_on_continued_pressed"]
+[connection signal="pressed" from="Panel/end" to="." method="_on_end_pressed"]

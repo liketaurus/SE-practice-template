@@ -25,11 +25,8 @@ func _process(delta):
 		$AnimationPlayer.play("run")
 
 	move_and_slide()
+
 	if Input.is_action_pressed("pause"):
-		get_tree(). paused = true
+		get_tree().paused = true
 		$Pause.visible = true
-
-
-
-func _on_continued_pressed():
-	pass # Replace with function body.
+		
