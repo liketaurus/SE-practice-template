@@ -1,11 +1,24 @@
-[gd_scene load_steps=6 format=3 uid="uid://cneu1l0jfnksk"]
+[gd_scene load_steps=7 format=3 uid="uid://cneu1l0jfnksk"]
 
 [ext_resource type="Script" path="res://Scripts/menu.gd" id="1_7wt4u"]
 [ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="2_oi3x8"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78o4e"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqem2"]
+content_margin_top = 34.0
 bg_color = Color(0, 0, 0, 0.537255)
-corner_detail = 20
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.396078)
+shadow_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_yn3h0"]
+font_size = 40
+font_color = Color(0.823529, 0.823529, 0, 1)
+outline_size = 1
+shadow_size = 3
+shadow_color = Color(0, 1, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qh6s"]
 bg_color = Color(0.352941, 0.501961, 0.752941, 0.854902)
@@ -21,18 +34,16 @@ position = Vector2(575, 322)
 scale = Vector2(0.299106, 0.299106)
 texture = ExtResource("2_oi3x8")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 336.0
-offset_top = 40.0
-offset_right = 817.0
-offset_bottom = 605.0
-theme_type_variation = &"GraphNodeTitleLabel"
-theme_override_colors/font_color = Color(0.705882, 0.556863, 0, 1)
-theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_78o4e")
+[node name="Label2" type="Label" parent="."]
+offset_left = 332.0
+offset_top = 70.0
+offset_right = 808.0
+offset_bottom = 622.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_pqem2")
 text = "Cyberpunk 2069"
+label_settings = SubResource("LabelSettings_yn3h0")
 horizontal_alignment = 1
-visible_ratio = -0.0714286
 
 [node name="Play" type="Button" parent="."]
 offset_left = 448.0
