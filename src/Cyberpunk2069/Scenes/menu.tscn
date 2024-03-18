@@ -13,19 +13,28 @@ texture = ExtResource("2_oi3x8")
 
 [node name="Play" type="Button" parent="."]
 offset_left = 448.0
-offset_top = 192.0
+offset_top = 154.0
 offset_right = 701.0
-offset_bottom = 285.0
+offset_bottom = 247.0
 theme_override_font_sizes/font_size = 40
 text = "Play"
 
+[node name="Settings" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 291.0
+offset_right = 701.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 40
+text = "Settings"
+
 [node name="Quit" type="Button" parent="."]
 offset_left = 448.0
-offset_top = 328.0
+offset_top = 433.0
 offset_right = 701.0
-offset_bottom = 421.0
+offset_bottom = 526.0
 theme_override_font_sizes/font_size = 40
 text = "Quit"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
