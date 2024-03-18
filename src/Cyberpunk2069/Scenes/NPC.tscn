@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://boxgvpixl2dl3"]
+[gd_scene load_steps=5 format=3 uid="uid://bnlke3ngdj2nv"]
 
 [ext_resource type="Texture2D" uid="uid://cg1okgmagm47i" path="res://Textures/NPC.png" id="1_qoctu"]
 [ext_resource type="Script" path="res://Scripts/dialogue.gd" id="2_tg631"]
