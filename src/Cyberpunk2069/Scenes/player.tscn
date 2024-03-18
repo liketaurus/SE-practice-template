@@ -1,7 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
-[ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
 [ext_resource type="PackedScene" uid="uid://la72en53q5gw" path="res://Scenes/Pause.tscn" id="3_qjbvx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
@@ -56,10 +55,14 @@ tracks/0/keys = {
 "values": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }
 
+[sub_resource type="Animation" id="Animation_vc812"]
+resource_name = "run_left"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8k0hu"]
 _data = {
 "idle": SubResource("Animation_dqw3i"),
 "run": SubResource("Animation_u0rjx"),
+"run_left": SubResource("Animation_vc812"),
 "walk": SubResource("Animation_j0spp")
 }
 
@@ -71,10 +74,9 @@ script = ExtResource("1_nlplg")
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(372, 257)
 scale = Vector2(2.23965, 2.23965)
-texture = ExtResource("2_qduuw")
 hframes = 12
 vframes = 3
-frame = 34
+frame = 24
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(362, 328)

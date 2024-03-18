@@ -12,6 +12,7 @@ anchors_preset = 0
 script = ExtResource("1_bo3x3")
 
 [node name="Panel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 478.0
 offset_top = 300.0
 offset_right = 762.0
