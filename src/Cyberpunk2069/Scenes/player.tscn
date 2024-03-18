@@ -123,7 +123,7 @@ offset_left = 978.0
 offset_top = 8.0
 offset_right = 1147.0
 offset_bottom = 31.0
-text = "Ключів знайдено 0/1"
+text = "Ключів знайдено 0/4"
 
 [node name="Hp" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(44, 614)

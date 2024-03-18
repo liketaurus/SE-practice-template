@@ -57,3 +57,13 @@ scale = Vector2(1.18079, 1.18079)
 
 [node name="Npc" parent="." instance=ExtResource("5_ab5ik")]
 position = Vector2(50, 2)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 183.0
+offset_top = 157.0
+offset_right = 287.0
+offset_bottom = 188.0
+theme_override_font_sizes/font_size = 10
+text = "Підійдіть і натисніть 
+Е"
+horizontal_alignment = 1

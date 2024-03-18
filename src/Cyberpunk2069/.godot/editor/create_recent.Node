@@ -1,5 +1,5 @@
-TileMap
 Label
+TileMap
 CanvasLayer
 CollisionShape2D
 Area2D
