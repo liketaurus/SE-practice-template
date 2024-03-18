@@ -1,8 +1,5 @@
 extends Area2D
 
-var chase = false
-
-func _process(body):
-	if body.name == "Player":
-		chase = true
-		print(1)
+func _process(delta):
+	if Input.is_key_pressed(KEY_E):
+		$Label.visible = true
