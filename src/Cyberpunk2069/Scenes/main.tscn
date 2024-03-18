@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm68f2lyegqgo"]
+
+[ext_resource type="PackedScene" uid="uid://bpugttvk7s8va" path="res://Scenes/Environment.tscn" id="1_deff2"]
+[ext_resource type="PackedScene" uid="uid://btb3mslexwkb0" path="res://Scenes/player.tscn" id="2_cm5n4"]
+[ext_resource type="Texture2D" uid="uid://doj5q74cedgyt" path="res://Textures/HP.png" id="3_etrmn"]
+
+[sub_resource type="GDScript" id="GDScript_dnbjt"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	Engine.max_fps = 90
+	
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="Main" type="Node2D"]
+script = SubResource("GDScript_dnbjt")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_deff2")]
+position = Vector2(0, 1)
+
+[node name="Player" parent="." instance=ExtResource("2_cm5n4")]
+position = Vector2(-169, 45)
+scale = Vector2(1.18079, 1.18079)
+
+[node name="Hp" type="Sprite2D" parent="."]
+position = Vector2(90, 565)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("3_etrmn")
+
+[node name="Hp2" type="Sprite2D" parent="."]
+position = Vector2(171, 565)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("3_etrmn")
+
+[node name="Hp3" type="Sprite2D" parent="."]
+position = Vector2(252, 565)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("3_etrmn")
