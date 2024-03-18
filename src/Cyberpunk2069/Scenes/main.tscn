@@ -25,7 +25,7 @@ script = SubResource("GDScript_dnbjt")
 position = Vector2(0, 1)
 
 [node name="Player" parent="." instance=ExtResource("2_cm5n4")]
-position = Vector2(-169, 45)
+position = Vector2(-266, 7)
 scale = Vector2(1.18079, 1.18079)
 
 [node name="Hp" type="Sprite2D" parent="."]

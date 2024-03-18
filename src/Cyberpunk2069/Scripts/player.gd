@@ -16,12 +16,5 @@ func _process(delta):
 		velocity.x = -speed
 	if Input.is_key_pressed(KEY_D):
 		velocity.x = speed
-	
-	if velocity.x == 0 and velocity.y == 0:
-		$AnimationPlayer.play("idle")
-	elif speed == 150:
-		$AnimationPlayer.play("walk")
-	else:
-		$AnimationPlayer.play("run")
 
 	move_and_slide()
