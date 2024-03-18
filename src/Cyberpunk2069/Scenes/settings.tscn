@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1wie8f06jwas"]
+[gd_scene load_steps=5 format=3 uid="uid://d1wie8f06jwas"]
 
 [ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="1_2coh7"]
 [ext_resource type="Script" path="res://Scripts/settings.gd" id="1_kolho"]
@@ -10,6 +10,13 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 20
+shadow_size = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_21qty"]
+font_size = 40
+font_color = Color(0.823529, 0.823529, 0, 1)
+outline_size = 1
+shadow_color = Color(0, 1, 0, 1)
 
 [node name="Settings" type="Node2D"]
 script = ExtResource("1_kolho")
@@ -20,20 +27,35 @@ scale = Vector2(0.3, 0.299769)
 texture = ExtResource("1_2coh7")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 452.0
-offset_top = 474.0
-offset_right = 787.0
-offset_bottom = 512.0
+offset_left = 406.0
+offset_top = 454.0
+offset_right = 741.0
+offset_bottom = 492.0
 text = "Назад"
 
 [node name="Label" type="Label" parent="."]
-offset_left = 426.0
+offset_left = 382.0
 offset_top = 140.0
-offset_right = 814.0
+offset_right = 770.0
 offset_bottom = 426.0
 theme_type_variation = &"HeaderMedium"
 theme_override_styles/normal = SubResource("StyleBoxFlat_8k2qv")
 text = "Налаштування"
+label_settings = SubResource("LabelSettings_21qty")
 horizontal_alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 431.0
+offset_top = 200.0
+offset_right = 724.0
+offset_bottom = 231.0
+text = "Вимкнути звук"
+
+[node name="CheckButton2" type="CheckButton" parent="."]
+offset_left = 431.0
+offset_top = 240.0
+offset_right = 724.0
+offset_bottom = 271.0
+text = "Вимкнути музику"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
