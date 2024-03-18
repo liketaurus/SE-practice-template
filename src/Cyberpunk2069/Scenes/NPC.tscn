@@ -11,25 +11,18 @@ corner_radius_top_right = 3
 corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fds4s"]
-size = Vector2(311, 225)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fubd8"]
+size = Vector2(2.78, 1.88)
 
-[node name="Npc" type="Node2D"]
-
-[node name="Npc" type="Sprite2D" parent="."]
-position = Vector2(1.19209e-07, -43)
-scale = Vector2(0.159625, 0.22975)
-texture = ExtResource("1_qoctu")
-
-[node name="dialogue" type="Area2D" parent="."]
+[node name="Npc" type="Area2D"]
 script = ExtResource("2_tg631")
 
-[node name="Label" type="Label" parent="dialogue"]
+[node name="Label" type="Label" parent="."]
 visible = false
-offset_left = 62.0
-offset_top = 47.0
-offset_right = 172.0
-offset_bottom = 112.0
+offset_left = -141.0
+offset_top = -93.0
+offset_right = -31.0
+offset_bottom = -28.0
 theme_override_font_sizes/font_size = 10
 theme_override_styles/normal = SubResource("StyleBoxFlat_3gvf2")
 text = "Привіт, в мене є 
@@ -37,7 +30,13 @@ text = "Привіт, в мене є
 Тобі потрібно знайти 
 4 ключі"
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(-10.5, -18.5)
-shape = SubResource("RectangleShape2D_fds4s")
-debug_color = Color(0.956863, 0, 0.529412, 0.419608)
+[node name="Npc" type="Sprite2D" parent="."]
+position = Vector2(1.19209e-07, -43)
+scale = Vector2(0.159625, 0.22975)
+texture = ExtResource("1_qoctu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-31, -15)
+scale = Vector2(100, 100)
+shape = SubResource("RectangleShape2D_fubd8")
+debug_color = Color(0.796078, 0.34902, 0.623529, 0.419608)

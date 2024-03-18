@@ -1,15 +1,14 @@
+Area2D
+CollisionShape2D
 StaticBody2D
 PointLight2D
-CollisionShape2D
 Node
 TileMap
 Label
 CanvasLayer
-Area2D
 AnimatedSprite2D
 Control
 Node2D
 Window
 Button
 Panel
-Camera2D

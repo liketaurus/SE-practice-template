@@ -76,19 +76,18 @@ up_direction = Vector2(0, 1)
 script = ExtResource("1_nlplg")
 
 [node name="Player" type="Sprite2D" parent="."]
-position = Vector2(372, 271)
+position = Vector2(391.19, 172.793)
 scale = Vector2(2.00316, 1.86982)
 texture = ExtResource("2_qduuw")
 hframes = 12
 vframes = 3
-frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(369, 326)
+position = Vector2(388.19, 227.793)
 shape = SubResource("CapsuleShape2D_cnkmm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(364, 314)
+position = Vector2(383.19, 215.793)
 zoom = Vector2(1.5, 1.5)
 limit_top = 0
 limit_right = 1150
@@ -107,6 +106,7 @@ libraries = {
 }
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(377, 248)
 sprite_frames = SubResource("SpriteFrames_jj3ld")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

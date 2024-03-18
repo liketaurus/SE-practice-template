@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://bfkqcskdbmhin"]
 
-[ext_resource type="Script" path="res://Scenes/yep.gd" id="1_0hs4w"]
+[ext_resource type="Script" path="res://Scripts/yep.gd" id="1_0hs4w"]
 [ext_resource type="Texture2D" uid="uid://dys1v1227wnrb" path="res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png" id="1_1qgrx"]
 [ext_resource type="PackedScene" uid="uid://btb3mslexwkb0" path="res://Scenes/player.tscn" id="2_7nm1t"]
 [ext_resource type="PackedScene" uid="uid://bnlke3ngdj2nv" path="res://Scenes/NPC.tscn" id="3_6lh8y"]
@@ -6505,7 +6505,8 @@ debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Sprites" type="Node" parent="."]
 
-[node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
-
 [node name="Npc" parent="Sprites" instance=ExtResource("3_6lh8y")]
-position = Vector2(167, 119)
+position = Vector2(194, 129)
+
+[node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
+position = Vector2(43, 15)
