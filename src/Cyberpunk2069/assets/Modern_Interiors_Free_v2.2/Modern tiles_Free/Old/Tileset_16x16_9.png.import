@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8x5he1j22ung"
-path="res://.godot/imported/Бука_просто_Димка.jpeg-82fededbeaa84e88019e27a90cf49013.ctex"
+uid="uid://honjkdq2s4nj"
+path="res://.godot/imported/Tileset_16x16_9.png-3c75fd965060e6082c9a2c1b1e401ee8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Бука_просто_Димка.jpeg"
-dest_files=["res://.godot/imported/Бука_просто_Димка.jpeg-82fededbeaa84e88019e27a90cf49013.ctex"]
+source_file="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Old/Tileset_16x16_9.png"
+dest_files=["res://.godot/imported/Tileset_16x16_9.png-3c75fd965060e6082c9a2c1b1e401ee8.ctex"]
 
 [params]
 
