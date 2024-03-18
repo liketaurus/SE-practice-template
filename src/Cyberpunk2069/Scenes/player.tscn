@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=11 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
 [ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
@@ -56,12 +56,18 @@ tracks/0/keys = {
 "values": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }
 
+[sub_resource type="Animation" id="Animation_vc812"]
+resource_name = "run_left"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8k0hu"]
 _data = {
 "idle": SubResource("Animation_dqw3i"),
 "run": SubResource("Animation_u0rjx"),
+"run_left": SubResource("Animation_vc812"),
 "walk": SubResource("Animation_j0spp")
 }
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jj3ld"]
 
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1
@@ -74,7 +80,7 @@ scale = Vector2(2.23965, 2.23965)
 texture = ExtResource("2_qduuw")
 hframes = 12
 vframes = 3
-frame = 34
+frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(362, 328)
@@ -105,3 +111,6 @@ offset_left = -260.0
 offset_top = -105.0
 offset_right = -260.0
 offset_bottom = -105.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jj3ld")
