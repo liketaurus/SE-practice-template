@@ -34,7 +34,7 @@ position = Vector2(575, 322)
 scale = Vector2(0.299106, 0.299106)
 texture = ExtResource("2_oi3x8")
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label" type="Label" parent="."]
 offset_left = 335.0
 offset_top = 66.0
 offset_right = 811.0
@@ -46,35 +46,24 @@ label_settings = SubResource("LabelSettings_wvoer")
 horizontal_alignment = 1
 
 [node name="Play" type="Button" parent="."]
-offset_left = 448.0
-offset_top = 213.0
-offset_right = 701.0
-offset_bottom = 306.0
+offset_left = 429.0
+offset_top = 253.0
+offset_right = 712.0
+offset_bottom = 346.0
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_0qh6s")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3enoh")
-text = "Play"
+text = "Почати гру"
 
 [node name="Settings" type="Button" parent="."]
-offset_left = 448.0
-offset_top = 339.0
-offset_right = 701.0
-offset_bottom = 432.0
+offset_left = 429.0
+offset_top = 403.0
+offset_right = 712.0
+offset_bottom = 496.0
 theme_override_font_sizes/font_size = 35
 theme_override_styles/normal = SubResource("StyleBoxFlat_0qh6s")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3enoh")
-text = "Settings"
-
-[node name="Quit" type="Button" parent="."]
-offset_left = 448.0
-offset_top = 470.0
-offset_right = 701.0
-offset_bottom = 563.0
-theme_override_font_sizes/font_size = 35
-theme_override_styles/normal = SubResource("StyleBoxFlat_0qh6s")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3enoh")
-text = "Quit"
+text = "Налаштування"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
