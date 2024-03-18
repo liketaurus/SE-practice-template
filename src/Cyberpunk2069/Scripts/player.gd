@@ -1,18 +1,20 @@
 extends CharacterBody2D
 
-func _physics_process(delta):
-	var x_dir = Input.get_axis("move_left", "move_right")
-	velocity.x = 150 * x_dir
-	var y_dir = Input.get_axis("move_up", "move_down")
-	velocity.y = 150 * y_dir
-
-	move_and_slide()
-
-
 func _process(delta):
-	var x_dir = Input.get_axis("run_left", "run_right")
-	velocity.x = 175 * x_dir
-	var y_dir = Input.get_axis("run_up", "run_down")
-	velocity.y = 175 * y_dir
+	velocity.x = 0
+	velocity.y = 0
+	var speed = 150
+	
+	if Input.is_key_pressed(KEY_SHIFT):
+		speed += 200
+	
+	if Input.is_key_pressed(KEY_W):
+		velocity.y = -speed
+	if Input.is_key_pressed(KEY_S):
+		velocity.y = speed
+	if Input.is_key_pressed(KEY_A):
+		velocity.x = -speed
+	if Input.is_key_pressed(KEY_D):
+		velocity.x = speed
 
 	move_and_slide()
