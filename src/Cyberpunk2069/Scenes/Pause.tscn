@@ -12,10 +12,10 @@ anchors_preset = 0
 script = ExtResource("1_bo3x3")
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 812.0
-offset_top = 308.0
-offset_right = 1096.0
-offset_bottom = 550.0
+offset_left = 478.0
+offset_top = 300.0
+offset_right = 762.0
+offset_bottom = 542.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_87fve")
 
 [node name="continued" type="Button" parent="Panel"]
