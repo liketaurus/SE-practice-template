@@ -5,3 +5,4 @@ res://Scripts/dialogue.gd
 res://Scripts/main.gd
 res://Scenes/player.tscn
 res://Scenes/yep.tscn
+res://default_bus_layout.tres
