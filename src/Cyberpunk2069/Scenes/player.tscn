@@ -106,13 +106,6 @@ libraries = {
 "": SubResource("AnimationLibrary_8k0hu")
 }
 
-[node name="Pause" parent="." instance=ExtResource("3_qjbvx")]
-visible = false
-offset_left = -260.0
-offset_top = -105.0
-offset_right = -260.0
-offset_bottom = -105.0
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jj3ld")
 
@@ -139,3 +132,10 @@ texture = ExtResource("4_4p3li")
 position = Vector2(177, 614)
 scale = Vector2(0.224, 0.224)
 texture = ExtResource("4_4p3li")
+
+[node name="Pause" parent="." instance=ExtResource("3_qjbvx")]
+visible = false
+offset_left = -260.0
+offset_top = -105.0
+offset_right = -260.0
+offset_bottom = -105.0
