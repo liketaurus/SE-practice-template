@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_f4swj"]
 [ext_resource type="PackedScene" uid="uid://btb3mslexwkb0" path="res://Scenes/player.tscn" id="2_cm5n4"]
 [ext_resource type="Texture2D" uid="uid://uvgmivoagie1" path="res://assets/2231.png" id="4_6r330"]
-[ext_resource type="PackedScene" uid="uid://boxgvpixl2dl3" path="res://Scenes/NPC.tscn" id="5_ab5ik"]
+[ext_resource type="PackedScene" uid="uid://bnlke3ngdj2nv" path="res://Scenes/NPC.tscn" id="5_ab5ik"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u072r"]
 texture = ExtResource("4_6r330")
