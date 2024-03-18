@@ -1,9 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://bpugttvk7s8va"]
+[gd_scene load_steps=11 format=3 uid="uid://bpugttvk7s8va"]
 
 [ext_resource type="Texture2D" uid="uid://c428c883cpnkb" path="res://Textures/Environment.png" id="1_r0cbh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c0sfj"]
 size = Vector2(1149, 35)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t3h24"]
+size = Vector2(34.5, 460.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8e32k"]
 size = Vector2(40, 647)
@@ -42,8 +45,8 @@ position = Vector2(575, 622)
 shape = SubResource("RectangleShape2D_c0sfj")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
-position = Vector2(21, 323.5)
-shape = SubResource("RectangleShape2D_8e32k")
+position = Vector2(19.75, 231.875)
+shape = SubResource("RectangleShape2D_t3h24")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
 position = Vector2(1130, 326)
