@@ -8,3 +8,4 @@ res://Scenes/yep.tscn
 res://default_bus_layout.tres
 res://Scripts/menu.gd
 res://Scenes/yep.gd
+res://Scripts/player.gd
