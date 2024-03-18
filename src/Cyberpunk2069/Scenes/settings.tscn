@@ -1,9 +1,39 @@
-[gd_scene format=3 uid="uid://d1wie8f06jwas"]
+[gd_scene load_steps=4 format=3 uid="uid://d1wie8f06jwas"]
+
+[ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="1_2coh7"]
+[ext_resource type="Script" path="res://Scripts/settings.gd" id="1_kolho"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8k2qv"]
+bg_color = Color(0, 0, 0, 0.537255)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
 
 [node name="Settings" type="Node2D"]
+script = ExtResource("1_kolho")
 
-[node name="CheckButton" type="CheckButton" parent="."]
-offset_left = 254.0
-offset_top = 162.0
-offset_right = 298.0
-offset_bottom = 186.0
+[node name="MenuImage" type="Sprite2D" parent="."]
+position = Vector2(575, 322)
+scale = Vector2(0.3, 0.299769)
+texture = ExtResource("1_2coh7")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 452.0
+offset_top = 474.0
+offset_right = 787.0
+offset_bottom = 512.0
+text = "Назад"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 426.0
+offset_top = 140.0
+offset_right = 814.0
+offset_bottom = 426.0
+theme_type_variation = &"HeaderMedium"
+theme_override_styles/normal = SubResource("StyleBoxFlat_8k2qv")
+text = "Налаштування"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
