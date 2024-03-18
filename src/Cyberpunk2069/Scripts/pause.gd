@@ -6,5 +6,6 @@ func _on_continued_pressed():
 	visible = false
 	
 func _on_end_pressed():
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
 

@@ -26,6 +26,7 @@ func _process(delta):
 
 	move_and_slide()
 	if Input.is_action_pressed("pause"):
+		get_tree(). paused = true
 		$Pause.visible = true
 
 
