@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+var paused = false
+
 func _process(delta):
 	velocity.x = 0
 	velocity.y = 0
@@ -25,3 +27,16 @@ func _process(delta):
 		$AnimationPlayer.play("run")
 
 	move_and_slide()
+
+	if Input.is_action_pressed("pause"):
+		pause()
+
+func pause():
+	if paused:
+		$Pause.hide()
+		Engine.time_scale = 1
+	else:
+		$Pause.show()
+		Engine.time_scale = 0
+
+	paused = !paused

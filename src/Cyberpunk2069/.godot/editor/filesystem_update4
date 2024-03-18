@@ -6,3 +6,4 @@ res://Scenes/Pause.tscn
 res://Scripts/pause.gd
 res://Scripts/settings.gd
 res://Scripts/main.gd
+res://Scripts/menu.gd
