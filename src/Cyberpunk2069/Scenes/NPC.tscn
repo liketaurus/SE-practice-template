@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://boxgvpixl2dl3"]
+
+[ext_resource type="Texture2D" uid="uid://cg1okgmagm47i" path="res://Textures/NPC.png" id="1_qoctu"]
+[ext_resource type="Script" path="res://Scripts/dialogue.gd" id="2_tg631"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mmlqn"]
+radius = 203.416
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3gvf2"]
+content_margin_left = 2.0
+bg_color = Color(0, 0, 0, 0.513726)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[node name="Npc" type="Node2D"]
+
+[node name="Npc" type="Sprite2D" parent="."]
+position = Vector2(199, 96)
+scale = Vector2(0.159625, 0.22975)
+texture = ExtResource("1_qoctu")
+
+[node name="dialogue" type="Area2D" parent="."]
+script = ExtResource("2_tg631")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dialogue"]
+position = Vector2(240, 199)
+shape = SubResource("CircleShape2D_mmlqn")
+debug_color = Color(0.956863, 0, 0.529412, 0.419608)
+
+[node name="Label" type="Label" parent="dialogue"]
+offset_left = 70.0
+offset_top = 51.0
+offset_right = 173.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_3gvf2")
+text = "Привіт, в мене є 
+завдання для тебе!"

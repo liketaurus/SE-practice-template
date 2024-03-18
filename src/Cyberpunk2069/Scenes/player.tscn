@@ -40,6 +40,9 @@ tracks/0/keys = {
 "values": [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
 }
 
+[sub_resource type="Animation" id="Animation_vc812"]
+resource_name = "run_left"
+
 [sub_resource type="Animation" id="Animation_j0spp"]
 resource_name = "walk"
 loop_mode = 1
@@ -55,9 +58,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 }
-
-[sub_resource type="Animation" id="Animation_vc812"]
-resource_name = "run_left"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8k0hu"]
 _data = {
@@ -75,8 +75,8 @@ up_direction = Vector2(0, 1)
 script = ExtResource("1_nlplg")
 
 [node name="Player" type="Sprite2D" parent="."]
-position = Vector2(372, 257)
-scale = Vector2(2.23965, 2.23965)
+position = Vector2(372, 271)
+scale = Vector2(2.00316, 1.86982)
 texture = ExtResource("2_qduuw")
 hframes = 12
 vframes = 3

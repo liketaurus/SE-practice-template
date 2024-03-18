@@ -2,4 +2,5 @@ res://Scenes/menu.tscn
 res://Scenes/main.tscn
 res://Scenes/Pause.tscn
 res://Scenes/player.tscn
-res://Scripts/player.gd
+res://Scenes/NPC.tscn
+res://Scripts/dialogue.gd
