@@ -1,5 +1,6 @@
 TileMap
 Label
+CanvasLayer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
@@ -7,7 +8,6 @@ Control
 Node2D
 Window
 Node
-CanvasLayer
 Button
 Panel
 Camera2D

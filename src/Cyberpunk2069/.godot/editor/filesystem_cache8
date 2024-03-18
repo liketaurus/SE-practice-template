@@ -2,16 +2,16 @@ ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1710790311
 icon.svg::CompressedTexture2D::7438081712965145412::1710788353::1710788353::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::6463009266295747810::1710790311::0::1::::<><>::
-::res://assets/::1710791451
+::res://assets/::1710791497
 2231.png::CompressedTexture2D::1447514990343395570::1710788353::1710788368::1::::<><>::
-Nigerian_Public_Domain_131.jpg::CompressedTexture2D::482285259078237554::1710720201::1710790203::1::::<><>::
+Nigerian_Public_Domain_131.jpg::CompressedTexture2D::4530805177349331227::1710720201::1710791506::1::::<><>::
 Player.png::CompressedTexture2D::2709511620690905097::1710788353::1710788353::1::::<><>::
 PlayerLeft.png::CompressedTexture2D::9050373264867832100::1710788353::1710788368::1::::<><>::
-Бука__Димка.jpeg::CompressedTexture2D::9124374235706646799::1710719977::1710790203::1::::<><>::
+Бука__Димка.jpeg::CompressedTexture2D::6209944828518761239::1710719977::1710791506::1::::<><>::
 Бука_Сука_Димка.jpeg::CompressedTexture2D::2081282454536768718::1710719977::1710791459::1::::<><>::
-::res://assets/CyberPunk Asset Pack/::1710790203
-asset page 1.png::CompressedTexture2D::4964392574977767781::1710781780::1710790203::1::::<><>::
-page 2.png::CompressedTexture2D::2990050978737981116::1710781780::1710790203::1::::<><>::
+::res://assets/CyberPunk Asset Pack/::1710791497
+asset page 1.png::CompressedTexture2D::6260806221716894686::1710781780::1710791506::1::::<><>::
+page 2.png::CompressedTexture2D::8734860983736987226::1710781780::1710791506::1::::<><>::
 ::res://assets/FreeKnight_v1/::1710788353
 Comparison2x.png::CompressedTexture2D::8144719301083168016::1710788353::1710788353::1::::<><>::
 ::res://assets/FreeKnight_v1/Colour1/::1710788353
@@ -148,62 +148,62 @@ _WallClimb.png::CompressedTexture2D::1124358268943167874::1710788353::1710788353
 _WallClimbNoMovement.png::CompressedTexture2D::8803797033412169119::1710788353::1710788353::1::::<><>::
 _WallHang.png::CompressedTexture2D::8720751437277639315::1710788353::1710788353::1::::<><>::
 _WallSlide.png::CompressedTexture2D::4720898509384979696::1710788353::1710788353::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/::1710790204
+::res://assets/Tech Dungeon Roguelite - Asset Pack/::1710791497
 Read Me.txt::TextFile::-1::1710782027::0::1::::<><>::
-tileset x1.png::CompressedTexture2D::8231029521357568862::1710782027::1710790203::1::::<><>::
-tileset x2.png::CompressedTexture2D::7571870844073412151::1710782027::1710790203::1::::<><>::
-tileset x3.png::CompressedTexture2D::2910632614260296234::1710782027::1710790204::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/::1710790203
+tileset x1.png::CompressedTexture2D::5053040013897394884::1710782027::1710791506::1::::<><>::
+tileset x2.png::CompressedTexture2D::8882570650036309703::1710782027::1710791507::1::::<><>::
+tileset x3.png::CompressedTexture2D::2095039115949695851::1710782027::1710791507::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/::1710791497
 10x16 Cells.txt::TextFile::-1::1710782027::0::1::::<><>::
-enemies x1.png::CompressedTexture2D::8898874952226331589::1710782027::1710790203::1::::<><>::
-enemies x2.png::CompressedTexture2D::5019573757043768291::1710782027::1710790203::1::::<><>::
-enemies x3.png::CompressedTexture2D::1767455979560275371::1710782027::1710790203::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/::1710790203
-enemies x1.png::CompressedTexture2D::8259172050033111763::1710782027::1710790203::1::::<><>::
-enemies x2.png::CompressedTexture2D::1193648315098105497::1710782027::1710790203::1::::<><>::
-enemies x3.png::CompressedTexture2D::8359526822465401055::1710782027::1710790203::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/::1710790203
+enemies x1.png::CompressedTexture2D::5042565188258600078::1710782027::1710791507::1::::<><>::
+enemies x2.png::CompressedTexture2D::4722545941940223963::1710782027::1710791507::1::::<><>::
+enemies x3.png::CompressedTexture2D::1608879927793484843::1710782027::1710791508::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/::1710791497
+enemies x1.png::CompressedTexture2D::744464397632471063::1710782027::1710791508::1::::<><>::
+enemies x2.png::CompressedTexture2D::7135316003484502067::1710782027::1710791508::1::::<><>::
+enemies x3.png::CompressedTexture2D::8853007062767798591::1710782027::1710791508::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/::1710791497
 6x3 Cells.txt::TextFile::-1::1710782027::0::1::::<><>::
-npc x1.png::CompressedTexture2D::7177558764866886061::1710782027::1710790203::1::::<><>::
-npc x2.png::CompressedTexture2D::5919218709636135015::1710782027::1710790203::1::::<><>::
-npc x3.png::CompressedTexture2D::4630678315273921318::1710782027::1710790203::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/No Outlines/::1710790203
-npc x1.png::CompressedTexture2D::3766838150023659860::1710782027::1710790203::1::::<><>::
-npc x2.png::CompressedTexture2D::838980965388571460::1710782027::1710790203::1::::<><>::
-npc x3.png::CompressedTexture2D::8977386024650251629::1710782027::1710790203::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/Players/::1710790203
+npc x1.png::CompressedTexture2D::2815937110156225857::1710782027::1710791508::1::::<><>::
+npc x2.png::CompressedTexture2D::4216578866625105771::1710782027::1710791508::1::::<><>::
+npc x3.png::CompressedTexture2D::1104701750137039875::1710782027::1710791508::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/No Outlines/::1710791497
+npc x1.png::CompressedTexture2D::5257569985032894114::1710782027::1710791508::1::::<><>::
+npc x2.png::CompressedTexture2D::2075570949657216291::1710782027::1710791508::1::::<><>::
+npc x3.png::CompressedTexture2D::8602838380649342235::1710782027::1710791508::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/Players/::1710791497
 8x13 Cells.txt::TextFile::-1::1710782026::0::1::::<><>::
-players blue x1.png::CompressedTexture2D::4040167519487835318::1710782026::1710790202::1::::<><>::
-players blue x2.png::CompressedTexture2D::3434384835175576690::1710782026::1710790202::1::::<><>::
-players blue x3.png::CompressedTexture2D::775335689093557699::1710782026::1710790203::1::::<><>::
-players green x1.png::CompressedTexture2D::5392862465306708799::1710782026::1710790202::1::::<><>::
-players green x2.png::CompressedTexture2D::3558610048026208674::1710782026::1710790203::1::::<><>::
-players green x3.png::CompressedTexture2D::6240674378332581314::1710782026::1710790203::1::::<><>::
-players grey x1.png::CompressedTexture2D::9045325779641854080::1710782026::1710790202::1::::<><>::
-players grey x2.png::CompressedTexture2D::372826029816224681::1710782026::1710790203::1::::<><>::
-players grey x3.png::CompressedTexture2D::1303535785382588420::1710782026::1710790203::1::::<><>::
-players red x1.png::CompressedTexture2D::3829031668279857515::1710782026::1710790202::1::::<><>::
-players red x2.png::CompressedTexture2D::6500272841270818053::1710782026::1710790203::1::::<><>::
-players red x3.png::CompressedTexture2D::395581170420159411::1710782026::1710790203::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/Players/No Outlines/::1710790203
-players blue x1.png::CompressedTexture2D::880804349047109181::1710782026::1710790203::1::::<><>::
-players blue x2.png::CompressedTexture2D::3578211854843758006::1710782026::1710790203::1::::<><>::
-players blue x3.png::CompressedTexture2D::1616977928273276120::1710782026::1710790203::1::::<><>::
-players green x1.png::CompressedTexture2D::1094143504471606594::1710782026::1710790203::1::::<><>::
-players green x2.png::CompressedTexture2D::8388162748209875500::1710782026::1710790203::1::::<><>::
-players green x3.png::CompressedTexture2D::9214512042385798038::1710782026::1710790203::1::::<><>::
-players grey x1.png::CompressedTexture2D::4391417827904505899::1710782026::1710790203::1::::<><>::
-players grey x2.png::CompressedTexture2D::4331588540788358237::1710782026::1710790203::1::::<><>::
-players grey x3.png::CompressedTexture2D::5073839902351077280::1710782026::1710790203::1::::<><>::
-players red x1.png::CompressedTexture2D::5119582882634368165::1710782026::1710790202::1::::<><>::
-players red x2.png::CompressedTexture2D::5114650715655987196::1710782026::1710790202::1::::<><>::
-players red x3.png::CompressedTexture2D::2505932713602838677::1710782027::1710790203::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/UI/::1710790203
+players blue x1.png::CompressedTexture2D::7347312102027456458::1710782026::1710791508::1::::<><>::
+players blue x2.png::CompressedTexture2D::4326741528851638972::1710782026::1710791508::1::::<><>::
+players blue x3.png::CompressedTexture2D::9088340132758222424::1710782026::1710791509::1::::<><>::
+players green x1.png::CompressedTexture2D::7539706417359080382::1710782026::1710791509::1::::<><>::
+players green x2.png::CompressedTexture2D::204793593580058729::1710782026::1710791503::1::::<><>::
+players green x3.png::CompressedTexture2D::911347896298050491::1710782026::1710791503::1::::<><>::
+players grey x1.png::CompressedTexture2D::6424902463986553054::1710782026::1710791503::1::::<><>::
+players grey x2.png::CompressedTexture2D::6895885644034895258::1710782026::1710791503::1::::<><>::
+players grey x3.png::CompressedTexture2D::7290974779741091971::1710782026::1710791503::1::::<><>::
+players red x1.png::CompressedTexture2D::3933964828169631876::1710782026::1710791504::1::::<><>::
+players red x2.png::CompressedTexture2D::7573987949810217273::1710782026::1710791504::1::::<><>::
+players red x3.png::CompressedTexture2D::8288138525910141468::1710782026::1710791504::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/Players/No Outlines/::1710791497
+players blue x1.png::CompressedTexture2D::5142552023900345794::1710782026::1710791504::1::::<><>::
+players blue x2.png::CompressedTexture2D::8443698013828597029::1710782026::1710791504::1::::<><>::
+players blue x3.png::CompressedTexture2D::2290110789095641645::1710782026::1710791504::1::::<><>::
+players green x1.png::CompressedTexture2D::2508518094796317272::1710782026::1710791504::1::::<><>::
+players green x2.png::CompressedTexture2D::372906755916580565::1710782026::1710791504::1::::<><>::
+players green x3.png::CompressedTexture2D::6046509399505766060::1710782026::1710791504::1::::<><>::
+players grey x1.png::CompressedTexture2D::2863381559824525392::1710782026::1710791505::1::::<><>::
+players grey x2.png::CompressedTexture2D::6189324051703076861::1710782026::1710791505::1::::<><>::
+players grey x3.png::CompressedTexture2D::8587870404467591058::1710782026::1710791505::1::::<><>::
+players red x1.png::CompressedTexture2D::7456720853532709113::1710782026::1710791505::1::::<><>::
+players red x2.png::CompressedTexture2D::5708914301465876120::1710782026::1710791505::1::::<><>::
+players red x3.png::CompressedTexture2D::6309464047482409458::1710782027::1710791505::1::::<><>::
+::res://assets/Tech Dungeon Roguelite - Asset Pack/UI/::1710791497
 20x11 Cells.txt::TextFile::-1::1710782027::0::1::::<><>::
-ui x1.png::CompressedTexture2D::2607821096522231736::1710782027::1710790203::1::::<><>::
-ui x2.png::CompressedTexture2D::3222276160398933493::1710782027::1710790203::1::::<><>::
-ui x3.png::CompressedTexture2D::1146384555904963360::1710782027::1710790203::1::::<><>::
-::res://Scenes/::1710789958
+ui x1.png::CompressedTexture2D::105576511881250058::1710782027::1710791505::1::::<><>::
+ui x2.png::CompressedTexture2D::7004435288740634146::1710782027::1710791505::1::::<><>::
+ui x3.png::CompressedTexture2D::6710230901861205236::1710782027::1710791506::1::::<><>::
+::res://Scenes/::1710791497
 Environment.tscn::PackedScene::3480940156267982942::1710788353::0::1::::<><>::uid://c428c883cpnkb::::res://Textures/Environment.png
 main.tscn::PackedScene::5681117227368614090::1710789958::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
 menu.tscn::PackedScene::5694815232986804398::1710788728::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg

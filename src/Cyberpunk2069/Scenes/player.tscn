@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=12 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
 [ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
 [ext_resource type="PackedScene" uid="uid://la72en53q5gw" path="res://Scenes/Pause.tscn" id="3_qjbvx"]
+[ext_resource type="Texture2D" uid="uid://doj5q74cedgyt" path="res://Textures/HP.png" id="4_4p3li"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
 radius = 14.0
@@ -114,3 +115,27 @@ offset_bottom = -105.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jj3ld")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="key" type="Label" parent="CanvasLayer"]
+offset_left = 978.0
+offset_top = 8.0
+offset_right = 1147.0
+offset_bottom = 31.0
+text = "Ключів знайдено 0/1"
+
+[node name="Hp" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(44, 614)
+scale = Vector2(0.224, 0.224)
+texture = ExtResource("4_4p3li")
+
+[node name="Hp2" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(110, 614)
+scale = Vector2(0.224, 0.224)
+texture = ExtResource("4_4p3li")
+
+[node name="Hp3" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(177, 614)
+scale = Vector2(0.224, 0.224)
+texture = ExtResource("4_4p3li")
