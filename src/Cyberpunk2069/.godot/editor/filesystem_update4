@@ -1,6 +1,6 @@
 res://Scenes/menu.tscn
 res://Scenes/main.tscn
+res://Scenes/Pause.tscn
+res://Scenes/player.tscn
 res://Scenes/NPC.tscn
 res://Scripts/dialogue.gd
-res://Scripts/main.gd
-res://Scenes/player.tscn
