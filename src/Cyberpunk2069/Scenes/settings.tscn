@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1wie8f06jwas"]
+[gd_scene load_steps=6 format=3 uid="uid://d1wie8f06jwas"]
 
 [ext_resource type="Texture2D" uid="uid://c8ywycbmqvmkv" path="res://Textures/MenuImage.jpg" id="1_2coh7"]
 [ext_resource type="Script" path="res://Scripts/settings.gd" id="1_kolho"]
@@ -10,6 +10,23 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5snvt"]
+content_margin_top = 34.0
+bg_color = Color(0, 0, 0, 0.537255)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.396078)
+shadow_size = 15
+
+[sub_resource type="LabelSettings" id="LabelSettings_nsysf"]
+font_size = 40
+font_color = Color(0.823529, 0.823529, 0, 1)
+outline_size = 1
+shadow_size = 3
+shadow_color = Color(0, 1, 0, 1)
 
 [node name="Settings" type="Node2D"]
 script = ExtResource("1_kolho")
@@ -34,6 +51,17 @@ offset_bottom = 426.0
 theme_type_variation = &"HeaderMedium"
 theme_override_styles/normal = SubResource("StyleBoxFlat_8k2qv")
 text = "Налаштування"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 992.0
+offset_top = 72.0
+offset_right = 1468.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_5snvt")
+text = "Cyberpunk 2069"
+label_settings = SubResource("LabelSettings_nsysf")
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
