@@ -1,6 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bnlke3ngdj2nv"]
+[gd_scene load_steps=7 format=3 uid="uid://bnlke3ngdj2nv"]
 
-[ext_resource type="Texture2D" uid="uid://cg1okgmagm47i" path="res://Textures/NPC.png" id="1_qoctu"]
+[ext_resource type="Texture2D" uid="uid://cg52n6nq3n86y" path="res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/No Outlines/npc x1.png" id="2_0aqok"]
 [ext_resource type="Script" path="res://Scripts/dialogue.gd" id="2_tg631"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3gvf2"]
@@ -13,6 +13,28 @@ corner_radius_bottom_left = 3
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fubd8"]
 size = Vector2(2.78, 1.88)
+
+[sub_resource type="Animation" id="Animation_2txwq"]
+resource_name = "idle"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Npc:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r60vl"]
+_data = {
+"idle": SubResource("Animation_2txwq")
+}
 
 [node name="Npc" type="Area2D"]
 script = ExtResource("2_tg631")
@@ -31,12 +53,21 @@ text = "Привіт, в мене є
 4 ключі"
 
 [node name="Npc" type="Sprite2D" parent="."]
-position = Vector2(1.19209e-07, -43)
-scale = Vector2(0.159625, 0.22975)
-texture = ExtResource("1_qoctu")
+texture_filter = 1
+position = Vector2(1.52588e-05, -64)
+scale = Vector2(2.67799, 3.85446)
+texture = ExtResource("2_0aqok")
+hframes = 6
+vframes = 3
+frame = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-31, -15)
 scale = Vector2(100, 100)
 shape = SubResource("RectangleShape2D_fubd8")
 debug_color = Color(0.796078, 0.34902, 0.623529, 0.419608)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_r60vl")
+}
