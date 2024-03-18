@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=11 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
+[ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
 [ext_resource type="PackedScene" uid="uid://la72en53q5gw" path="res://Scenes/Pause.tscn" id="3_qjbvx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
@@ -66,6 +67,8 @@ _data = {
 "walk": SubResource("Animation_j0spp")
 }
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_jj3ld"]
+
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1
 up_direction = Vector2(0, 1)
@@ -74,9 +77,10 @@ script = ExtResource("1_nlplg")
 [node name="Player" type="Sprite2D" parent="."]
 position = Vector2(372, 257)
 scale = Vector2(2.23965, 2.23965)
+texture = ExtResource("2_qduuw")
 hframes = 12
 vframes = 3
-frame = 24
+frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(362, 328)
@@ -107,3 +111,6 @@ offset_left = -260.0
 offset_top = -105.0
 offset_right = -260.0
 offset_bottom = -105.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jj3ld")

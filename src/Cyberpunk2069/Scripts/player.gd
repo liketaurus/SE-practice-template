@@ -25,6 +25,10 @@ func _process(delta):
 		$AnimationPlayer.play("walk")
 	else:
 		$AnimationPlayer.play("run")
+	if Input.is_key_pressed(KEY_D):
+		$Player.flip_h = false
+	if Input.is_key_pressed(KEY_A):
+		$Player.flip_h = true
 
 	move_and_slide()
 
