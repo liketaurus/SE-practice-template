@@ -1,15 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710791894
-default_bus_layout.tres::AudioBusLayout::6463009266295747810::1710791851::0::1::::<><>::
+::res://::1710843192
+default_bus_layout.tres::AudioBusLayout::6463009266295747810::1710841832::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1710843192::0::1::::<><>::
 icon.svg::CompressedTexture2D::7438081712965145412::1710782880::1710782881::1::::<><>::
-::res://assets/::1710791866
+::res://assets/::1710841926
 2231.png::CompressedTexture2D::1447514990343395570::1710791786::1710791786::1::::<><>::
 Nigerian_Public_Domain_131.jpg::CompressedTexture2D::4530805177349331227::1710791786::1710791851::1::::<><>::
+nope.mp3::AudioStreamMP3::2523323036859633818::1710841832::1710841926::1::::<><>::
 Player.png::CompressedTexture2D::2709511620690905097::1710791773::1710791773::1::::<><>::
 PlayerLeft.png::CompressedTexture2D::9050373264867832100::1710791773::1710791773::1::::<><>::
+yep.mp3::::-1::0::0::0::::<><>::
 Бука__Димка.jpeg::CompressedTexture2D::6209944828518761239::1710791773::1710791851::1::::<><>::
-Бука_просто_Димка.jpeg::CompressedTexture2D::2365546789443171768::1710791866::1710791866::1::::<><>::
-Бука_Сука_Димка.jpeg::CompressedTexture2D::2081282454536768718::1710791851::1710791895::1::::<><>::
 ::res://assets/CyberPunk Asset Pack/::1710791851
 asset page 1.png::CompressedTexture2D::6260806221716894686::1710791774::1710791851::1::::<><>::
 page 2.png::CompressedTexture2D::8734860983736987226::1710791774::1710791851::1::::<><>::
@@ -149,10 +150,113 @@ _WallClimb.png::CompressedTexture2D::1124358268943167874::1710791782::1710791783
 _WallClimbNoMovement.png::CompressedTexture2D::8803797033412169119::1710791783::1710791783::1::::<><>::
 _WallHang.png::CompressedTexture2D::8720751437277639315::1710791783::1710791783::1::::<><>::
 _WallSlide.png::CompressedTexture2D::4720898509384979696::1710791783::1710791783::1::::<><>::
-::res://assets/Tech Dungeon Roguelite - Asset Pack/::1710791851
+::res://assets/Modern_Interiors_Free_v2.2/::1710841831
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/::1710841927
+free_overview.png::CompressedTexture2D::862442937514582828::1710841832::1710841927::1::::<><>::
+LICENSE.txt::TextFile::-1::1710841831::0::1::::<><>::
+READ ME.txt::TextFile::-1::1710841832::0::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Characters_free/::1710841927
+Adam_16x16.png::CompressedTexture2D::6038666365594448184::1710841831::1710841927::1::::<><>::
+Adam_idle_16x16.png::CompressedTexture2D::5543346676341924818::1710841831::1710841927::1::::<><>::
+Adam_idle_anim_16x16.png::CompressedTexture2D::2463856483043117198::1710841831::1710841927::1::::<><>::
+Adam_phone_16x16.png::CompressedTexture2D::3210341622045598031::1710841831::1710841927::1::::<><>::
+Adam_run_16x16.png::CompressedTexture2D::7805994902830458340::1710841831::1710841927::1::::<><>::
+Adam_sit2_16x16.png::CompressedTexture2D::4572983511298241277::1710841831::1710841927::1::::<><>::
+Adam_sit3_16x16.png::CompressedTexture2D::7992807151202744734::1710841831::1710841927::1::::<><>::
+Adam_sit_16x16.png::CompressedTexture2D::3721623190390397086::1710841831::1710841927::1::::<><>::
+Alex_16x16.png::CompressedTexture2D::7606064617326423626::1710841831::1710841927::1::::<><>::
+Alex_idle_16x16.png::CompressedTexture2D::8901248747185368207::1710841831::1710841927::1::::<><>::
+Alex_idle_anim_16x16.png::CompressedTexture2D::1649695059514018222::1710841831::1710841927::1::::<><>::
+Alex_phone_16x16.png::CompressedTexture2D::3934370707202823370::1710841831::1710841927::1::::<><>::
+Alex_run_16x16.png::CompressedTexture2D::2290397968353996497::1710841831::1710841927::1::::<><>::
+Alex_sit2_16x16.png::CompressedTexture2D::5006535205091305459::1710841831::1710841927::1::::<><>::
+Alex_sit3_16x16.png::CompressedTexture2D::4890591243410645064::1710841831::1710841927::1::::<><>::
+Alex_sit_16x16.png::CompressedTexture2D::7275653345734811686::1710841831::1710841927::1::::<><>::
+Amelia_16x16.png::CompressedTexture2D::7407968502158705387::1710841831::1710841927::1::::<><>::
+Amelia_idle_16x16.png::CompressedTexture2D::5339819961666429160::1710841831::1710841927::1::::<><>::
+Amelia_idle_anim_16x16.png::CompressedTexture2D::2767450107840640560::1710841831::1710841927::1::::<><>::
+Amelia_phone_16x16.png::CompressedTexture2D::2069647254156212023::1710841831::1710841927::1::::<><>::
+Amelia_run_16x16.png::CompressedTexture2D::5611801344651044553::1710841831::1710841927::1::::<><>::
+Amelia_sit2_16x16.png::CompressedTexture2D::2254923787072077628::1710841831::1710841927::1::::<><>::
+Amelia_sit3_16x16.png::CompressedTexture2D::2430836890387019409::1710841831::1710841927::1::::<><>::
+Amelia_sit_16x16.png::CompressedTexture2D::597623653880236066::1710841831::1710841927::1::::<><>::
+Bob_16x16.png::CompressedTexture2D::304930320562220095::1710841831::1710841927::1::::<><>::
+Bob_idle_16x16.png::CompressedTexture2D::4158522329882478044::1710841831::1710841927::1::::<><>::
+Bob_idle_anim_16x16.png::CompressedTexture2D::4648885995652235250::1710841831::1710841927::1::::<><>::
+Bob_phone_16x16.png::CompressedTexture2D::8055989845609009258::1710841831::1710841927::1::::<><>::
+Bob_run_16x16.png::CompressedTexture2D::1639284514121696058::1710841831::1710841927::1::::<><>::
+Bob_sit2_16x16.png::CompressedTexture2D::5645563345673483065::1710841831::1710841927::1::::<><>::
+Bob_sit3_16x16.png::CompressedTexture2D::9116901023971260409::1710841831::1710841927::1::::<><>::
+Bob_sit_16x16.png::CompressedTexture2D::436372798411667317::1710841831::1710841927::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Characters_free/RPGMAKERMV/::1710841927
+Characters_MV.png::CompressedTexture2D::9161246133335736408::1710841831::1710841927::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/::1710841831
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/::1710841927
+Interiors_free_16x16.png::CompressedTexture2D::258994553383357269::1710841831::1710841927::1::::<><>::
+Room_Builder_free_16x16.png::CompressedTexture2D::8418639740276168680::1710841831::1710841927::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/32x32/::1710841927
+Interiors_free_32x32.png::CompressedTexture2D::3423608558262828211::1710841831::1710841927::1::::<><>::
+Room_Builder_free_32x32.png::CompressedTexture2D::4859624566270656200::1710841831::1710841927::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/48x48/::1710841927
+Interiors_free_48x48.png::CompressedTexture2D::4411032457275639637::1710841831::1710841927::1::::<><>::
+Room_Builder_free_48x48.png::CompressedTexture2D::4418273249037502601::1710841831::1710841927::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Old/::1710841927
+idle_16x16_2.png::CompressedTexture2D::7249767005305480453::1710841832::1710841927::1::::<><>::
+idle_32x32_2.png::CompressedTexture2D::5926585297710243525::1710841832::1710841926::1::::<><>::
+idle_48x48_2.png::CompressedTexture2D::5269107845383980644::1710841832::1710841926::1::::<><>::
+run_horizontal_16x16_2.png::CompressedTexture2D::901416245925187047::1710841832::1710841926::1::::<><>::
+run_horizontal_32x32_2.png::CompressedTexture2D::4563305441727557413::1710841832::1710841926::1::::<><>::
+run_horizontal_48x48_2.png::CompressedTexture2D::3077419919727515462::1710841832::1710841926::1::::<><>::
+Tileset_16x16_1.png::CompressedTexture2D::7132736974502775701::1710841831::1710841926::1::::<><>::
+Tileset_16x16_2.png::CompressedTexture2D::928972418956916735::1710841831::1710841926::1::::<><>::
+Tileset_16x16_3.png::CompressedTexture2D::6201927709937405945::1710841831::1710841926::1::::<><>::
+Tileset_16x16_9.png::CompressedTexture2D::521029117705875639::1710841831::1710841926::1::::<><>::
+Tileset_16x16_16.png::CompressedTexture2D::5164799893397882337::1710841831::1710841926::1::::<><>::
+Tileset_32x32_1.png::CompressedTexture2D::4810129790343392897::1710841831::1710841926::1::::<><>::
+Tileset_32x32_2.png::CompressedTexture2D::6751402498533292706::1710841831::1710841926::1::::<><>::
+Tileset_32x32_3.png::CompressedTexture2D::7310421227945027325::1710841832::1710841926::1::::<><>::
+Tileset_32x32_9.png::CompressedTexture2D::5110372177037882844::1710841832::1710841926::1::::<><>::
+Tileset_32x32_16.png::CompressedTexture2D::2778230090553580731::1710841831::1710841926::1::::<><>::
+Tileset_48x48_1.png::CompressedTexture2D::122813792167393819::1710841832::1710841926::1::::<><>::
+Tileset_48x48_2.png::CompressedTexture2D::3430069890917482145::1710841832::1710841926::1::::<><>::
+Tileset_48x48_3.png::CompressedTexture2D::2646566994968721977::1710841832::1710841926::1::::<><>::
+Tileset_48x48_9.png::CompressedTexture2D::1964936827220104132::1710841832::1710841926::1::::<><>::
+Tileset_48x48_16.png::CompressedTexture2D::2666068966367011183::1710841832::1710841926::1::::<><>::
+::res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Old/mv/::1710841927
+Character_2_16x16_RPGMAKER.png::CompressedTexture2D::5880454982542867169::1710841832::1710841927::1::::<><>::
+Character_2_32x32_RPGMAKER.png::CompressedTexture2D::1224800951313963968::1710841832::1710841927::1::::<><>::
+Character_2_48x48_RPGMAKER.png::CompressedTexture2D::9123813963364030465::1710841832::1710841927::1::::<><>::
+::res://assets/pixel_cyberpunk_interior_free_1.0.1/::1710841927
+pixel-cyberpunk-interior.png::CompressedTexture2D::4760213656658785443::1710841832::1710841927::1::::<><>::
+Readme.txt::TextFile::-1::1710841832::0::1::::<><>::
+::res://assets/RF_Catacombs_v1.0/::1710841927
+candleA_01.png::CompressedTexture2D::8963776688920415857::1710841832::1710841927::1::::<><>::
+candleA_02.png::CompressedTexture2D::1673650371204120880::1710841832::1710841927::1::::<><>::
+candleA_03.png::CompressedTexture2D::1671366844352322479::1710841832::1710841927::1::::<><>::
+candleA_04.png::CompressedTexture2D::5380197252872575922::1710841832::1710841927::1::::<><>::
+candleB_01.png::CompressedTexture2D::3805884159592217385::1710841832::1710841927::1::::<><>::
+candleB_02.png::CompressedTexture2D::7227384252096114894::1710841832::1710841927::1::::<><>::
+candleB_03.png::CompressedTexture2D::2347262540351135003::1710841832::1710841927::1::::<><>::
+candleB_04.png::CompressedTexture2D::5829181436973585129::1710841832::1710841927::1::::<><>::
+decorative.png::CompressedTexture2D::3069298454562584882::1710841832::1710841927::1::::<><>::
+mainlevbuild.png::CompressedTexture2D::4496579465204693028::1710841832::1710841927::1::::<><>::
+public-license.txt::TextFile::-1::1710841832::0::1::::<><>::
+spike_0.png::CompressedTexture2D::2297017186986790894::1710841832::1710841927::1::::<><>::
+spike_1.png::CompressedTexture2D::829210652685464638::1710841832::1710841927::1::::<><>::
+spike_2.png::CompressedTexture2D::8638068553447868159::1710841832::1710841927::1::::<><>::
+spike_3.png::CompressedTexture2D::8303069694453744169::1710841832::1710841927::1::::<><>::
+spike_4.png::CompressedTexture2D::7218538821311231777::1710841832::1710841927::1::::<><>::
+torch_1.png::CompressedTexture2D::7905903904098123535::1710841832::1710841927::1::::<><>::
+torch_2.png::CompressedTexture2D::7095630176569417146::1710841832::1710841927::1::::<><>::
+torch_3.png::CompressedTexture2D::4694059855599423791::1710841832::1710841926::1::::<><>::
+torch_4.png::CompressedTexture2D::9012267287843825257::1710841832::1710841926::1::::<><>::
+::res://assets/RF_Catacombs_v1.0/PSD/::1710841832
+::res://assets/RF_Catacombs_v1.0/PSD/Anim/::1710841832
+::res://assets/Tech Dungeon Roguelite - Asset Pack/::1710846384
 Read Me.txt::TextFile::-1::1710791783::0::1::::<><>::
 tileset x1.png::CompressedTexture2D::5053040013897394884::1710791783::1710791851::1::::<><>::
 tileset x2.png::CompressedTexture2D::8882570650036309703::1710791784::1710791851::1::::<><>::
+tileset x2v2.png::CompressedTexture2D::364196574435574344::1710846321::1710846387::1::::<><>::
 tileset x3.png::CompressedTexture2D::2095039115949695851::1710791784::1710791851::1::::<><>::
 ::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/::1710791851
 10x16 Cells.txt::TextFile::-1::1710791784::0::1::::<><>::
@@ -204,22 +308,24 @@ players red x3.png::CompressedTexture2D::6309464047482409458::1710791786::171079
 ui x1.png::CompressedTexture2D::105576511881250058::1710791786::1710791851::1::::<><>::
 ui x2.png::CompressedTexture2D::7004435288740634146::1710791786::1710791851::1::::<><>::
 ui x3.png::CompressedTexture2D::6710230901861205236::1710791786::1710791851::1::::<><>::
-::res://Scenes/::1710791851
+::res://Scenes/::1710845335
 Environment.tscn::PackedScene::3480940156267982942::1710791732::0::1::::<><>::uid://c428c883cpnkb::::res://Textures/Environment.png
-main.tscn::PackedScene::5681117227368614090::1710791732::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
-menu.tscn::PackedScene::5694815232986804398::1710791732::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg
-NPC.tscn::PackedScene::3322199610398732211::1710791851::0::1::::<><>::uid://cg1okgmagm47i::::res://Textures/NPC.png<>res://Scripts/dialogue.gd
+main.tscn::PackedScene::5681117227368614090::1710845333::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
+menu.tscn::PackedScene::5694815232986804398::1710845333::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg
+nope.gd::GDScript::-1::1710841831::0::1::::<>Area2D<>::
+NPC.tscn::PackedScene::3322199610398732211::1710841831::0::1::::<><>::uid://cg52n6nq3n86y::::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/No Outlines/npc x1.png<>res://Scripts/dialogue.gd
 Pause.tscn::PackedScene::774068671799317146::1710791732::0::1::::<><>::res://Scripts/pause.gd
-player.tscn::PackedScene::3723795558520600771::1710791851::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://doj5q74cedgyt::::res://Textures/HP.png
+player.tscn::PackedScene::3723795558520600771::1710845333::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://doj5q74cedgyt::::res://Textures/HP.png
 settings.tscn::PackedScene::9030082917547479554::1710791732::0::1::::<><>::uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg<>res://Scripts/settings.gd
-yep.tscn::PackedScene::2758984683902403337::1710791851::0::1::::<><>::uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://cvg1tfx5a58oo::::res://assets/CyberPunk Asset Pack/asset page 1.png
-::res://Scripts/::1710791738
-dialogue.gd::GDScript::-1::1710791738::0::1::::<>Area2D<>::
+yep.tscn::PackedScene::2758984683902403337::1710845335::0::1::::<><>::res://Scripts/yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn<>uid://b825a2dwcwu1p::::res://assets/pixel_cyberpunk_interior_free_1.0.1/pixel-cyberpunk-interior.png<>uid://cuqe5b7mmj6el::::res://assets/Бука__Димка.jpeg<>res://Scenes/nope.gd<>uid://bb7k05uat8rxq::::res://assets/nope.mp3
+::res://Scripts/::1710841831
+dialogue.gd::GDScript::-1::1710841831::0::1::::<>Area2D<>::
 main.gd::GDScript::-1::1710791738::0::1::::<>Node2D<>::
-menu.gd::GDScript::-1::1710791738::0::1::::<>Node2D<>::
+menu.gd::GDScript::-1::1710841831::0::1::::<>Node2D<>::
 pause.gd::GDScript::-1::1710791738::0::1::::<>Control<>::
-player.gd::GDScript::-1::1710791738::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1710841831::0::1::::<>CharacterBody2D<>::
 settings.gd::GDScript::-1::1710791738::0::1::::<>Node2D<>::
+yep.gd::GDScript::-1::1710841831::0::1::::<>Node2D<>::
 ::res://Textures/::1710786751
 Environment.png::CompressedTexture2D::6866065050122428257::1710782890::1710782890::1::::<><>::
 HP.png::CompressedTexture2D::8162337069926641331::1710782890::1710782890::1::::<><>::
