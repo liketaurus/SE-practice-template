@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bfkqcskdbmhin"]
+[gd_scene load_steps=25 format=3 uid="uid://bfkqcskdbmhin"]
 
 [ext_resource type="Script" path="res://Scripts/yep.gd" id="1_0hs4w"]
 [ext_resource type="Texture2D" uid="uid://dys1v1227wnrb" path="res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png" id="1_1qgrx"]
@@ -6,8 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://bnlke3ngdj2nv" path="res://Scenes/NPC.tscn" id="3_6lh8y"]
 [ext_resource type="Texture2D" uid="uid://b825a2dwcwu1p" path="res://assets/pixel_cyberpunk_interior_free_1.0.1/pixel-cyberpunk-interior.png" id="3_b2hew"]
 [ext_resource type="Texture2D" uid="uid://cuqe5b7mmj6el" path="res://assets/Бука__Димка.jpeg" id="4_67ag0"]
-[ext_resource type="Script" path="res://Scenes/nope.gd" id="5_pmrw3"]
+[ext_resource type="Script" path="res://Scripts/nope.gd" id="5_pmrw3"]
 [ext_resource type="AudioStream" uid="uid://bb7k05uat8rxq" path="res://assets/nope.mp3" id="6_4r6bm"]
+[ext_resource type="PackedScene" uid="uid://b1l2vj4gdwyr4" path="res://Scenes/key.tscn" id="9_bdg6a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g7h05"]
 texture = ExtResource("1_1qgrx")
@@ -7065,3 +7066,6 @@ position = Vector2(194, 175)
 
 [node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
 position = Vector2(43, 61)
+
+[node name="Key" parent="Sprites" instance=ExtResource("9_bdg6a")]
+position = Vector2(449, 218)

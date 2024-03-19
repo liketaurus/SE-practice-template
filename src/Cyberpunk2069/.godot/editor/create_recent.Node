@@ -1,8 +1,9 @@
 Label
+Area2D
+CollisionShape2D
+StaticBody2D
 TileMap
 CanvasLayer
-CollisionShape2D
-Area2D
 AnimatedSprite2D
 Control
 Node2D
@@ -11,4 +12,3 @@ Node
 Button
 Panel
 Camera2D
-CheckButton
