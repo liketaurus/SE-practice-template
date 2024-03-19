@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var paused = false
+var key_pressed = false
 
 func _process(delta):
 	velocity.x = 0
@@ -32,7 +33,12 @@ func _process(delta):
 
 	move_and_slide()
 
-	if Input.is_action_pressed("pause"):
+func _unhandled_input(event):
+	if event is InputEventKey and event.pressed and not event.echo:
+		on_keydown(event)
+
+func on_keydown(key):
+	if key.keycode == KEY_ESCAPE:
 		pause()
 
 func pause():
@@ -43,4 +49,4 @@ func pause():
 		$Pause.show()
 		Engine.time_scale = 0
 
-	paused = !paused
+	paused = false
