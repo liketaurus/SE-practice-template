@@ -13,10 +13,10 @@ script = ExtResource("1_bo3x3")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = 478.0
-offset_top = 300.0
-offset_right = 762.0
-offset_bottom = 542.0
+offset_left = -144.0
+offset_top = -114.0
+offset_right = 140.0
+offset_bottom = 128.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_87fve")
 
 [node name="continued" type="Button" parent="Panel"]

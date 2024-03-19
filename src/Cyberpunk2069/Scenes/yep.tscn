@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cuqe5b7mmj6el" path="res://assets/Бука__Димка.jpeg" id="4_67ag0"]
 [ext_resource type="Script" path="res://Scripts/nope.gd" id="5_pmrw3"]
 [ext_resource type="AudioStream" uid="uid://bb7k05uat8rxq" path="res://assets/nope.mp3" id="6_4r6bm"]
-[ext_resource type="PackedScene" path="res://Scenes/key.tscn" id="9_bdg6a"]
+[ext_resource type="PackedScene" uid="uid://b1l2vj4gdwyr4" path="res://Scenes/key.tscn" id="9_bdg6a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g7h05"]
 texture = ExtResource("1_1qgrx")
@@ -7065,16 +7065,16 @@ stream = ExtResource("6_4r6bm")
 position = Vector2(194, 175)
 
 [node name="Key" parent="Sprites" instance=ExtResource("9_bdg6a")]
-position = Vector2(700, 324)
+position = Vector2(1067, 544)
 
 [node name="Key2" parent="Sprites" instance=ExtResource("9_bdg6a")]
-position = Vector2(584, 324)
+position = Vector2(951, 544)
 
 [node name="Key3" parent="Sprites" instance=ExtResource("9_bdg6a")]
-position = Vector2(462, 324)
+position = Vector2(829, 544)
 
 [node name="Key4" parent="Sprites" instance=ExtResource("9_bdg6a")]
-position = Vector2(340, 324)
+position = Vector2(707, 544)
 
 [node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
 position = Vector2(43, 61)

@@ -10,10 +10,10 @@ radius = 54.037
 script = ExtResource("1_p74tu")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 244.0
-offset_top = 140.0
-offset_right = 374.0
-offset_bottom = 209.0
+offset_left = -67.0
+offset_top = -43.0
+offset_right = 63.0
+offset_bottom = 26.0
 
 [node name="Key" type="Sprite2D" parent="Label"]
 position = Vector2(63, 45)
@@ -21,6 +21,5 @@ scale = Vector2(0.077, 0.077)
 texture = ExtResource("1_udrfl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(311, 180)
 shape = SubResource("CircleShape2D_b0sfj")
 debug_color = Color(0.65098, 0.435294, 0.741176, 0.419608)
