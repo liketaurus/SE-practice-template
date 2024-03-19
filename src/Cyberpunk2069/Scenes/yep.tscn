@@ -7064,8 +7064,17 @@ stream = ExtResource("6_4r6bm")
 [node name="Npc" parent="Sprites" instance=ExtResource("3_6lh8y")]
 position = Vector2(194, 175)
 
+[node name="Key" parent="Sprites" instance=ExtResource("9_bdg6a")]
+position = Vector2(700, 324)
+
+[node name="Key2" parent="Sprites" instance=ExtResource("9_bdg6a")]
+position = Vector2(584, 324)
+
+[node name="Key3" parent="Sprites" instance=ExtResource("9_bdg6a")]
+position = Vector2(462, 324)
+
+[node name="Key4" parent="Sprites" instance=ExtResource("9_bdg6a")]
+position = Vector2(340, 324)
+
 [node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
 position = Vector2(43, 61)
-
-[node name="Key" parent="Sprites" instance=ExtResource("9_bdg6a")]
-position = Vector2(449, 218)
