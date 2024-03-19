@@ -3,3 +3,4 @@ res://Scripts/dialogue.gd
 res://Scenes/main.tscn
 res://Scenes/player.tscn
 res://Scenes/yep.tscn
+res://Scenes/nope.gd

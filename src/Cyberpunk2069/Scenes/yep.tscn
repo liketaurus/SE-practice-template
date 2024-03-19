@@ -1,10 +1,13 @@
-[gd_scene load_steps=20 format=3 uid="uid://bfkqcskdbmhin"]
+[gd_scene load_steps=24 format=3 uid="uid://bfkqcskdbmhin"]
 
 [ext_resource type="Script" path="res://Scripts/yep.gd" id="1_0hs4w"]
 [ext_resource type="Texture2D" uid="uid://dys1v1227wnrb" path="res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png" id="1_1qgrx"]
 [ext_resource type="PackedScene" uid="uid://btb3mslexwkb0" path="res://Scenes/player.tscn" id="2_7nm1t"]
 [ext_resource type="PackedScene" uid="uid://bnlke3ngdj2nv" path="res://Scenes/NPC.tscn" id="3_6lh8y"]
 [ext_resource type="Texture2D" uid="uid://b825a2dwcwu1p" path="res://assets/pixel_cyberpunk_interior_free_1.0.1/pixel-cyberpunk-interior.png" id="3_b2hew"]
+[ext_resource type="Texture2D" uid="uid://cuqe5b7mmj6el" path="res://assets/Бука__Димка.jpeg" id="4_67ag0"]
+[ext_resource type="Script" path="res://Scenes/nope.gd" id="5_pmrw3"]
+[ext_resource type="AudioStream" uid="uid://bb7k05uat8rxq" path="res://assets/nope.mp3" id="6_4r6bm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g7h05"]
 texture = ExtResource("1_1qgrx")
@@ -6973,6 +6976,9 @@ size = Vector2(16, 127)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tq4co"]
 size = Vector2(16, 432)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x00oi"]
+size = Vector2(246.418, 390.123)
+
 [node name="Yep" type="Node2D"]
 position = Vector2(0, 46)
 script = ExtResource("1_0hs4w")
@@ -7036,6 +7042,24 @@ shape = SubResource("RectangleShape2D_tq4co")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Sprites" type="Node" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Sprites"]
+position = Vector2(962.5, 205.25)
+scale = Vector2(1.396, 0.717722)
+script = ExtResource("5_pmrw3")
+
+[node name="Nope" type="Sprite2D" parent="Sprites/Area2D"]
+visible = false
+scale = Vector2(1, 1)
+texture = ExtResource("4_67ag0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Area2D"]
+position = Vector2(-0.358154, 1.04498)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_x00oi")
+
+[node name="Nop" type="AudioStreamPlayer2D" parent="Sprites/Area2D"]
+stream = ExtResource("6_4r6bm")
 
 [node name="Npc" parent="Sprites" instance=ExtResource("3_6lh8y")]
 position = Vector2(194, 175)
