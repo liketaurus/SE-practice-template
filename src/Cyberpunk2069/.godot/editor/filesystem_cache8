@@ -3,7 +3,7 @@ ea4bc82a6ad023ab7ee23ee620429895
 default_bus_layout.tres::AudioBusLayout::6463009266295747810::1710796934::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1710845836::0::1::::<><>::
 icon.svg::CompressedTexture2D::7438081712965145412::1710788353::1710788353::1::::<><>::
-::res://assets/::1710808400
+::res://assets/::1710854081
 2231.png::CompressedTexture2D::1447514990343395570::1710788353::1710788368::1::::<><>::
 Nigerian_Public_Domain_131.jpg::CompressedTexture2D::4530805177349331227::1710720201::1710791506::1::::<><>::
 nope.mp3::AudioStreamMP3::2523323036859633818::1710808396::1710808400::1::::<><>::
@@ -226,6 +226,17 @@ Tileset_48x48_16.png::CompressedTexture2D::2666068966367011183::1710791333::1710
 Character_2_16x16_RPGMAKER.png::CompressedTexture2D::5880454982542867169::1710791333::1710791970::1::::<><>::
 Character_2_32x32_RPGMAKER.png::CompressedTexture2D::1224800951313963968::1710791333::1710791970::1::::<><>::
 Character_2_48x48_RPGMAKER.png::CompressedTexture2D::9123813963364030465::1710791333::1710791970::1::::<><>::
+::res://assets/Pixel Art Top Down - Basic/::1710853986
+::res://assets/Pixel Art Top Down - Basic/Texture/::1710854694
+TX Plant.png::CompressedTexture2D::9049788586250473446::1710853986::1710854694::1::::<><>::
+TX Player.png::CompressedTexture2D::2692383941264534884::1710853986::1710854694::1::::<><>::
+TX Props.png::CompressedTexture2D::4779256021348391904::1710853986::1710854694::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::317435246955343251::1710853986::1710854694::1::::<><>::
+TX Shadow.png::CompressedTexture2D::2800266433669942552::1710853986::1710854694::1::::<><>::
+TX Struct.png::CompressedTexture2D::5849746086402215977::1710853986::1710854694::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::55991438838709573::1710853986::1710854694::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::752608130050956331::1710853986::1710854694::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::5590879562465492472::1710853986::1710854694::1::::<><>::
 ::res://assets/pixel_cyberpunk_interior_free_1.0.1/::1710806437
 pixel-cyberpunk-interior.png::CompressedTexture2D::4760213656658785443::1710806362::1710806437::1::::<><>::
 Readme.txt::TextFile::-1::1710806362::0::1::::<><>::
