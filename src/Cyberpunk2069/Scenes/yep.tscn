@@ -6977,7 +6977,7 @@ size = Vector2(16, 127)
 size = Vector2(16, 432)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x00oi"]
-size = Vector2(246.418, 390.123)
+size = Vector2(252.149, 398.483)
 
 [node name="Yep" type="Node2D"]
 position = Vector2(0, 46)
@@ -7050,13 +7050,12 @@ script = ExtResource("5_pmrw3")
 
 [node name="Nope" type="Sprite2D" parent="Sprites/Area2D"]
 visible = false
-scale = Vector2(1, 1)
 texture = ExtResource("4_67ag0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Area2D"]
-position = Vector2(-0.358154, 1.04498)
-scale = Vector2(1, 1)
+position = Vector2(-1.07452, 1.04498)
 shape = SubResource("RectangleShape2D_x00oi")
+debug_color = Color(0, 0.6, 0.701961, 0)
 
 [node name="Nop" type="AudioStreamPlayer2D" parent="Sprites/Area2D"]
 stream = ExtResource("6_4r6bm")

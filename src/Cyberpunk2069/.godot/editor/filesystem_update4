@@ -1,6 +1,4 @@
-res://Scenes/NPC.tscn
-res://Scripts/dialogue.gd
+res://Scenes/yep.tscn
 res://Scenes/main.tscn
 res://Scenes/player.tscn
-res://Scenes/yep.tscn
-res://Scenes/nope.gd
+res://Scenes/NPC.tscn
