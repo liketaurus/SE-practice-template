@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 var paused = false
 var key_pressed = false
+var keys_found = 0 
 
 func _process(delta):
 	velocity.x = 0
@@ -38,6 +39,8 @@ func _unhandled_input(event):
 		on_keydown(event)
 
 func on_keydown(key):
+	
+	
 	if key.keycode == KEY_ESCAPE:
 		pause()
 

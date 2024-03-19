@@ -1,9 +1,9 @@
+CanvasLayer
 CollisionShape2D
 Area2D
 Label
 StaticBody2D
 TileMap
-CanvasLayer
 AnimatedSprite2D
 Control
 Node2D

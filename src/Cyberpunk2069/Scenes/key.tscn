@@ -23,3 +23,12 @@ texture = ExtResource("1_udrfl")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_b0sfj")
 debug_color = Color(0.65098, 0.435294, 0.741176, 0.419608)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="key1" type="Label" parent="CanvasLayer"]
+offset_left = 949.0
+offset_top = 16.0
+offset_right = 1118.0
+offset_bottom = 39.0
+text = "Ключів знайдено 0/4"

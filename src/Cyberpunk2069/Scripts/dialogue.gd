@@ -2,6 +2,7 @@ extends Area2D
 
 var player_in_area = false
 
+
 func _ready() -> void:
 	connect("body_entered", _on_body_entered)
 	connect("body_exited", _on_body_exited)
@@ -20,3 +21,4 @@ func _on_body_exited(body: Node) -> void:
 	$AnimationPlayer.play("idle")
 	player_in_area = false
 	$Label.visible = false
+	

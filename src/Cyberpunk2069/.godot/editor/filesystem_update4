@@ -1,11 +1,6 @@
 res://Scenes/menu.tscn
-res://Scenes/main.tscn
-res://Scenes/player.tscn
 res://Scenes/yep.tscn
-res://Scenes/NPC.tscn
-res://Scenes/Environment.tscn
 res://Scenes/key.tscn
+res://Scenes/NPC.tscn
+res://Scenes/player.tscn
 res://Scripts/key.gd
-res://Scenes/Pause.tscn
-res://Scripts/CanvasLayer.gd
-res://Scenes/area_2d.tscn

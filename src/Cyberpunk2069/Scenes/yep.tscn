@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bfkqcskdbmhin"]
+[gd_scene load_steps=25 format=3 uid="uid://c0ycdqf20416c"]
 
 [ext_resource type="Script" path="res://Scripts/yep.gd" id="1_0hs4w"]
 [ext_resource type="Texture2D" uid="uid://dys1v1227wnrb" path="res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png" id="1_1qgrx"]
@@ -7077,4 +7077,4 @@ position = Vector2(829, 544)
 position = Vector2(707, 544)
 
 [node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
-position = Vector2(43, 61)
+position = Vector2(44, 100)
