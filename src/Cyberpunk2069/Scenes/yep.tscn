@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cuqe5b7mmj6el" path="res://assets/Бука__Димка.jpeg" id="4_67ag0"]
 [ext_resource type="Script" path="res://Scripts/nope.gd" id="5_pmrw3"]
 [ext_resource type="AudioStream" uid="uid://bb7k05uat8rxq" path="res://assets/nope.mp3" id="6_4r6bm"]
-[ext_resource type="PackedScene" uid="uid://b1l2vj4gdwyr4" path="res://Scenes/key.tscn" id="9_bdg6a"]
+[ext_resource type="PackedScene" path="res://Scenes/key.tscn" id="9_bdg6a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g7h05"]
 texture = ExtResource("1_1qgrx")

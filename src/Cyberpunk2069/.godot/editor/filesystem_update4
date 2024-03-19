@@ -1,8 +1,4 @@
-res://Scenes/menu.tscn
 res://Scenes/main.tscn
 res://Scenes/player.tscn
-res://Scenes/yep.tscn
 res://Scenes/NPC.tscn
-res://Scenes/Environment.tscn
-res://Scenes/key.tscn
-res://Scripts/key.gd
+res://Scenes/yep.tscn
