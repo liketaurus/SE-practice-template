@@ -10,11 +10,13 @@ func _ready() -> void:
 
 func _process(delta):
 	if Input.is_key_pressed(KEY_E) and player_in_area:
+		$AnimationPlayer.play("talk")
 		$Label.visible = true
 
 func _on_body_entered(body: Node) -> void:
 	player_in_area = true
 
 func _on_body_exited(body: Node) -> void:
+	$AnimationPlayer.play("idle")
 	player_in_area = false
 	$Label.visible = false

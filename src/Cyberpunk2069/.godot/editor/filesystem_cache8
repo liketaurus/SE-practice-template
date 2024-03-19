@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710804547
+::res://::1710806714
 default_bus_layout.tres::AudioBusLayout::6463009266295747810::1710796934::0::1::::<><>::
 icon.svg::CompressedTexture2D::7438081712965145412::1710788353::1710788353::1::::<><>::
 ::res://assets/::1710806431
@@ -223,7 +223,7 @@ Tileset_48x48_16.png::CompressedTexture2D::2666068966367011183::1710791333::1710
 Character_2_16x16_RPGMAKER.png::CompressedTexture2D::5880454982542867169::1710791333::1710791970::1::::<><>::
 Character_2_32x32_RPGMAKER.png::CompressedTexture2D::1224800951313963968::1710791333::1710791970::1::::<><>::
 Character_2_48x48_RPGMAKER.png::CompressedTexture2D::9123813963364030465::1710791333::1710791970::1::::<><>::
-::res://assets/pixel_cyberpunk_interior_free_1.0.1/::1710806362
+::res://assets/pixel_cyberpunk_interior_free_1.0.1/::1710806437
 pixel-cyberpunk-interior.png::CompressedTexture2D::4760213656658785443::1710806362::1710806437::1::::<><>::
 Readme.txt::TextFile::-1::1710806362::0::1::::<><>::
 ::res://assets/RF_Catacombs_v1.0/::1710805857
@@ -304,7 +304,7 @@ players red x3.png::CompressedTexture2D::6309464047482409458::1710782027::171079
 ui x1.png::CompressedTexture2D::105576511881250058::1710782027::1710791505::1::::<><>::
 ui x2.png::CompressedTexture2D::7004435288740634146::1710782027::1710791505::1::::<><>::
 ui x3.png::CompressedTexture2D::6710230901861205236::1710782027::1710791506::1::::<><>::
-::res://Scenes/::1710804929
+::res://Scenes/::1710806614
 Environment.tscn::PackedScene::3480940156267982942::1710788353::0::1::::<><>::uid://c428c883cpnkb::::res://Textures/Environment.png
 main.tscn::PackedScene::5681117227368614090::1710804574::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
 menu.tscn::PackedScene::5694815232986804398::1710796485::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg
@@ -312,7 +312,7 @@ NPC.tscn::PackedScene::3322199610398732211::1710804574::0::1::::<><>::uid://cg52
 Pause.tscn::PackedScene::774068671799317146::1710788353::0::1::::<><>::res://Scripts/pause.gd
 player.tscn::PackedScene::3723795558520600771::1710804574::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://doj5q74cedgyt::::res://Textures/HP.png
 settings.tscn::PackedScene::9030082917547479554::1710788353::0::1::::<><>::uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg<>res://Scripts/settings.gd
-yep.tscn::PackedScene::2758984683902403337::1710804929::0::1::::<><>::res://Scripts/yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
+yep.tscn::PackedScene::2758984683902403337::1710806614::0::1::::<><>::res://Scripts/yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn<>uid://b825a2dwcwu1p::::res://assets/pixel_cyberpunk_interior_free_1.0.1/pixel-cyberpunk-interior.png
 ::res://Scripts/::1710804353
 dialogue.gd::GDScript::-1::1710804353::0::1::::<>Area2D<>::
 main.gd::GDScript::-1::1710788701::0::1::::<>Node2D<>::
