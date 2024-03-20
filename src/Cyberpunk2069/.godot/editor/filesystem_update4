@@ -1,6 +1,10 @@
-res://Scenes/menu.tscn
-res://Scenes/yep.tscn
 res://Scenes/Enemi.tscn
 res://Scenes/player.tscn
+res://Scenes/menu.tscn
+res://Scenes/yep.tscn
 res://Scenes/key.tscn
+res://Scenes/NPC.tscn
+res://Scripts/Enemi.gd
 res://Scripts/player.gd
+res://Scripts/yep.gd
+res://Scripts/key.gd
