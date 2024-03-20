@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://kuvhqfox2d3l" path="res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/enemies x1.png" id="1_7n5k7"]
 [ext_resource type="Script" path="res://Scripts/Enemi.gd" id="1_pbthr"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_173rr"]
-radius = 12.0416
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wemss"]
+height = 26.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qj525"]
 atlas = ExtResource("1_7n5k7")
@@ -177,7 +177,7 @@ safe_margin = 0.001
 script = ExtResource("1_pbthr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_173rr")
+shape = SubResource("CapsuleShape2D_wemss")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../AnimatedSprite2D")
