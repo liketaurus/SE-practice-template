@@ -4,3 +4,4 @@ res://Scenes/key.tscn
 res://Scenes/NPC.tscn
 res://Scenes/player.tscn
 res://Scenes/Enemi.tscn
+res://Scripts/player.gd
