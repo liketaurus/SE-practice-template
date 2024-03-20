@@ -3,7 +3,7 @@ extends CharacterBody2D
 var player = null
 var player_in_area = false
 var speed = 100
-@onready var animation =  $AnimatedSprite2D
+@onready var animation = $AnimatedSprite2D
 
 func _process(delta):
 	_progress(delta)
@@ -42,9 +42,9 @@ func _on_death_body_entered(body):
 		_death()
 		
 func _death ():
-		animation.play("death")
-		await animation.animation_finished
-		queue_free()
+	animation.play("death")
+	await animation.animation_finished
+	queue_free()
 	
 func _on_animated_sprite_2d_animation_finished():
 	pass # Replace with function body.

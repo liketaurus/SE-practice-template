@@ -54,8 +54,7 @@ func _process(delta):
 		$AnimatedSprite2D.play("walk")
 	else:
 		$AnimatedSprite2D.play("run")
-
-
+		
 	move_and_slide()
 
 func _unhandled_input(event):
@@ -69,7 +68,6 @@ func on_keydown(key):
 		pickup_key()
 
 func pickup_key():
-	print(key_in_item_aura)
 	if not key_in_item_aura or not current_key.visible:
 		return
 	
@@ -86,5 +84,3 @@ func pause():
 		Engine.time_scale = 0
 
 	paused = false
-	
-
