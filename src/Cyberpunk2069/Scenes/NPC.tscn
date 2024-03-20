@@ -68,7 +68,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_3gvf2")
 text = "Привіт, в мене є 
 завдання для тебе!
 Тобі потрібно знайти 
-4 ключі"
+4 карти пам'яті"
 
 [node name="Npc" type="Sprite2D" parent="."]
 texture_filter = 1

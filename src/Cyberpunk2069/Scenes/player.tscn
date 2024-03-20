@@ -430,10 +430,8 @@ horizontal_alignment = 2
 
 [node name="Pause" parent="." instance=ExtResource("3_qjbvx")]
 visible = false
-offset_left = 382.0
-offset_top = 225.0
-offset_right = 382.0
-offset_bottom = 225.0
+offset_top = 1.0
+offset_bottom = 1.0
 
 [node name="ItemAura" type="Area2D" parent="."]
 
