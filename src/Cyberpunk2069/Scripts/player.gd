@@ -41,21 +41,19 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_S):
 		velocity.y = speed
 	if Input.is_key_pressed(KEY_A):
-		$AnimatedSprite2D.flip_h = true
+		$Player.flip_h = true
 		velocity.x = -speed
 	if Input.is_key_pressed(KEY_D):
-		$AnimatedSprite2D.flip_h = false
+		$Player.flip_h = false
 		velocity.x = speed
-	if Input.is_key_pressed(KEY_SPACE):
-		$AnimatedSprite2D.play("attack")
-	elif velocity.x == 0 and velocity.y == 0:
-		$AnimatedSprite2D.play("idle")
+	
+	if velocity.x == 0 and velocity.y == 0:
+		$AnimationPlayer.play("idle")
 	elif speed == 150:
-		$AnimatedSprite2D.play("walk")
+		$AnimationPlayer.play("walk")
 	else:
-		$AnimatedSprite2D.play("run")
-
-
+		$AnimationPlayer.play("run")
+		
 	move_and_slide()
 
 func _unhandled_input(event):
