@@ -8,6 +8,7 @@ func _process(delta):
 	_progress(delta)
 	_move(delta)
 
+
 func _progress(delta):
 	if velocity == Vector2.ZERO:
 		$AnimatedSprite2D.play("idle")

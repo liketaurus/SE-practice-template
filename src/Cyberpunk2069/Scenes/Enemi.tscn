@@ -187,7 +187,8 @@ scale = Vector2(2.61328, 2.82422)
 sprite_frames = SubResource("SpriteFrames_uee0t")
 animation = &"death"
 autoplay = "idle"
-frame_progress = 0.452883
+frame = 7
+frame_progress = 0.90971
 
 [node name="Detector" type="Area2D" parent="."]
 
