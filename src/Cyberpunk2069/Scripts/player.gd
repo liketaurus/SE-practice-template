@@ -2,11 +2,35 @@ extends CharacterBody2D
 
 var paused = false
 var key_pressed = false
-var keys_found = 0 
+var keys_found = 0
+var key_in_item_aura = false
+var current_key: Area2D = null
+
+func _ready():	
+	$ItemAura.connect("area_shape_entered", area_shape_entered)
+	$ItemAura.connect("area_shape_exited", area_shape_exited)
+
+func area_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
+	if not area.name.to_lower().find("key"):
+		on_key_in_item_area(area)
+
+func on_key_in_item_area(area: Area2D):
+	if not area.visible:
+		return
+	
+	key_in_item_aura = true
+	current_key = area
+
+func area_shape_exited(area: Area2D):
+	if not area.visible:
+		return
+	
+	key_in_item_aura = false
+	current_key = area
 
 func _process(delta):
-	velocity.x = 0
-	velocity.y = 0
+	velocity = Vector2.ZERO
+	
 	var speed = 150
 	
 	if Input.is_key_pressed(KEY_SHIFT):
@@ -17,8 +41,10 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_S):
 		velocity.y = speed
 	if Input.is_key_pressed(KEY_A):
+		$Player.flip_h = true
 		velocity.x = -speed
 	if Input.is_key_pressed(KEY_D):
+		$Player.flip_h = false
 		velocity.x = speed
 	
 	if velocity.x == 0 and velocity.y == 0:
@@ -27,11 +53,7 @@ func _process(delta):
 		$AnimationPlayer.play("walk")
 	else:
 		$AnimationPlayer.play("run")
-	if Input.is_key_pressed(KEY_D):
-		$Player.flip_h = false
-	if Input.is_key_pressed(KEY_A):
-		$Player.flip_h = true
-
+		
 	move_and_slide()
 
 func _unhandled_input(event):
@@ -39,10 +61,19 @@ func _unhandled_input(event):
 		on_keydown(event)
 
 func on_keydown(key):
-	
-	
 	if key.keycode == KEY_ESCAPE:
 		pause()
+	if key.keycode == KEY_E:
+		pickup_key()
+
+func pickup_key():
+	print(key_in_item_aura)
+	if not key_in_item_aura or not current_key.visible:
+		return
+	
+	keys_found += 1
+	current_key.visible = false
+	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % keys_found
 
 func pause():
 	if paused:
