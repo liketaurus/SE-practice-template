@@ -14,8 +14,10 @@ func _process(delta):
 		$Label2.visible = true
 	if Input.is_key_pressed(KEY_E) and player_in_area:
 		$AnimationPlayer.play("talk")
-		$Label.visible = true
-		_keys_counter()
+		if Global.keys_found < 4:
+			$Label.visible = true
+		if Global.keys_found == 4:
+			$Label3.visible = true
 
 func _on_body_entered(body: Node) -> void:
 	player_in_area = true
@@ -25,7 +27,3 @@ func _on_body_exited(body: Node) -> void:
 	player_in_area = false
 	$Label.visible = false
 	$Label2.visible = false
-	
-func _keys_counter ():
-	if Global.keys_found == 4:
-		$Label3.visible = true
