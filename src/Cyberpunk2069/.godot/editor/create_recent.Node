@@ -1,5 +1,5 @@
-AnimationPlayer
 CollisionShape2D
+AnimationPlayer
 Area2D
 AnimatedSprite2D
 CharacterBody2D
@@ -12,4 +12,3 @@ Control
 Window
 Node
 Button
-Panel
