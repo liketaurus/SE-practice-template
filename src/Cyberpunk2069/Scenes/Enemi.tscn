@@ -176,8 +176,8 @@ radius = 202.062
 radius = 64.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_njqcn"]
-radius = 20.0
-height = 48.0
+radius = 28.0
+height = 92.0
 
 [node name="Enemi" type="CharacterBody2D"]
 safe_margin = 0.001

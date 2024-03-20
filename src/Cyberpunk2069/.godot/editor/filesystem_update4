@@ -5,3 +5,5 @@ res://Scenes/player.tscn
 res://Scenes/key.tscn
 res://Scripts/Enemi.gd
 res://Scripts/player.gd
+res://Scripts/yep.gd
+res://global.gd

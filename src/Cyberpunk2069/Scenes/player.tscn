@@ -439,7 +439,6 @@ offset_top = 1.0
 offset_bottom = 1.0
 
 [node name="AttackLeft" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackLeft"]
 position = Vector2(-48, -31)
@@ -448,7 +447,6 @@ shape = SubResource("CapsuleShape2D_ha4h7")
 debug_color = Color(1, 0, 0.0705882, 0.419608)
 
 [node name="AttackRight" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRight"]
 position = Vector2(48, -31)

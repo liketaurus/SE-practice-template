@@ -8,6 +8,17 @@ var current_key: Area2D = null
 func _ready():	
 	$ItemAura.connect("area_shape_entered", area_shape_entered)
 	$ItemAura.connect("area_shape_exited", area_shape_exited)
+	
+	$AttackLeft.connect("area_shape_exited", atack_left_shape_entered)
+	$AttackRight.connect("area_shape_exited", atack_right_shape_entered)
+
+func atack_right_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
+	if not area.name.to_lower().find("hitbox"):
+		print("right")
+
+func atack_left_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
+	if not area.name.to_lower().find("hitbox"):
+		print("left")
 
 func area_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if not area.name.to_lower().find("key"):
