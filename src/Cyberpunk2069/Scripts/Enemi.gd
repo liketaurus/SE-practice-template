@@ -3,7 +3,7 @@ extends CharacterBody2D
 var player = null
 var player_in_area = false
 var speed = 100
-@onready var animation =  $AnimatedSprite2D
+@onready var animation = $AnimatedSprite2D
 
 func _process(delta):
 	_progress(delta)
