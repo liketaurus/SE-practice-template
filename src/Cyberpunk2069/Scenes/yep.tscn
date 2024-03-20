@@ -11627,7 +11627,7 @@ position = Vector2(250, 952)
 position = Vector2(-969, 960)
 
 [node name="Key4" parent="Sprites" instance=ExtResource("9_bdg6a")]
-position = Vector2(-977, 95)
+position = Vector2(114, 525)
 
 [node name="Enemi" parent="Sprites" instance=ExtResource("10_383m0")]
 position = Vector2(-581, 202)
