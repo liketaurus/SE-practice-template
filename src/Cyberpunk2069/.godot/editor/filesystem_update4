@@ -4,3 +4,4 @@ res://Scenes/Enemi.tscn
 res://Scenes/player.tscn
 res://Scenes/key.tscn
 res://Scripts/Enemi.gd
+res://Scripts/player.gd

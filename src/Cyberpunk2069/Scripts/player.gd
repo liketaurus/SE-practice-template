@@ -54,8 +54,7 @@ func _process(delta):
 		$AnimatedSprite2D.play("walk")
 	else:
 		$AnimatedSprite2D.play("run")
-
-
+		
 	move_and_slide()
 
 func _unhandled_input(event):
@@ -85,5 +84,3 @@ func pause():
 		Engine.time_scale = 0
 
 	paused = false
-	
-
