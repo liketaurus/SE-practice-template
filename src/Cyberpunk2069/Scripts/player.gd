@@ -110,9 +110,12 @@ func pickup_key():
 	current_key.visible = false
 	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % Global.keys_found
 
-func atack():
-	print(left_enemy)
-	if left_enemy or right_enemy:
+func atack():	
+	if $AnimatedSprite2D.flip_h and right_enemy != null:
+		right_enemy.position = Vector2(10000, 10000)
+		print(right_enemy)
+	if not $AnimatedSprite2D.flip_h and left_enemy != null:
+		left_enemy.position = Vector2(10000, 10000)
 		print(left_enemy)
 
 func pause():

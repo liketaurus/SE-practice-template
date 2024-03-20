@@ -322,18 +322,18 @@ players red x3.png::CompressedTexture2D::6309464047482409458::1710954560::171095
 ui x1.png::CompressedTexture2D::105576511881250058::1710954560::1710954603::1::::<><>::
 ui x2.png::CompressedTexture2D::7004435288740634146::1710954560::1710954603::1::::<><>::
 ui x3.png::CompressedTexture2D::6710230901861205236::1710954560::1710954604::1::::<><>::
-::res://Scenes/::1710975308
-Enemi.tscn::PackedScene::3575723731948723431::1710975307::0::1::::<><>::uid://kuvhqfox2d3l::::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/enemies x1.png<>res://Scripts/Enemi.gd
+::res://Scenes/::1710976565
+Enemi.tscn::PackedScene::3575723731948723431::1710976565::0::1::::<><>::uid://kuvhqfox2d3l::::res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/enemies x1.png<>res://Scripts/Enemi.gd
 Environment.tscn::PackedScene::3480940156267982942::1710954560::0::1::::<><>::uid://c428c883cpnkb::::res://Textures/Environment.png
 key.tscn::PackedScene::4235716151840291871::1710964061::0::1::::<><>::res://Scripts/key.gd<>uid://drwjqkpvlddn::::res://Textures/Key.png<>uid://c8nuvpmhp3cto::::res://Textures/KeyWhite.png
 main.tscn::PackedScene::5681117227368614090::1710954560::0::1::::<><>::uid://bpugttvk7s8va::::res://Scenes/Environment.tscn<>res://Scripts/main.gd<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://uvgmivoagie1::::res://assets/2231.png<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn
-menu.tscn::PackedScene::5694815232986804398::1710975304::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg
+menu.tscn::PackedScene::5694815232986804398::1710976562::0::1::::<><>::res://Scripts/menu.gd<>uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg
 NPC.tscn::PackedScene::3322199610398732211::1710974362::0::1::::<><>::uid://cg52n6nq3n86y::::res://assets/Tech Dungeon Roguelite - Asset Pack/NPC/No Outlines/npc x1.png<>res://Scripts/dialogue.gd
 Pause.tscn::PackedScene::774068671799317146::1710954560::0::1::::<><>::res://Scripts/pause.gd
-player.tscn::PackedScene::3723795558520600771::1710975308::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://cr3087lreouas::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_AttackComboNoMovement.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://bqj1rswqgtsvh::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png<>uid://doj5q74cedgyt::::res://Textures/HP.png<>uid://t0unnnicp1fw::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Roll.png<>uid://d3s3n8bo0l5ss::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png
+player.tscn::PackedScene::3723795558520600771::1710976565::0::1::::<><>::res://Scripts/player.gd<>uid://beuri4f2gguh2::::res://assets/Player.png<>uid://cr3087lreouas::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_AttackComboNoMovement.png<>uid://la72en53q5gw::::res://Scenes/Pause.tscn<>uid://bqj1rswqgtsvh::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png<>uid://doj5q74cedgyt::::res://Textures/HP.png<>uid://t0unnnicp1fw::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Roll.png<>uid://d3s3n8bo0l5ss::::res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Run.png
 settings.tscn::PackedScene::9030082917547479554::1710954560::0::1::::<><>::uid://c8ywycbmqvmkv::::res://Textures/MenuImage.jpg<>res://Scripts/settings.gd
-yep.tscn::PackedScene::6577235165160654112::1710975307::0::1::::<><>::res://Scripts/yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn<>uid://b825a2dwcwu1p::::res://assets/pixel_cyberpunk_interior_free_1.0.1/pixel-cyberpunk-interior.png<>uid://fgoi8u3yergy::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2v2.png<>uid://cuqe5b7mmj6el::::res://assets/Бука__Димка.jpeg<>res://Scripts/nope.gd<>uid://bb7k05uat8rxq::::res://assets/nope.mp3<>uid://b1l2vj4gdwyr4::::res://Scenes/key.tscn<>uid://bq7dwapgvgf0b::::res://Scenes/Enemi.tscn
-::res://Scripts/::1710975304
+yep.tscn::PackedScene::6577235165160654112::1710976565::0::1::::<><>::res://Scripts/yep.gd<>uid://dys1v1227wnrb::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png<>uid://btb3mslexwkb0::::res://Scenes/player.tscn<>uid://bnlke3ngdj2nv::::res://Scenes/NPC.tscn<>uid://b825a2dwcwu1p::::res://assets/pixel_cyberpunk_interior_free_1.0.1/pixel-cyberpunk-interior.png<>uid://fgoi8u3yergy::::res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2v2.png<>uid://cuqe5b7mmj6el::::res://assets/Бука__Димка.jpeg<>res://Scripts/nope.gd<>uid://bb7k05uat8rxq::::res://assets/nope.mp3<>uid://b1l2vj4gdwyr4::::res://Scenes/key.tscn<>uid://bq7dwapgvgf0b::::res://Scenes/Enemi.tscn
+::res://Scripts/::1710976562
 dialogue.gd::GDScript::-1::1710964312::0::1::::<>Area2D<>::
 Enemi.gd::GDScript::-1::1710966536::0::1::::<>CharacterBody2D<>::
 key.gd::GDScript::-1::1710958272::0::1::::<>Area2D<>::
@@ -341,7 +341,7 @@ main.gd::GDScript::-1::1710954560::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1710954560::0::1::::<>Node2D<>::
 nope.gd::GDScript::-1::1710954560::0::1::::<>Area2D<>::
 pause.gd::GDScript::-1::1710954560::0::1::::<>Control<>::
-player.gd::GDScript::-1::1710975304::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1710976562::0::1::::<>CharacterBody2D<>::
 settings.gd::GDScript::-1::1710954560::0::1::::<>Node2D<>::
 yep.gd::GDScript::-1::1710966690::0::1::::<>Node2D<>::
 ::res://Textures/::1710958272
