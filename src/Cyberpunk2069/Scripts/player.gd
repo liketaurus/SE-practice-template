@@ -46,6 +46,7 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_D):
 		$AnimatedSprite2D.flip_h = false
 		velocity.x = speed
+		
 	if Input.is_key_pressed(KEY_SPACE):
 		$AnimatedSprite2D.play("attack")
 	elif velocity.x == 0 and velocity.y == 0:

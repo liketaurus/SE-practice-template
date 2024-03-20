@@ -374,7 +374,7 @@ scale = Vector2(2.07083, 1.875)
 sprite_frames = SubResource("SpriteFrames_jj3ld")
 animation = &"attack"
 autoplay = "attack"
-frame_progress = 0.0210461
+frame_progress = 0.921425
 
 [node name="Player" type="Sprite2D" parent="."]
 visible = false
