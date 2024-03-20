@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-var chase = false
+var player = null
+var player_in_area = false
 var speed = 100
 
 func _process(delta):
@@ -8,32 +9,28 @@ func _process(delta):
 	_move(delta)
 
 func _progress(delta):
-	if velocity.x == 0 and velocity.y == 0:
+	if velocity == Vector2.ZERO:
 		$AnimatedSprite2D.play("idle")
 	elif speed == 100:
 		$AnimatedSprite2D.play("run")
 
 func _on_detector_body_entered(body):
 	if body.name == "Player":
-		chase = true
-		print(1)
-
-func _move(delta):
-	var player = $"../Player"
-	var direction = (player.position - self.position).normalized()
-	if chase == true:
-		velocity.x = direction.x * speed
-		velocity.y = direction.y * speed
+		player_in_area = true
 		
-		print(2)
-		move_and_slide()
-	else:
-		velocity.x = 0
-	
-
-
-
 func _on_detector_body_exited(body):
 	if body.name == "Player":
-		chase = false
-		print(3)
+		player_in_area = false
+
+func _move(delta):
+	if not player_in_area:
+		return
+	
+	var player = $"../Player"
+	var direction = -(self.position - player.position).normalized()
+	
+	velocity = direction * speed
+	
+	move_and_slide()
+
+

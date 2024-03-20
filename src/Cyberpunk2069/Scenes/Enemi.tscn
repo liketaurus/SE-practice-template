@@ -174,19 +174,16 @@ animations = [{
 radius = 202.062
 
 [node name="Enemi" type="CharacterBody2D"]
-position = Vector2(26, 86)
 safe_margin = 0.001
 script = ExtResource("1_pbthr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -20)
 shape = SubResource("CapsuleShape2D_8d0bn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(4.76837e-07, -20)
 scale = Vector2(2.61328, 2.82422)
 sprite_frames = SubResource("SpriteFrames_uee0t")
 animation = &"idle"
@@ -196,7 +193,6 @@ frame_progress = 0.631981
 [node name="Detector" type="Area2D" parent="."]
 
 [node name="zone" type="CollisionShape2D" parent="Detector"]
-position = Vector2(1, -35)
 shape = SubResource("CircleShape2D_ybdoh")
 debug_color = Color(0.427451, 0.603922, 0, 0.419608)
 
