@@ -5,8 +5,8 @@ var key_pressed = false
 var key_in_item_aura = false
 var current_key: Area2D = null
 
-var left_enemy = null
-var right_enemy = null
+var left_enemy: Area2D = null
+var right_enemy: Area2D = null
 
 func _ready():	
 	$ItemAura.connect("area_shape_entered", area_shape_entered)
@@ -22,25 +22,25 @@ func atack_right_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, 
 	if area.name.to_lower().find("hitbox"):
 		return
 		
-	var left_enemy = area
+	right_enemy = area
 
 func atack_left_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if area.name.to_lower().find("hitbox"):
 		return
-	print(area)
-	var right_enemy = area
+		
+	left_enemy = area
 
 func atack_right_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if area.name.to_lower().find("hitbox"):
 		return
 	
-	var left_enemy = null
+	right_enemy = null
 
 func atack_left_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if area.name.to_lower().find("hitbox"):
 		return
 	
-	var right_enemy = null
+	left_enemy = null
 
 func area_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if not area.name.to_lower().find("key"):
@@ -111,7 +111,7 @@ func pickup_key():
 	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % Global.keys_found
 
 func atack():
-	print($left_enemy)
+	print(left_enemy)
 	if left_enemy or right_enemy:
 		print(left_enemy)
 
