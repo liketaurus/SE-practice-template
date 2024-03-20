@@ -4,3 +4,6 @@ res://Scenes/player.tscn
 res://Scenes/NPC.tscn
 res://Scenes/yep.tscn
 res://Scenes/key.tscn
+res://Scripts/player.gd
+res://Scripts/key.gd
+res://Scripts/dialogue.gd

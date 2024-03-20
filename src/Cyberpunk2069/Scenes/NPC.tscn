@@ -70,6 +70,14 @@ text = "Привіт, в мене є
 Тобі потрібно знайти 
 4 карти пам'яті"
 
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = -117.0
+offset_top = -122.0
+offset_right = 117.0
+offset_bottom = -99.0
+text = "Натисніть E щоб поговорити"
+
 [node name="Npc" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(1.52588e-05, -64)

@@ -1,6 +1,6 @@
+Label
 CollisionShape2D
 Area2D
-Label
 AnimationPlayer
 AnimatedSprite2D
 CharacterBody2D
