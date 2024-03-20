@@ -1,7 +1,7 @@
 extends Area2D
 
 var player_in_area = false
-
+var pupupu = 0
 
 func _ready() -> void:
 	connect("body_entered", _on_body_entered)
@@ -11,8 +11,12 @@ func _ready() -> void:
 
 func _process(delta):
 	if player_in_area:
-		$Label2.visible = true
+		if pupupu < 1:
+			$Label2.visible = true
+		else:
+			$Label2.visible = false
 	if Input.is_key_pressed(KEY_E) and player_in_area:
+		pupupu += 1
 		$AnimationPlayer.play("talk")
 		if Global.keys_found < 4:
 			$Label.visible = true
@@ -27,3 +31,4 @@ func _on_body_exited(body: Node) -> void:
 	player_in_area = false
 	$Label.visible = false
 	$Label2.visible = false
+	pupupu = 0
