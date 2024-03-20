@@ -6,5 +6,4 @@ func _ready():
 
 
 func _process(delta):
-	print(Global.keys_found)
 	pass
