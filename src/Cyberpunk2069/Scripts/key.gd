@@ -14,8 +14,7 @@ func on_keydown(key):
 	if key.keycode == KEY_E and player_in_area:
 		keys_found += 1
 		$Label.visible = false
-		if $CanvasLayer.has_node("key1"):
-			$CanvasLayer/key1.text = "Ключів знайдено %d/4" % keys_found
+		$CanvasLayer/key1.text = "Ключів знайдено %d/4" % keys_found
 
 func _process(delta):
 	if Input.is_key_pressed(KEY_E) and player_in_area:
