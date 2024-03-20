@@ -5,20 +5,42 @@ var key_pressed = false
 var key_in_item_aura = false
 var current_key: Area2D = null
 
+var left_enemy = null
+var right_enemy = null
+
 func _ready():	
 	$ItemAura.connect("area_shape_entered", area_shape_entered)
 	$ItemAura.connect("area_shape_exited", area_shape_exited)
 	
-	$AttackLeft.connect("area_shape_exited", atack_left_shape_entered)
-	$AttackRight.connect("area_shape_exited", atack_right_shape_entered)
+	$AttackLeft.connect("area_shape_entered", atack_left_shape_entered)
+	$AttackRight.connect("area_shape_entered", atack_right_shape_entered)
+	
+	$AttackLeft.connect("area_shape_exited", atack_left_shape_exited)
+	$AttackRight.connect("area_shape_exited", atack_right_shape_exited)
 
 func atack_right_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
-	if not area.name.to_lower().find("hitbox"):
-		print("right")
+	if area.name.to_lower().find("hitbox"):
+		return
+		
+	var left_enemy = area
 
 func atack_left_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
-	if not area.name.to_lower().find("hitbox"):
-		print("left")
+	if area.name.to_lower().find("hitbox"):
+		return
+	print(area)
+	var right_enemy = area
+
+func atack_right_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
+	if area.name.to_lower().find("hitbox"):
+		return
+	
+	var left_enemy = null
+
+func atack_left_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
+	if area.name.to_lower().find("hitbox"):
+		return
+	
+	var right_enemy = null
 
 func area_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if not area.name.to_lower().find("key"):
@@ -77,6 +99,8 @@ func on_keydown(key):
 		pause()
 	if key.keycode == KEY_E:
 		pickup_key()
+	if key.keycode == KEY_SPACE:
+		atack()
 
 func pickup_key():
 	if not key_in_item_aura or not current_key.visible:
@@ -85,6 +109,11 @@ func pickup_key():
 	Global.keys_found += 1
 	current_key.visible = false
 	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % Global.keys_found
+
+func atack():
+	print($left_enemy)
+	if left_enemy or right_enemy:
+		print(left_enemy)
 
 func pause():
 	if paused:

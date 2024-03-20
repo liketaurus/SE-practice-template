@@ -3,9 +3,7 @@ res://Scenes/yep.tscn
 res://Scenes/Enemi.tscn
 res://Scenes/player.tscn
 res://Scenes/key.tscn
-res://Scripts/dialogue.gd
-res://Scripts/key.gd
+res://Scripts/Enemi.gd
 res://Scripts/player.gd
-res://global.gd
 res://Scripts/yep.gd
-res://Scenes/NPC.tscn
+res://global.gd

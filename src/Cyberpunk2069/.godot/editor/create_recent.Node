@@ -1,5 +1,6 @@
 CollisionShape2D
 Area2D
+Polygon2D
 Label
 AnimationPlayer
 AnimatedSprite2D
@@ -11,4 +12,3 @@ TileMap
 Control
 Window
 Node
-Button

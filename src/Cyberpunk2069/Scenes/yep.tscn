@@ -12554,7 +12554,7 @@ texture = ExtResource("3_b2hew")
 sources/0 = SubResource("TileSetAtlasSource_a58h8")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x00oi"]
-size = Vector2(252.149, 398.483)
+size = Vector2(126.075, 202.028)
 
 [node name="Yep" type="Node2D"]
 position = Vector2(1, 48)
@@ -12668,7 +12668,7 @@ visible = false
 texture = ExtResource("4_67ag0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Area2D"]
-position = Vector2(-1.07452, 1.04498)
+position = Vector2(61.9628, -97.1825)
 shape = SubResource("RectangleShape2D_x00oi")
 debug_color = Color(0, 0.6, 0.701961, 0)
 

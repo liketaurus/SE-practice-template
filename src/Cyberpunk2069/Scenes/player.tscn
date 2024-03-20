@@ -390,8 +390,8 @@ _data = {
 }
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ha4h7"]
-radius = 20.0899
-height = 79.5695
+radius = 16.4179
+height = 68.6567
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_asipa"]
 radius = 69.0652
@@ -454,6 +454,13 @@ position = Vector2(177, 614)
 scale = Vector2(0.224, 0.224)
 texture = ExtResource("4_4p3li")
 
+[node name="CardsCounter2" type="Label" parent="CanvasLayer"]
+offset_left = 778.0
+offset_right = 931.0
+offset_bottom = 23.0
+text = "Nope"
+horizontal_alignment = 2
+
 [node name="CardsCounter" type="Label" parent="CanvasLayer"]
 offset_left = 999.0
 offset_right = 1152.0
@@ -466,14 +473,21 @@ visible = false
 offset_top = 1.0
 offset_bottom = 1.0
 
-[node name="attack" type="Area2D" parent="."]
-visible = false
+[node name="AttackLeft" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
-position = Vector2(16, -33)
-rotation = 1.43641
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackLeft"]
+position = Vector2(-48, -33)
 scale = Vector2(2.01, 2.01)
 shape = SubResource("CapsuleShape2D_ha4h7")
+debug_color = Color(0.996078, 0, 0.156863, 0.419608)
+
+[node name="AttackRight" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackRight"]
+position = Vector2(48, -33)
+scale = Vector2(2.01, 2.01)
+shape = SubResource("CapsuleShape2D_ha4h7")
+debug_color = Color(0.996078, 0, 0.156863, 0.419608)
 
 [node name="ItemAura" type="Area2D" parent="."]
 
@@ -482,4 +496,5 @@ position = Vector2(0, -31)
 shape = SubResource("CircleShape2D_asipa")
 debug_color = Color(0.384314, 0.611765, 0, 0.419608)
 
-[connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]
+[connection signal="body_entered" from="AttackLeft" to="." method="_on_attack_body_entered"]
+[connection signal="body_entered" from="AttackRight" to="." method="_on_attack_body_entered"]

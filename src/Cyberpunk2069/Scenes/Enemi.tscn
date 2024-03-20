@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bq7dwapgvgf0b"]
+[gd_scene load_steps=28 format=3 uid="uid://bq7dwapgvgf0b"]
 
 [ext_resource type="Texture2D" uid="uid://kuvhqfox2d3l" path="res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/enemies x1.png" id="1_7n5k7"]
 [ext_resource type="Script" path="res://Scripts/Enemi.gd" id="1_pbthr"]
@@ -175,6 +175,9 @@ radius = 202.062
 [sub_resource type="CircleShape2D" id="CircleShape2D_63gnn"]
 radius = 64.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_lrxcn"]
+radius = 26.0192
+
 [node name="Enemi" type="CharacterBody2D"]
 safe_margin = 0.001
 script = ExtResource("1_pbthr")
@@ -202,6 +205,13 @@ debug_color = Color(0.427451, 0.603922, 0, 0.419608)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
 shape = SubResource("CircleShape2D_63gnn")
 debug_color = Color(0.196078, 0.615686, 0.517647, 0.419608)
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, -11)
+shape = SubResource("CircleShape2D_lrxcn")
+debug_color = Color(0.92549, 0, 0.67451, 0.419608)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
