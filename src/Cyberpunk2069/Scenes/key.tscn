@@ -1,17 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://b1l2vj4gdwyr4"]
 
+[ext_resource type="Script" path="res://Scripts/key.gd" id="1_txxou"]
 [ext_resource type="Texture2D" uid="uid://drwjqkpvlddn" path="res://Textures/Key.png" id="1_udrfl"]
 [ext_resource type="Texture2D" uid="uid://c8nuvpmhp3cto" path="res://Textures/KeyWhite.png" id="2_knxoj"]
 
-[sub_resource type="GDScript" id="GDScript_ey5tm"]
-script/source = "extends Area2D
-"
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_b0sfj"]
-radius = 54.037
+radius = 86.0058
 
 [node name="Key" type="Area2D"]
-script = SubResource("GDScript_ey5tm")
+script = ExtResource("1_txxou")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_b0sfj")
@@ -22,8 +19,12 @@ position = Vector2(-4, 2)
 scale = Vector2(0.077, 0.077)
 texture = ExtResource("1_udrfl")
 
-[node name="KeyWhite" type="Sprite2D" parent="CollisionShape2D"]
+[node name="Label" type="Label" parent="."]
 visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="KeyWhite" type="Sprite2D" parent="Label"]
 position = Vector2(-4, 2)
 scale = Vector2(0.0773125, 0.0773125)
 texture = ExtResource("2_knxoj")
