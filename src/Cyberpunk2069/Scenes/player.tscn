@@ -299,8 +299,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
-radius = 17.0
-height = 76.0
+radius = 14.0
+height = 34.0
 
 [sub_resource type="Animation" id="Animation_dqw3i"]
 resource_name = "idle"
@@ -362,7 +362,7 @@ _data = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_asipa"]
-radius = 91.4112
+radius = 69.0652
 
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1
@@ -370,11 +370,11 @@ up_direction = Vector2(0, 1)
 script = ExtResource("1_nlplg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, -75)
 scale = Vector2(2.07083, 1.875)
 sprite_frames = SubResource("SpriteFrames_jj3ld")
-animation = &"attack"
+animation = &"idle"
 autoplay = "attack"
-frame_progress = 0.921425
 
 [node name="Player" type="Sprite2D" parent="."]
 visible = false
@@ -385,7 +385,7 @@ hframes = 12
 vframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-9, 40)
+position = Vector2(0, -17)
 shape = SubResource("CapsuleShape2D_cnkmm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -436,5 +436,6 @@ offset_bottom = 1.0
 [node name="ItemAura" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemAura"]
+position = Vector2(0, -31)
 shape = SubResource("CircleShape2D_asipa")
 debug_color = Color(0.384314, 0.611765, 0, 0.419608)
