@@ -37,7 +37,6 @@ func _move(delta):
 		
 func _on_death_body_entered(body):
 	if body.name == "Player":
-		print(1)
 		$AnimatedSprite2D.stop()
 		_death()
 		
