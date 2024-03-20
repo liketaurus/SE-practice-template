@@ -3,3 +3,5 @@ res://Scenes/yep.tscn
 res://Scenes/Enemi.tscn
 res://Scenes/player.tscn
 res://Scenes/key.tscn
+res://Scenes/NPC.tscn
+res://Scripts/dialogue.gd
