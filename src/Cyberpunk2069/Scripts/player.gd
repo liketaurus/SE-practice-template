@@ -70,7 +70,6 @@ func on_keydown(key):
 		pickup_key()
 
 func pickup_key():
-	print(key_in_item_aura)
 	if not key_in_item_aura or not current_key.visible:
 		return
 	
