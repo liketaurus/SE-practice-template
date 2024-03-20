@@ -102,11 +102,11 @@ libraries = {
 [node name="Label3" type="Label" parent="."]
 visible = false
 offset_left = -77.0
-offset_top = -92.0
-offset_right = 46.0
+offset_top = -65.0
+offset_right = 38.0
 offset_bottom = 19.0
 
 [node name="Se-logo-transparent" type="Sprite2D" parent="Label3"]
-position = Vector2(91, 84)
-scale = Vector2(0.410622, 0.37395)
+position = Vector2(73, 43)
+scale = Vector2(0.699428, 0.615546)
 texture = ExtResource("3_qsd4e")
