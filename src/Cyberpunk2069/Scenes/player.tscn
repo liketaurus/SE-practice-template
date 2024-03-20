@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=56 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
 [ext_resource type="Texture2D" uid="uid://d3jt0a06csyvv" path="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png" id="2_jxuy7"]
@@ -295,12 +295,12 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 10.0
+"speed": 9.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cnkmm"]
-radius = 14.0
-height = 34.0
+radius = 18.0
+height = 66.0
 
 [sub_resource type="Animation" id="Animation_dqw3i"]
 resource_name = "idle"
@@ -361,6 +361,10 @@ _data = {
 "walk": SubResource("Animation_j0spp")
 }
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ha4h7"]
+radius = 20.0899
+height = 79.5695
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_asipa"]
 radius = 69.0652
 
@@ -373,8 +377,9 @@ script = ExtResource("1_nlplg")
 position = Vector2(8, -75)
 scale = Vector2(2.07083, 1.875)
 sprite_frames = SubResource("SpriteFrames_jj3ld")
-animation = &"idle"
+animation = &"attack"
 autoplay = "attack"
+frame_progress = 0.121085
 
 [node name="Player" type="Sprite2D" parent="."]
 visible = false
@@ -385,7 +390,7 @@ hframes = 12
 vframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -17)
+position = Vector2(0, -34)
 shape = SubResource("CapsuleShape2D_cnkmm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -433,9 +438,20 @@ visible = false
 offset_top = 1.0
 offset_bottom = 1.0
 
+[node name="attack" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
+position = Vector2(16, -33)
+rotation = 1.43641
+scale = Vector2(2.01, 2.01)
+shape = SubResource("CapsuleShape2D_ha4h7")
+
 [node name="ItemAura" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemAura"]
 position = Vector2(0, -31)
 shape = SubResource("CircleShape2D_asipa")
 debug_color = Color(0.384314, 0.611765, 0, 0.419608)
+
+[connection signal="body_entered" from="attack" to="." method="_on_attack_body_entered"]
