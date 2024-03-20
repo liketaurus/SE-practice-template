@@ -363,7 +363,7 @@ _data = {
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ha4h7"]
 radius = 20.0899
-height = 79.5695
+height = 63.6816
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_asipa"]
 radius = 69.0652
@@ -439,11 +439,9 @@ offset_top = 1.0
 offset_bottom = 1.0
 
 [node name="attack" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="attack"]
-position = Vector2(16, -33)
-rotation = 1.43641
+position = Vector2(48, -31)
 scale = Vector2(2.01, 2.01)
 shape = SubResource("CapsuleShape2D_ha4h7")
 
