@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://c0ycdqf20416c"]
+[gd_scene load_steps=37 format=3 uid="uid://c0ycdqf20416c"]
 
 [ext_resource type="Script" path="res://Scripts/yep.gd" id="1_0hs4w"]
 [ext_resource type="Texture2D" uid="uid://dys1v1227wnrb" path="res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png" id="1_1qgrx"]
@@ -11473,6 +11473,30 @@ size = Vector2(16, 127)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tq4co"]
 size = Vector2(16, 432)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oes60"]
+size = Vector2(100, 66)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8xgic"]
+size = Vector2(101, 65)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_esyyc"]
+size = Vector2(67.5, 95.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qrvdb"]
+size = Vector2(72, 97.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sir0l"]
+size = Vector2(1123, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_osslo"]
+size = Vector2(22, 1091.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2gh3"]
+size = Vector2(2273, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrb68"]
+size = Vector2(42, 395)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x00oi"]
 size = Vector2(252.149, 398.483)
 
@@ -11538,6 +11562,38 @@ debug_color = Color(0, 0.6, 0.701961, 0.419608)
 position = Vector2(8, 168)
 shape = SubResource("RectangleShape2D_tq4co")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(1044, 462)
+shape = SubResource("RectangleShape2D_oes60")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(851.5, 462.5)
+shape = SubResource("RectangleShape2D_8xgic")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(584.25, 485.75)
+shape = SubResource("RectangleShape2D_esyyc")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(601, 102.25)
+shape = SubResource("RectangleShape2D_qrvdb")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(-547.5, -58)
+shape = SubResource("RectangleShape2D_sir0l")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(-1098, 502.25)
+shape = SubResource("RectangleShape2D_osslo")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(48.5, 1035.5)
+shape = SubResource("RectangleShape2D_e2gh3")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
+position = Vector2(1172, 826.5)
+shape = SubResource("RectangleShape2D_xrb68")
 
 [node name="Sprites" type="Node" parent="."]
 
