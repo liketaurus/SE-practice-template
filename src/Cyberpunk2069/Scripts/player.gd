@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 var paused = false
 var key_pressed = false
-var keys_found = 0
 var key_in_item_aura = false
 var current_key: Area2D = null
 
@@ -73,9 +72,9 @@ func pickup_key():
 	if not key_in_item_aura or not current_key.visible:
 		return
 	
-	keys_found += 1
+	Global.keys_found += 1
 	current_key.visible = false
-	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % keys_found
+	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % Global.keys_found
 
 func pause():
 	if paused:
