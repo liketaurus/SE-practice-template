@@ -1,7 +1,7 @@
 res://Scenes/Enemi.tscn
-res://Scenes/yep.tscn
+res://Scenes/player.tscn
 res://Scenes/menu.tscn
+res://Scenes/yep.tscn
 res://Scenes/key.tscn
 res://Scenes/NPC.tscn
-res://Scenes/player.tscn
 res://Scripts/Enemi.gd
