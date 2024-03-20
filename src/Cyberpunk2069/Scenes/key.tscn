@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b1l2vj4gdwyr4"]
+[gd_scene load_steps=5 format=3 uid="uid://b1l2vj4gdwyr4"]
 
 [ext_resource type="Texture2D" uid="uid://drwjqkpvlddn" path="res://Textures/Key.png" id="1_udrfl"]
+[ext_resource type="Texture2D" uid="uid://c8nuvpmhp3cto" path="res://Textures/KeyWhite.png" id="2_knxoj"]
 
 [sub_resource type="GDScript" id="GDScript_ey5tm"]
 script/source = "extends Area2D
@@ -20,3 +21,9 @@ debug_color = Color(0.65098, 0.435294, 0.741176, 0.419608)
 position = Vector2(-4, 2)
 scale = Vector2(0.077, 0.077)
 texture = ExtResource("1_udrfl")
+
+[node name="KeyWhite" type="Sprite2D" parent="CollisionShape2D"]
+visible = false
+position = Vector2(-4, 2)
+scale = Vector2(0.0773125, 0.0773125)
+texture = ExtResource("2_knxoj")
