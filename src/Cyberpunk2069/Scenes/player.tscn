@@ -479,6 +479,7 @@ offset_bottom = 1.0
 position = Vector2(-48, -33)
 scale = Vector2(2.01, 2.01)
 shape = SubResource("CapsuleShape2D_ha4h7")
+disabled = true
 debug_color = Color(0.996078, 0, 0.156863, 0.419608)
 
 [node name="AttackRight" type="Area2D" parent="."]
@@ -487,6 +488,7 @@ debug_color = Color(0.996078, 0, 0.156863, 0.419608)
 position = Vector2(48, -33)
 scale = Vector2(2.01, 2.01)
 shape = SubResource("CapsuleShape2D_ha4h7")
+disabled = true
 debug_color = Color(0.996078, 0, 0.156863, 0.419608)
 
 [node name="ItemAura" type="Area2D" parent="."]

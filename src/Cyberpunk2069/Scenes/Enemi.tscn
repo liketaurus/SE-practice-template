@@ -178,7 +178,7 @@ radius = 64.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_lrxcn"]
 radius = 26.0192
 
-[node name="Enemi" type="CharacterBody2D"]
+[node name="Enemi" type="CharacterBody2D" groups=["EnemyHitbox"]]
 safe_margin = 0.001
 script = ExtResource("1_pbthr")
 
@@ -206,9 +206,9 @@ debug_color = Color(0.427451, 0.603922, 0, 0.419608)
 shape = SubResource("CircleShape2D_63gnn")
 debug_color = Color(0.196078, 0.615686, 0.517647, 0.419608)
 
-[node name="Hitbox" type="Area2D" parent="."]
+[node name="Hitbox" type="Area2D" parent="." groups=["EnemyHitbox"]]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" groups=["EnemyHitbox"]]
 position = Vector2(0, -11)
 shape = SubResource("CircleShape2D_lrxcn")
 debug_color = Color(0.92549, 0, 0.67451, 0.419608)

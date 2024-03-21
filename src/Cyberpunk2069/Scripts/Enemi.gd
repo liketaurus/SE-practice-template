@@ -33,12 +33,17 @@ func _move(delta):
 	velocity = direction * speed
 	
 	move_and_slide()
-	
 		
 func _on_death_body_entered(body):
 	if body.name == "Player":
 		$AnimatedSprite2D.stop()
 		_death()
+
+func take_damage():
+	$AnimatedSprite2D.play("death")
+	
+	await get_tree().create_timer(1)
+	queue_free()
 		
 func _death ():
 	animation.play("death")
