@@ -7,11 +7,10 @@ var speed = 100
 var d = 0
 @onready var animation = $AnimatedSprite2D
 
+var timer
+
 func _process(delta):
 	_progress(delta)
-
-	if player_auch:
-		Global.hp -= 1
 
 	if Input.is_key_pressed(KEY_SPACE) and player_in_area:
 		d += 1
@@ -22,7 +21,18 @@ func _process(delta):
 			speed = 0
 	elif player_in_area:
 		_move(delta)
-	
+
+func _init():
+	timer = Timer.new()
+	add_child(timer)
+	timer.autostart = true
+	timer.wait_time = 3.0
+	timer.connect("timeout", self.timeout)
+
+func _timeout():
+	if player_auch:
+		Global.hp -= 1
+
 func _progress(delta):
 	if velocity == Vector2.ZERO and d < 1:
 		$AnimatedSprite2D.play("idle")
@@ -65,3 +75,4 @@ func _on_animated_sprite_2d_animation_finished():
 func _on_auch_body_entered(body):
 	if body.name == "Player":
 		player_auch = true
+
