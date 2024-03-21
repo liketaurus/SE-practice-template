@@ -74,20 +74,6 @@ func _move(delta):
 	velocity = direction * speed
 	
 	move_and_slide()
-	
-"""
-func _on_death_body_entered(body):
-	if body.name == "Player":
-		$AnimatedSprite2D.stop()
-		_death()
-		
-func _death():
-	pass
-	
-
-func _on_animated_sprite_2d_animation_finished():
-	pass
-"""
 
 func _on_auch_body_entered(body):
 	if body.name == "Player":
@@ -96,7 +82,6 @@ func _on_auch_body_entered(body):
 func _on_auch_body_exited(body):
 	if body.name == "Player":
 		player_auch = false
-
 
 func _on_death_body_entered(body):
 	if body.name == "Player":
