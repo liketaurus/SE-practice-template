@@ -33,7 +33,7 @@ func _init():
 	timer = Timer.new()
 	add_child(timer)
 	timer.autostart = true
-	timer.wait_time = 2.0
+	timer.wait_time = 1.5
 	timer.connect("timeout", self.timeout)
 	
 	timer2 = Timer.new()

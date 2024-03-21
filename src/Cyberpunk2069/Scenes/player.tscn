@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=62 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
 [ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
@@ -390,12 +390,21 @@ _data = {
 "walk": SubResource("Animation_j0spp")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_63bw4"]
+bg_color = Color(0, 0, 0, 0.607843)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+expand_margin_left = 3.0
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ha4h7"]
 radius = 16.4179
 height = 68.6567
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_asipa"]
-radius = 69.0652
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k5o0g"]
+radius = 17.0
+height = 74.0
 
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1
@@ -455,17 +464,12 @@ position = Vector2(177, 614)
 scale = Vector2(0.224, 0.224)
 texture = ExtResource("4_4p3li")
 
-[node name="CardsCounter2" type="Label" parent="CanvasLayer"]
-offset_left = 778.0
-offset_right = 931.0
-offset_bottom = 23.0
-text = "Nope"
-horizontal_alignment = 2
-
 [node name="CardsCounter" type="Label" parent="CanvasLayer"]
-offset_left = 999.0
-offset_right = 1152.0
-offset_bottom = 23.0
+offset_left = 986.0
+offset_top = 8.0
+offset_right = 1139.0
+offset_bottom = 31.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_63bw4")
 text = "Карт знайдено 0/4 "
 horizontal_alignment = 2
 
@@ -499,7 +503,7 @@ debug_color = Color(0.996078, 0, 0.156863, 0.419608)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ItemAura"]
 position = Vector2(0, -31)
-shape = SubResource("CircleShape2D_asipa")
+shape = SubResource("CapsuleShape2D_k5o0g")
 debug_color = Color(0.384314, 0.611765, 0, 0.419608)
 
 [connection signal="body_entered" from="AttackLeft" to="." method="_on_attack_body_entered"]
