@@ -454,13 +454,6 @@ position = Vector2(177, 614)
 scale = Vector2(0.224, 0.224)
 texture = ExtResource("4_4p3li")
 
-[node name="CardsCounter2" type="Label" parent="CanvasLayer"]
-offset_left = 778.0
-offset_right = 931.0
-offset_bottom = 23.0
-text = "Nope"
-horizontal_alignment = 2
-
 [node name="CardsCounter" type="Label" parent="CanvasLayer"]
 offset_left = 999.0
 offset_right = 1152.0
