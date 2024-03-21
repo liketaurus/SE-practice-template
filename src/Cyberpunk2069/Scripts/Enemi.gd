@@ -4,6 +4,7 @@ var player = null
 var player_in_area = false
 var player_auch = false
 var player_fight = false
+var is_dead = 0
 var speed = 100
 var d = 0
 @onready var animation = $AnimatedSprite2D
@@ -16,6 +17,7 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_SPACE) and player_fight:
 		d += 1
 		if d == 1:
+			is_dead = 1
 			animation.play("death")
 			speed = 0
 		elif d > 1:
@@ -31,7 +33,7 @@ func _init():
 	timer.connect("timeout", self.timeout)
 
 func timeout():
-	if player_auch:
+	if player_auch and is_dead < 1:
 		Global.hp -= 1
 
 func _progress(delta):
