@@ -1,7 +1,8 @@
+Timer
+Label
 CollisionShape2D
 Area2D
 Polygon2D
-Label
 AnimationPlayer
 AnimatedSprite2D
 CharacterBody2D
@@ -11,4 +12,3 @@ StaticBody2D
 TileMap
 Control
 Window
-Node

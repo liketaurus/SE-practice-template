@@ -117,6 +117,6 @@ offset_right = 38.0
 offset_bottom = 19.0
 
 [node name="Se-logo-transparent" type="Sprite2D" parent="Label3"]
-position = Vector2(73, 43)
-scale = Vector2(0.699428, 0.615546)
+position = Vector2(-6, 29)
+scale = Vector2(0.313527, 0.294905)
 texture = ExtResource("3_qsd4e")

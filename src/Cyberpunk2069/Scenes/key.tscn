@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://c8nuvpmhp3cto" path="res://Textures/KeyWhite.png" id="2_knxoj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b0sfj"]
-radius = 82.0975
+radius = 88.0511
 
 [node name="Key" type="Area2D"]
 script = ExtResource("1_txxou")

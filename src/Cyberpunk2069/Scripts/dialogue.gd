@@ -31,4 +31,5 @@ func _on_body_exited(body: Node) -> void:
 	player_in_area = false
 	$Label.visible = false
 	$Label2.visible = false
+	$Label3.visible = false
 	pupupu = 0

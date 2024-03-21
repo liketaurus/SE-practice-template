@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxrcvrlb8g78a"]
+
+[ext_resource type="Script" path="res://Scripts/dead_menu.gd" id="1_cr1ax"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25thd"]
+bg_color = Color(0, 0, 0, 0.537255)
+
+[node name="DeadMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cr1ax")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = -144.0
+offset_top = -114.0
+offset_right = 140.0
+offset_bottom = 128.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_25thd")
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 37.0
+offset_right = 264.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 35
+text = "Ви програли"
+horizontal_alignment = 1
+
+[node name="Exit" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 129.0
+offset_right = 228.0
+offset_bottom = 175.0
+rotation = 0.00106958
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 29
+text = "Вийти"
+
+[connection signal="pressed" from="Panel/Exit" to="." method="_on_exit_pressed"]
