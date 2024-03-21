@@ -2,7 +2,8 @@ extends CharacterBody2D
 
 var player = null
 var player_in_area = false
-var player_auch
+var player_auch = false
+var player_fight = false
 var speed = 100
 var d = 0
 @onready var animation = $AnimatedSprite2D
@@ -12,7 +13,7 @@ var timer
 func _process(delta):
 	_progress(delta)
 
-	if Input.is_key_pressed(KEY_SPACE) and player_in_area:
+	if Input.is_key_pressed(KEY_SPACE) and player_fight:
 		d += 1
 		if d == 1:
 			animation.play("death")
@@ -58,7 +59,7 @@ func _move(delta):
 	
 	move_and_slide()
 	
-		
+"""
 func _on_death_body_entered(body):
 	if body.name == "Player":
 		$AnimatedSprite2D.stop()
@@ -70,14 +71,21 @@ func _death():
 
 func _on_animated_sprite_2d_animation_finished():
 	pass
-
+"""
 
 func _on_auch_body_entered(body):
 	if body.name == "Player":
 		player_auch = true
 
-
-
 func _on_auch_body_exited(body):
 	if body.name == "Player":
 		player_auch = false
+
+
+func _on_death_body_entered(body):
+	if body.name == "Player":
+		player_fight = true
+
+func _on_death_body_exited(body):
+	if body.name == "Player":
+		player_fight = false

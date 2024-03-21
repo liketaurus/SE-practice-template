@@ -175,5 +175,6 @@ debug_color = Color(0.92549, 0, 0.67451, 0.419608)
 [connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
 [connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
 [connection signal="body_entered" from="death" to="." method="_on_death_body_entered"]
+[connection signal="body_exited" from="death" to="." method="_on_death_body_exited"]
 [connection signal="body_entered" from="auch" to="." method="_on_auch_body_entered"]
 [connection signal="body_exited" from="auch" to="." method="_on_auch_body_exited"]
