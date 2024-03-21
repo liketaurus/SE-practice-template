@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://bq7dwapgvgf0b"]
+[gd_scene load_steps=23 format=3 uid="uid://bq7dwapgvgf0b"]
 
 [ext_resource type="Texture2D" uid="uid://kuvhqfox2d3l" path="res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/enemies x1.png" id="1_7n5k7"]
 [ext_resource type="Script" path="res://Scripts/Enemi.gd" id="1_pbthr"]
+[ext_resource type="Texture2D" uid="uid://doj5q74cedgyt" path="res://Textures/HP.png" id="3_porh4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wemss"]
 height = 26.0
@@ -170,6 +171,21 @@ debug_color = Color(0.196078, 0.615686, 0.517647, 0.419608)
 position = Vector2(0, -11)
 shape = SubResource("CircleShape2D_lrxcn")
 debug_color = Color(0.92549, 0, 0.67451, 0.419608)
+
+[node name="Hp" type="Sprite2D" parent="."]
+position = Vector2(-20.5, -38.5)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("3_porh4")
+
+[node name="Hp2" type="Sprite2D" parent="."]
+position = Vector2(0.500002, -38.5)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("3_porh4")
+
+[node name="Hp3" type="Sprite2D" parent="."]
+position = Vector2(21.5, -38.5)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("3_porh4")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
