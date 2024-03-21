@@ -29,7 +29,7 @@ func _init():
 	timer.wait_time = 3.0
 	timer.connect("timeout", self.timeout)
 
-func _timeout():
+func timeout():
 	if player_auch:
 		Global.hp -= 1
 
