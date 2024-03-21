@@ -96,6 +96,7 @@ func _process(delta):
 	elif Global.hp == 1:
 		$CanvasLayer/Hp2.visible = false
 	elif Global.hp == 0:
+		$CanvasLayer/Hp.visible = false
 		Engine.time_scale = 0
 		$DeadMenu.visible = true
 
