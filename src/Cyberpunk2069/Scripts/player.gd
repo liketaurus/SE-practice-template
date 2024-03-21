@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var paused = false
+var dead = false
 var key_pressed = false
 var key_in_item_aura = false
 var current_key: Area2D = null
@@ -96,9 +97,9 @@ func _process(delta):
 	elif Global.hp == 1:
 		$CanvasLayer/Hp2.visible = false
 	elif Global.hp == 0:
+		dead = true
 		$CanvasLayer/Hp.visible = false
-		Engine.time_scale = 0
-		$DeadMenu.visible = true
+		dead_menu()
 
 func _unhandled_input(event):
 	if event is InputEventKey and event.pressed and not event.echo:
@@ -133,5 +134,13 @@ func pause():
 	else:
 		$Pause.show()
 		Engine.time_scale = 0
+
+func dead_menu():
+	if dead:
+		$DeadMenu.show()
+		Engine.time_scale = 0
+	else:
+		$DeadMenu.hide()
+		Engine.time_scale = 1
 
 	paused = false
