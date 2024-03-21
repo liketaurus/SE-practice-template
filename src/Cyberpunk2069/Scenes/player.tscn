@@ -470,8 +470,8 @@ horizontal_alignment = 2
 
 [node name="Pause" parent="." instance=ExtResource("3_qjbvx")]
 visible = false
-offset_top = 1.0
-offset_bottom = 1.0
+offset_top = -35.0
+offset_bottom = -35.0
 
 [node name="AttackLeft" type="Area2D" parent="."]
 

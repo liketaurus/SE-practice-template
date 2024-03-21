@@ -2,15 +2,29 @@ extends CharacterBody2D
 
 var player = null
 var player_in_area = false
+var player_auch = false
 var speed = 100
+var d = 0
 @onready var animation = $AnimatedSprite2D
 
 func _process(delta):
 	_progress(delta)
-	_move(delta)
+
+	if player_auch:
+		Global.hp -= 1
+
+	if Input.is_key_pressed(KEY_SPACE) and player_in_area:
+		d += 1
+		if d == 1:
+			animation.play("death")
+			speed = 0
+		elif d > 1:
+			speed = 0
+	elif player_in_area:
+		_move(delta)
 	
 func _progress(delta):
-	if velocity == Vector2.ZERO:
+	if velocity == Vector2.ZERO and d < 1:
 		$AnimatedSprite2D.play("idle")
 	elif speed == 100:
 		$AnimatedSprite2D.play("run")
@@ -40,10 +54,14 @@ func _on_death_body_entered(body):
 		$AnimatedSprite2D.stop()
 		_death()
 		
-func _death ():
-	animation.play("death")
-	await animation.animation_finished
-	queue_free()
+func _death():
+	pass
 	
+
 func _on_animated_sprite_2d_animation_finished():
-	pass # Replace with function body.
+	pass
+
+
+func _on_auch_body_entered(body):
+	if body.name == "Player":
+		player_auch = true
