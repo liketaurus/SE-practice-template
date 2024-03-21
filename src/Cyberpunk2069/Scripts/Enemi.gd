@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 var player = null
 var player_in_area = false
+var player_auch
 var speed = 100
 var d = 0
 @onready var animation = $AnimatedSprite2D
@@ -9,11 +10,7 @@ var d = 0
 func _process(delta):
 	_progress(delta)
 
-	if Global.player_auch == 1:
-		Global.hp -= 1
-	elif Global.player_auch == 2:
-		Global.hp -= 1
-	elif Global.player_auch == 3:
+	if player_auch:
 		Global.hp -= 1
 
 	if Input.is_key_pressed(KEY_SPACE) and player_in_area:
@@ -67,4 +64,4 @@ func _on_animated_sprite_2d_animation_finished():
 
 func _on_auch_body_entered(body):
 	if body.name == "Player":
-		Global.player_auch = 1
+		player_auch = true
