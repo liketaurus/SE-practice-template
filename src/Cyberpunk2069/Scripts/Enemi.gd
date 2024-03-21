@@ -76,3 +76,8 @@ func _on_auch_body_entered(body):
 	if body.name == "Player":
 		player_auch = true
 
+
+
+func _on_auch_body_exited(body):
+	if body.name == "Player":
+		player_auch = false
