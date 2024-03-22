@@ -5,45 +5,11 @@ var dead = false
 var key_pressed = false
 var key_in_item_aura = false
 var current_key: Area2D = null
-"""
-var left_enemy: Area2D = null
-var right_enemy: Area2D = null
-"""
+
 func _ready():
 	$ItemAura.connect("area_shape_entered", area_shape_entered)
 	$ItemAura.connect("area_shape_exited", area_shape_exited)
-"""
-	$AttackLeft.connect("area_shape_entered", atack_left_shape_entered)
-	$AttackRight.connect("area_shape_entered", atack_right_shape_entered)
 	
-	$AttackLeft.connect("area_shape_exited", atack_left_shape_exited)
-	$AttackRight.connect("area_shape_exited", atack_right_shape_exited)
-"""
-"""
-func atack_right_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
-	if area.name.to_lower().find("hitbox"):
-		return
-		
-	right_enemy = area
-
-func atack_left_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
-	if area.name.to_lower().find("hitbox"):
-		return
-		
-	left_enemy = area
-
-func atack_right_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
-	if area.name.to_lower().find("hitbox"):
-		return
-	
-	right_enemy = null
-
-func atack_left_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
-	if area.name.to_lower().find("hitbox"):
-		return
-	
-	left_enemy = null
-"""
 func area_shape_entered(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
 	if not area.name.to_lower().find("key"):
 		on_key_in_item_area(area)
@@ -60,7 +26,7 @@ func area_shape_exited(area: Area2D):
 		return
 	
 	key_in_item_aura = false
-	current_key = area
+	current_key = null
 
 func _process(delta):
 	velocity = Vector2.ZERO
