@@ -21,7 +21,8 @@ func on_key_in_item_area(area: Area2D):
 	key_in_item_aura = true
 	current_key = area
 
-func area_shape_exited(area: Area2D):
+func area_shape_exited(area_rid:RID, area:Area2D, area_shape_index:int, local_shape_index:int):
+	print(1)
 	if not area.visible:
 		return
 	
