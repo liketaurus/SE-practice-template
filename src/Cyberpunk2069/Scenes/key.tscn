@@ -16,7 +16,7 @@ debug_color = Color(0.65098, 0.435294, 0.741176, 0.419608)
 
 [node name="Key" type="Sprite2D" parent="CollisionShape2D"]
 position = Vector2(-4, 2)
-scale = Vector2(0.077, 0.077)
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("1_udrfl")
 
 [node name="Label" type="Label" parent="."]
@@ -26,5 +26,5 @@ offset_bottom = 23.0
 
 [node name="KeyWhite" type="Sprite2D" parent="Label"]
 position = Vector2(-4, 2)
-scale = Vector2(0.0773125, 0.0773125)
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_knxoj")

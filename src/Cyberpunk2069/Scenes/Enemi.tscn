@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://bq7dwapgvgf0b"]
+[gd_scene load_steps=23 format=3 uid="uid://bq7dwapgvgf0b"]
 
 [ext_resource type="Texture2D" uid="uid://kuvhqfox2d3l" path="res://assets/Tech Dungeon Roguelite - Asset Pack/Enemies/No Outlines/enemies x1.png" id="1_7n5k7"]
 [ext_resource type="Script" path="res://Scripts/Enemi.gd" id="1_pbthr"]
+[ext_resource type="Texture2D" uid="uid://doj5q74cedgyt" path="res://Textures/HP.png" id="3_porh4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wemss"]
 height = 26.0
@@ -10,33 +11,9 @@ height = 26.0
 atlas = ExtResource("1_7n5k7")
 region = Rect2(0, 96, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7yjs5"]
-atlas = ExtResource("1_7n5k7")
-region = Rect2(32, 96, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_eybe3"]
 atlas = ExtResource("1_7n5k7")
 region = Rect2(64, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8q8mi"]
-atlas = ExtResource("1_7n5k7")
-region = Rect2(96, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_rdxd7"]
-atlas = ExtResource("1_7n5k7")
-region = Rect2(128, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_48j05"]
-atlas = ExtResource("1_7n5k7")
-region = Rect2(160, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tyvrj"]
-atlas = ExtResource("1_7n5k7")
-region = Rect2(192, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oxyrw"]
-atlas = ExtResource("1_7n5k7")
-region = Rect2(224, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_agfsa"]
 atlas = ExtResource("1_7n5k7")
@@ -93,25 +70,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_qj525")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7yjs5")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_eybe3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8q8mi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rdxd7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_48j05")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tyvrj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oxyrw")
 }],
 "loop": true,
 "name": &"death",
@@ -173,12 +132,13 @@ animations = [{
 radius = 202.062
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_63gnn"]
-radius = 64.0
+radius = 89.0898
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lrxcn"]
-radius = 26.0192
+radius = 49.0
 
-[node name="Enemi" type="CharacterBody2D" groups=["EnemyHitbox"]]
+[node name="Enemi" type="CharacterBody2D"]
+collision_mask = 16
 safe_margin = 0.001
 script = ExtResource("1_pbthr")
 
@@ -191,10 +151,8 @@ scale = Vector2(2.61328, 2.82422)
 sprite_frames = SubResource("SpriteFrames_uee0t")
 animation = &"death"
 autoplay = "idle"
-frame_progress = 0.199723
 
 [node name="Detector" type="Area2D" parent="."]
-visible = false
 
 [node name="zone" type="CollisionShape2D" parent="Detector"]
 shape = SubResource("CircleShape2D_ybdoh")
@@ -203,17 +161,36 @@ debug_color = Color(0.427451, 0.603922, 0, 0.419608)
 [node name="death" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
+position = Vector2(0, -10)
 shape = SubResource("CircleShape2D_63gnn")
 debug_color = Color(0.196078, 0.615686, 0.517647, 0.419608)
 
-[node name="Hitbox" type="Area2D" parent="." groups=["EnemyHitbox"]]
+[node name="auch" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" groups=["EnemyHitbox"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="auch"]
 position = Vector2(0, -11)
 shape = SubResource("CircleShape2D_lrxcn")
 debug_color = Color(0.92549, 0, 0.67451, 0.419608)
+
+[node name="Hp" type="Sprite2D" parent="."]
+position = Vector2(-20.5, -38.5)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("3_porh4")
+
+[node name="Hp2" type="Sprite2D" parent="."]
+position = Vector2(0.500002, -38.5)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("3_porh4")
+
+[node name="Hp3" type="Sprite2D" parent="."]
+position = Vector2(21.5, -38.5)
+scale = Vector2(0.066, 0.066)
+texture = ExtResource("3_porh4")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
 [connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
 [connection signal="body_entered" from="death" to="." method="_on_death_body_entered"]
+[connection signal="body_exited" from="death" to="." method="_on_death_body_exited"]
+[connection signal="body_entered" from="auch" to="." method="_on_auch_body_entered"]
+[connection signal="body_exited" from="auch" to="." method="_on_auch_body_exited"]

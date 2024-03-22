@@ -1,6 +1,5 @@
-res://Scenes/menu.tscn
 res://Scenes/yep.tscn
-res://Scenes/Enemi.tscn
+res://Scenes/menu.tscn
 res://Scenes/player.tscn
-res://Scripts/Enemi.gd
-res://Scripts/player.gd
+res://Scenes/Enemi.tscn
+res://Scenes/key.tscn
