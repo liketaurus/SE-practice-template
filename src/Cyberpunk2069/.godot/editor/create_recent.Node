@@ -1,6 +1,7 @@
+CollisionShape2D
+TileMap
 Timer
 Label
-CollisionShape2D
 Area2D
 Polygon2D
 AnimationPlayer
@@ -9,6 +10,5 @@ CharacterBody2D
 Node2D
 CanvasLayer
 StaticBody2D
-TileMap
 Control
 Window

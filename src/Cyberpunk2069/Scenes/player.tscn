@@ -403,7 +403,7 @@ height = 68.6567
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k5o0g"]
 radius = 17.0
-height = 74.0
+height = 60.0
 
 [node name="Player" type="CharacterBody2D"]
 texture_filter = 1
@@ -412,7 +412,7 @@ script = ExtResource("1_nlplg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(8, -75)
-scale = Vector2(2.07083, 1.875)
+scale = Vector2(1.75, 1.585)
 sprite_frames = SubResource("SpriteFrames_jj3ld")
 animation = &"attack"
 autoplay = "attack"
