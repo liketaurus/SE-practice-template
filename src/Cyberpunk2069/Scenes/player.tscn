@@ -529,7 +529,7 @@ shape = SubResource("CapsuleShape2D_k5o0g")
 debug_color = Color(0.384314, 0.611765, 0, 0.419608)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 10.0
 
 [connection signal="body_entered" from="AttackLeft" to="." method="_on_attack_body_entered"]
 [connection signal="body_entered" from="AttackRight" to="." method="_on_attack_body_entered"]
