@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://btb3mslexwkb0"]
+[gd_scene load_steps=64 format=3 uid="uid://btb3mslexwkb0"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_nlplg"]
 [ext_resource type="Texture2D" uid="uid://beuri4f2gguh2" path="res://assets/Player.png" id="2_qduuw"]
@@ -390,6 +390,13 @@ _data = {
 "walk": SubResource("Animation_j0spp")
 }
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkbe8"]
+bg_color = Color(0.0588235, 0.0156863, 0.14902, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qdrt0"]
+line_spacing = 10.0
+font_size = 18
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_63bw4"]
 bg_color = Color(0, 0, 0, 0.607843)
 corner_radius_top_left = 3
@@ -447,6 +454,21 @@ libraries = {
 }
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Start" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = -28.0
+offset_top = -22.0
+offset_right = 1180.0
+offset_bottom = 671.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jkbe8")
+text = "У світі, що потопає в таємничій темряві, заговорили легенди про великого героя, здатного принести світло в темряву,
+ зупинити бурхливе зло і повернути світ у гармонію. Вам належить взяти на себе його роль 
+і вступити в епічну подорож крізь похмурі таємниці, щоб урятувати світ від майбутньої загибелі.
+ Хоч для початку буде достатньо знайти 4 картки пам’яті у майбутньому все може бути складніше."
+label_settings = SubResource("LabelSettings_qdrt0")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Hp" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(44, 614)
@@ -506,5 +528,9 @@ position = Vector2(0, -31)
 shape = SubResource("CapsuleShape2D_k5o0g")
 debug_color = Color(0.384314, 0.611765, 0, 0.419608)
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
 [connection signal="body_entered" from="AttackLeft" to="." method="_on_attack_body_entered"]
 [connection signal="body_entered" from="AttackRight" to="." method="_on_attack_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

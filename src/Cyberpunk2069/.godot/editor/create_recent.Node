@@ -1,7 +1,7 @@
+Label
+Timer
 CollisionShape2D
 TileMap
-Timer
-Label
 Area2D
 Polygon2D
 AnimationPlayer
