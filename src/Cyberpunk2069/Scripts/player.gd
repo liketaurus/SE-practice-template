@@ -7,6 +7,14 @@ var key_in_item_aura = false
 var current_key: Area2D = null
 
 func _ready():
+	$CanvasLayer/Start.visible = true
+	
+	$CanvasLayer/Hp.visible = false
+	$CanvasLayer/Hp2.visible = false
+	$CanvasLayer/Hp3.visible = false
+	$CanvasLayer/CardsCounter.visible = false
+	
+	$Timer.start()
 	$ItemAura.connect("area_shape_entered", area_shape_entered)
 	$ItemAura.connect("area_shape_exited", area_shape_exited)
 	
@@ -110,3 +118,13 @@ func dead_menu():
 		Engine.time_scale = 1
 
 	paused = false
+
+
+func _on_timer_timeout():
+	$CanvasLayer/Start.visible = false
+	
+	$CanvasLayer/Hp.visible = true
+	$CanvasLayer/Hp2.visible = true
+	$CanvasLayer/Hp3.visible = true
+	$CanvasLayer/CardsCounter.visible = true
+	pass # Replace with function body.
