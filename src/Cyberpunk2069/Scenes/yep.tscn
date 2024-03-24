@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://c0ycdqf20416c"]
+[gd_scene load_steps=52 format=3 uid="uid://c0ycdqf20416c"]
 
 [ext_resource type="Script" path="res://Scripts/yep.gd" id="1_0hs4w"]
 [ext_resource type="Texture2D" uid="uid://dys1v1227wnrb" path="res://assets/Tech Dungeon Roguelite - Asset Pack/tileset x2.png" id="1_1qgrx"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://uvgmivoagie1" path="res://assets/2231.png" id="8_lckfc"]
 [ext_resource type="PackedScene" uid="uid://b1l2vj4gdwyr4" path="res://Scenes/key.tscn" id="9_bdg6a"]
 [ext_resource type="PackedScene" uid="uid://bq7dwapgvgf0b" path="res://Scenes/Enemi.tscn" id="10_383m0"]
+[ext_resource type="AudioStream" uid="uid://blnsisslpc8fx" path="res://assets/ESCP - Neon Metaphor (freetouse.com).mp3" id="16_oua2g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g7h05"]
 texture = ExtResource("1_1qgrx")
@@ -13161,3 +13162,8 @@ position = Vector2(-109, 856)
 
 [node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
 position = Vector2(306, 436)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_oua2g")
+volume_db = -31.124
+autoplay = true
