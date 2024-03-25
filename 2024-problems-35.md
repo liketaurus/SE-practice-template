@@ -44,7 +44,7 @@
 
 ---
 
-💡 Приклади для натхнення - [Code a Magic 8 Ball CSS Animation Website in 5min | CSS For Beginners | 5min Tech Project](https://www.youtube.com/watch?v=wlcoJVn8y3I), [Книга змін](https://github.com/liketaurus/Changes) ([вихідні коди](https://github.com/liketaurus/Changes)), [App Inventor 2 Magic 8 Ball Tutorial](https://www.youtube.com/watch?v=HCdvJ7rpJuY). Думаю, в Мережі ще купа подібних прикладів...
+💡 Приклади для натхнення - [Code a Magic 8 Ball CSS Animation Website in 5min](https://www.youtube.com/watch?v=wlcoJVn8y3I), [Книга змін](https://github.com/liketaurus/Changes) ([вихідні коди](https://github.com/liketaurus/Changes)), [App Inventor 2 Magic 8 Ball Tutorial](https://www.youtube.com/watch?v=HCdvJ7rpJuY). Думаю, в Мережі ще купа подібних прикладів...
 
 💡 Текстовий контент та вихідні коди ви можете генерувати з допомогою AI ([Gemini](https://gemini.google.com/), [Copilot](https://copilot.microsoft.com/), [Chat GPT](https://chat.openai.com/), [Claude](https://claude.ai/), [YOU](https://you.com/) тощо), графічні матеріали - також ([Microsoft Designer](https://designer.microsoft.com/), [DALL-E](https://labs.openai.com/), [Gencraft](https://labs.openai.com/),[Monica](https://monica.im/image-tools/ai-image-generator-from-text), [Koala](https://koala.sh/tools/free-ai-stock-image-generator),[Fotor](https://www.fotor.com/ai-image-generator/) тощо). **Це не заборонено, а навіть вітається!**
 
