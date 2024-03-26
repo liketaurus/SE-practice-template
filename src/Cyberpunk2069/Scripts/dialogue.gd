@@ -36,4 +36,5 @@ func _on_body_exited(body: Node) -> void:
 
 
 func _on_button_pressed():
-	pass # Replace with function body.
+	OS.shell_open("https://sites.google.com/polytechnic.co.cc/main/%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0/%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%97?authuser=0#h.ho48gail8chq")
+	
