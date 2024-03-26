@@ -7,4 +7,4 @@ res://Scenes/settings.tscn
 res://Scenes/Pause.tscn
 res://Scenes/NPC.tscn
 res://Scenes/dead_menu.tscn
-res://Scripts/dialogue.gd
+res://Scripts/player.gd

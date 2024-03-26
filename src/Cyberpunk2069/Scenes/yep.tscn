@@ -11988,7 +11988,7 @@ sources/2 = SubResource("TileSetAtlasSource_pnhyb")
 size = Vector2(115.2, 6.4)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_14xum"]
-size = Vector2(1152.5, 63.625)
+size = Vector2(1152.5, 53.9995)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbi8k"]
 size = Vector2(384, 64)
@@ -11997,7 +11997,7 @@ size = Vector2(384, 64)
 size = Vector2(16, 256)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3f317"]
-size = Vector2(14, 688)
+size = Vector2(14, 673)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yyv3c"]
 size = Vector2(16, 127)
@@ -12027,7 +12027,7 @@ size = Vector2(22, 1091.5)
 size = Vector2(2273, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrb68"]
-size = Vector2(42, 395)
+size = Vector2(42, 314)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0j8iy"]
 size = Vector2(14, 32)
@@ -12957,7 +12957,7 @@ shape = SubResource("RectangleShape2D_pdwuo")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
-position = Vector2(575.75, 608.813)
+position = Vector2(575.75, 604)
 shape = SubResource("RectangleShape2D_14xum")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
@@ -12972,7 +12972,7 @@ shape = SubResource("RectangleShape2D_u2ifk")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
-position = Vector2(1145, 296)
+position = Vector2(1145, 288.5)
 shape = SubResource("RectangleShape2D_3f317")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
@@ -13015,7 +13015,7 @@ position = Vector2(48.5, 1035.5)
 shape = SubResource("RectangleShape2D_e2gh3")
 
 [node name="CollisionShape2D15" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]
-position = Vector2(1172, 826.5)
+position = Vector2(1172, 867)
 shape = SubResource("RectangleShape2D_xrb68")
 
 [node name="CollisionShape2D16" type="CollisionShape2D" parent="Map/Walls/StaticBody2D"]

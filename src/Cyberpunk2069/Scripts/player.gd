@@ -8,13 +8,8 @@ var current_key: Area2D = null
 
 func _ready():
 	$CanvasLayer/Start.visible = true
+	$CanvasLayer/SkipLabel.visible = true
 	
-	$CanvasLayer/Hp.visible = false
-	$CanvasLayer/Hp2.visible = false
-	$CanvasLayer/Hp3.visible = false
-	$CanvasLayer/CardsCounter.visible = false
-	
-	$Timer.start()
 	$ItemAura.connect("area_shape_entered", area_shape_entered)
 	$ItemAura.connect("area_shape_exited", area_shape_exited)
 	
@@ -80,6 +75,9 @@ func _unhandled_input(event):
 		on_keydown(event)
 
 func on_keydown(key):
+	if $CanvasLayer/Start.visible:
+		disable_start_menu()
+	
 	if key.keycode == KEY_ESCAPE:
 		pause()
 	if key.keycode == KEY_E:
@@ -92,15 +90,7 @@ func pickup_key():
 	Global.keys_found += 1
 	current_key.visible = false
 	$CanvasLayer/CardsCounter.text = "Карт знайдено %d/4" % Global.keys_found
-"""
-func atack():
-	if $AnimatedSprite2D.flip_h and right_enemy != null:
-		right_enemy.position = Vector2(10000, 10000)
-		print(right_enemy)
-	if not $AnimatedSprite2D.flip_h and left_enemy != null:
-		left_enemy.position = Vector2(10000, 10000)
-		print(left_enemy)
-"""
+
 func pause():
 	if paused:
 		$Pause.hide()
@@ -119,12 +109,12 @@ func dead_menu():
 
 	paused = false
 
-
-func _on_timer_timeout():
+func disable_start_menu():
 	$CanvasLayer/Start.visible = false
+	$CanvasLayer/SkipLabel.visible = false
 	
 	$CanvasLayer/Hp.visible = true
 	$CanvasLayer/Hp2.visible = true
 	$CanvasLayer/Hp3.visible = true
+	
 	$CanvasLayer/CardsCounter.visible = true
-	pass # Replace with function body.
