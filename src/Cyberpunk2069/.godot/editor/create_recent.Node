@@ -1,3 +1,6 @@
+Button
+WorldEnvironment
+HTTPRequest
 AudioStreamPlayer
 Label
 Timer
@@ -10,6 +13,3 @@ AnimatedSprite2D
 CharacterBody2D
 Node2D
 CanvasLayer
-StaticBody2D
-Control
-Window
