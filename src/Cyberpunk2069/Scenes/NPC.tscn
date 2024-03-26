@@ -110,12 +110,24 @@ libraries = {
 
 [node name="Label3" type="Label" parent="."]
 visible = false
-offset_left = -77.0
+offset_left = -78.0
 offset_top = -65.0
-offset_right = 38.0
+offset_right = 37.0
 offset_bottom = 19.0
+vertical_alignment = 2
 
 [node name="Se-logo-transparent" type="Sprite2D" parent="Label3"]
 position = Vector2(-6, 29)
 scale = Vector2(0.313527, 0.294905)
 texture = ExtResource("3_qsd4e")
+
+[node name="Button" type="Button" parent="Label3"]
+layout_mode = 0
+offset_left = -91.0
+offset_top = 103.0
+offset_right = 57.0
+offset_bottom = 138.0
+theme_override_font_sizes/font_size = 12
+text = "Посилання на сторінку"
+
+[connection signal="pressed" from="Label3/Button" to="." method="_on_button_pressed"]

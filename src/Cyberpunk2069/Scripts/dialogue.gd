@@ -33,3 +33,7 @@ func _on_body_exited(body: Node) -> void:
 	$Label2.visible = false
 	$Label3.visible = false
 	pupupu = 0
+
+
+func _on_button_pressed():
+	pass # Replace with function body.
