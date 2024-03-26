@@ -13164,7 +13164,7 @@ position = Vector2(-109, 856)
 [node name="Player" parent="Sprites" instance=ExtResource("2_7nm1t")]
 position = Vector2(306, 436)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="BackrgoundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("16_oua2g")
 volume_db = -31.124
 autoplay = true
