@@ -13120,7 +13120,7 @@ layer_0/tile_data = PackedInt32Array(1638397, 262144, 0, 1703933, 262144, 1, 163
 [node name="Sprites" type="Node" parent="."]
 
 [node name="Area2D" type="Area2D" parent="Sprites"]
-position = Vector2(963.5, 207.25)
+position = Vector2(1601, 87)
 scale = Vector2(1.396, 0.717722)
 script = ExtResource("5_pmrw3")
 
@@ -13129,7 +13129,8 @@ visible = false
 texture = ExtResource("4_67ag0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprites/Area2D"]
-position = Vector2(50.5016, -76.283)
+visible = false
+position = Vector2(49.7851, -74.1931)
 shape = SubResource("RectangleShape2D_x00oi")
 debug_color = Color(0, 0.6, 0.701961, 0)
 

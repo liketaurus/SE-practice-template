@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 Global="*res://global.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 move_left={

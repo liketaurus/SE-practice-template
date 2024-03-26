@@ -68,17 +68,16 @@ _data = {
 script = ExtResource("2_tg631")
 
 [node name="Label" type="Label" parent="."]
-visible = false
-offset_left = -141.0
-offset_top = -93.0
-offset_right = -31.0
-offset_bottom = -28.0
+offset_left = -169.0
+offset_top = -88.0
+offset_right = -18.0
+offset_bottom = -23.0
 theme_override_font_sizes/font_size = 10
 theme_override_styles/normal = SubResource("StyleBoxFlat_3gvf2")
 text = "Привіт, в мене є 
 завдання для тебе!
 Тобі потрібно знайти 
-4 карти пам'яті"
+4 карти пам'яті, підняти на(E)"
 
 [node name="Label2" type="Label" parent="."]
 visible = false
