@@ -1,5 +1,7 @@
 extends Node
 
+var enable_music = true
+
 var keys_found = 0
 var hp = 3
 
