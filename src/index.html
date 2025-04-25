@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <!-- Кнопки -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="first-floor">Мапа першого поверху</a></li>
+            <li><a href="#" id="second-floor">Мапа другого поверху</a></li>
+        </ul>
+    </nav>
+    <!-- Модальне вікно -->
+    <div id="floorModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="">
+    </div>
+
+    <div class="container">
+        <p class="neon-text" id="start-text">
+            Раді направити Вас в аудиторію 221, <br> де і живе цифровий світ.
+        </p>
+        <p class="neon-text" id="task-output"></p>
+        <p class="neon-text" id="task-path">Знайдіть сходи за напрямком SW </p>
+    </div>
+    <div class="compass">
+        <div class="arrow"></div>
+        <div class="compass-circle"></div>
+      </div>
+    <button class="start-btn">Почати навігацію</button>
+    <div class="tasks">
+        <ul>
+            <li>
+                <label class="task opened">
+                <input type="checkbox" checked>
+                <span>Знайдіть сходи та підніміться на 2 поверх</span>
+                </label>
+            </li>
+            <li>
+                <label class="task opened">
+                <input type="checkbox" checked>
+                <span>Перейдіть до правого крила коледжу</span>
+                </label>
+            </li>
+            <li>
+                <label class="task opened">
+                <input type="checkbox" checked>
+                <span>Знайдіть аудиторію 221</span>
+                </label>
+            </li>
+        </ul>
+    </div>  
+
+    <script src="js/Maps.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/copCompass.js"></script>
+    <script src ="js/modal.js"></script>
+</body>
+</html>
