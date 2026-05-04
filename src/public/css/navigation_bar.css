@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Inter", sans-serif; 
+}
+
+:root{
+    --z-card-element: 1;
+    --z-sticky-header: 10;
+    --z-top-nav: 100;
+    --z-tooltip: 200;
+    --z-sidebar: 1000;
+    --z-modal: 2000;
+    --text: black;
+    --base-color: white;
+    --color-panel:#000000;
+    --color-behind-panel:#f9f9f9;
+    --color-card: white;
+    --curve: 10px;
+    --outline-color: #b9b9b9;
+    --color-kvadratik:#7A6ED6;
+    --color-lines:#7A6ED6;
+    --color-title-card: #000000;
+    --color-body-card:rgb(33, 33, 33);
+    --color-date: white;
+    --border-card:#d4d4d4;
+    --text-btn-card:rgb(51, 51, 51);
+    --btn-card:#ececec;
+     --hover-btn-card:#e4e4e4;
+     --color-galocha:rgb(41, 41, 41);
+     --color-date-after: rgb(218, 218, 218);
+     --border-card-after:#9e9e9e;
+     --color-hover:rgb(33, 26, 47);
+     --border-panel:#c7c5c5;
+     --color-area-text:rgb(124, 124, 124);
+     --background-form:url('../img/wallpaper_black.png') ;
+}
+.darkmode{
+    --base-color: #090909;
+    --color-panel:#222222;
+    --color-behind-panel:#0d0d0d;
+    --color-card: #3b4346;
+    --curve: 10px;
+    --outline-color: #2c2c2c;
+    --color-kvadratik:#5A7480;
+    --color-lines:#566b75;
+    --color-title-card: #B8CCD6;
+    --color-body-card:#8FA3AD;
+    --color-date: #6F858F;
+    --border-card:#50695f;
+    --text-btn-card:#2A363C;
+    --btn-card:#a2b6b2;
+    --hover-btn-card:rgb(127, 145, 141);
+    --color-galocha: white;
+    --color-date-after: rgb(52, 77, 61);
+    --border-card-after:#1e2624;
+    --color-hover:#26373b;
+    --color-area: #5f6b71;
+    --color-area-text:#3a4549;
+    --color-time-text:rgb(51, 51, 51);
+    --border-panel:#262b2d;
+    --text:white;
+    --background-form:url('../img/wallpaper_green.png');
+}
+body{
+    background-color: var(--base-color);
+    
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+}
+.left-panel {
+    z-index: var(--z-sidebar);
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    height: 100dvh; 
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-panel); 
+    padding: 24px;
+    border-radius: 0px;
+    transition: width 0.4s ease;
+    view-transition-name: main-sidebar;
+}
+
+.left-panel .head{
+    display: flex;
+    gap: 20px;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-lines);
+    
+}
+
+.user-img{
+    min-width: 47px; 
+    min-height: 47px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.user-img img{
+    width: 100%;
+    object-fit:  cover;
+    background-color: white; 
+    border-radius: 50%; 
+    border: 1px solid white;
+    
+}
+.user-details .title,
+.menu .title{
+    font-size: 9.5px;
+    font-weight: 500; 
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.user-details .name-user{
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px; 
+}
+.user-details .email-user{
+    font-size:  13px;
+    font-weight: 300;
+    overflow: hidden;  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px; 
+}
+
+.menu ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.menu ul li a{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 12px 8px;
+    border-radius: 8px;
+    transition:  all 0.3s;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.menu .icon{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    filter: invert(1);
+}
+
+.menu ul li a:hover {
+    background-color: var(--color-hover);
+}
+
+.icon-flag {
+    width: 28px;
+    height: 15px;
+    filter: none;
+}
+
+.selected-lang{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+.lang-menu li{
+    margin-left: 0;
+
+    display: flex;
+    align-items: center;
+}
+.lang-menu ul{
+    margin: 0;
+    border-radius: 5px;
+    display: none;
+}
+.lang-menu ul li{
+    list-style: none;
+}
+.lang-menu ul li a{
+   width: 100%;
+}
+
+.archive{
+      padding-left: 0;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      border-bottom: 2px solid var(--color-lines);;
+}
+
+
+.menu-top .menu:not(:last-child){
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.menu-bottom{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.menu-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn{
+    position: absolute;
+    right: -14px;
+    top: 1.5%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--color-kvadratik);
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.menu-btn img{
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.menu-btn .img-btn{
+    transition: all 0.3s;
+}
+
+.left-panel.active{
+    width: 92px;
+}
+
+.left-panel.active .menu-btn .img-btn {
+    transform: rotate(180deg);
+}
+
+.left-panel.active .menu ul li .arrow{
+    display: none;
+}
+
+.user-details, 
+.menu ul li a .text,
+.moon-sun a .text,
+.icon-flag {
+    transition: max-width 0.4s ease, opacity 0.4s ease;
+    max-width: 250px;
+    opacity: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu ul li a, .moon-sun a {
+    transition: gap 0.4s ease, background-color 0.3s;
+}
+.left-panel .head {
+    transition: gap 0.4s ease;
+}
+
+.left-panel.active .user-details,
+.left-panel.active .menu ul li a .text,
+.left-panel.active .moon-sun a .text,
+.left-panel.active .icon-flag {
+    max-width: 0;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.left-panel.active .menu ul li a,
+.left-panel.active .moon-sun a,
+.left-panel.active .head {
+    gap: 0;
+}
+
+.left-panel.active .menu > ul > li > a {
+    position: relative;
+}
+
+.left-panel.active .menu > ul > li > a:hover .text {
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--color-hover);
+    max-width: max-content;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: var(--z-tooltip);
+    transition: opacity 0.3s ease;
+}
+
+.left-panel.active .menu > ul > li > a:hover .text::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 20%;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: var(--color-hover);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+::view-transition-group(main-sidebar) {
+    z-index: 999999;
+}
+
+@media (max-width: 768px) {
+    .left-panel {
+        width: 250px; 
+        height: 100vh;
+        height: 100dvh;
+        margin: 0;
+        top: 0; 
+        left: 0;
+        z-index: var(--z-sidebar);
+        border-radius: 0;
+        transition: all 0.4s ease;
+        overflow: visible;
+    }
+
+    .menu-btn {
+        top: 25px;
+        right: auto;
+        left: 250px;
+        transform: translateX(-50%);
+        transition: left 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .left-panel.active {
+        width: 6px;
+        height: calc(100vh - 20px); 
+        height: calc(100dvh - 20px); 
+        margin: 10px 1px;
+        padding: 0;
+        overflow: visible;
+        border-radius: 15px;
+    }
+
+    .left-panel.active .head,
+    .left-panel.active .nav {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: none; 
+    }
+
+    .left-panel.active .menu-btn {
+        left: 34px; 
+        transform: translateX(-50%);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+}

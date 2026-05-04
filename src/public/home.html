@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href="css/navigation_bar.css">
+    <link rel = "stylesheet" href="css/navigation_top.css">
+    <link rel = "stylesheet" href="css/task_grid.css">
+    <link rel = "stylesheet" href="css/editor.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>Тask management</title>
+</head>
+<body class="home-page">
+    <div class = "container">
+        <div class = "left-panel active">
+            <div class ="menu-btn"><img src="img/left.png" alt=" " class ="img-btn"></div>
+            <div class = "head">
+            <div class = "user-img">
+                <img src="img/user.png" alt=" ">
+            </div>
+            <div class = "user-details">
+                <p class = "name-user"></p>
+                <p class = "email-user" >Not logged in</p>
+            </div>
+            </div>
+            <div class ="nav">
+<div class = "menu-top">
+                <div class ="menu">
+                    <p class = "title" data-lang="maintext">Main</p>
+                    <ul>
+                        <li class = "active" onclick="setGridViewMode('allCards')">
+                        <a href="#"><img src="img/home.png" class = "icon">
+                        <span class = "text" data-lang="hometext">Home</span>
+                        </a>
+                        </li>
+                        <li class = "archive" onclick="setGridViewMode('archive')">
+                        <a href="#"><img src="img/archive.png" class = "icon">
+                        <span class = "text" data-lang="archivetext">Archive</span>
+                        </a>
+                        </li>
+
+                        </ul>
+                    </div>
+                        <div class ="menu">
+                         <p class = "title" data-lang="settingtext">SETTING</p>
+                         <ul>
+                            <li class = "lang-menu">
+                        <a href="#" class = "selected-lang" id="current-lang">
+                            <img src="img/usa_flag.png" class = "icon-flag">ENG
+                        </a> 
+                        <ul class = "lang-list" id = "lang-list">
+                           <li data-lang="ENG" data-src="img/usa_flag.png">
+                            <a href="#"><img src="img/usa_flag.png" class="icon-flag">ENG</a>
+                            </li>
+                            <li data-lang="UA" data-src="img/ua_flag.png">
+                            <a href="#"><img src="img/ua_flag.png" class="icon-flag">UA</a>
+                            </li>
+                        </ul>
+                        </li>
+                            <!--<li class = "active">
+                                <a href="#"><img src="img/setting.png" class = "icon">
+                                <span class = "text" data-lang="settinguser">Setting</span>
+                                </a>
+                            </li>-->
+                            <li class="mode">
+                                <div class="moon-sun">
+                                    <a href="#" id="dark">
+                                        <img src="img/dark-theme.png" class="icon">
+                                        <span class="text" data-lang="darktheme">Dark Mode</span>
+                                    </a>
+                                    <a href="#" id="light" style="display:none">
+                                        <img src="img/light-theme.png" class="icon">
+                                        <span class="text" data-lang="lighttheme">Light Mode</span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+</div>
+<div class = "menu-bottom">
+                        <div class ="menu">
+                         <p class = "title" data-lang="accounttext">ACCOUNT</p>
+                         <ul>
+                            <li onclick="addCardAbout()">
+                                    <a href="#">
+                                        <img src="img/info.png" class="icon">
+                                        <span class="text" data-lang="aboutuser">About</span>
+                                    </a>
+                                </li>
+                            <li>
+                                <a href="#" onclick="exitaccount()"><img src="img/exit.png" class = "icon">
+                                <span class = "text" data-lang="exituser">Exit</span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                        <div class="about_div">
+                            <div class="about_f">
+                                <div class="about-header">
+                                    <span><b>Про нас</b></span>
+                                    <img src="img/close.png" onclick="closeAbout()" id="imgabout">
+                                </div>
+                                <p>Ми команда <b>Programists</b> - студенти 35 групи спеціальності 121, які об’єдналися для створення власного проєкту <b>NotePro</b>. Назва нашого сайту походить від назви команди(<b>Pro - Programists</b>). Наша мета - розробити зручний <i>таск-менеджер</i>, що допомагає ефективно організовувати завдання та планувати свій час.</p>
+                                <p>Цей сайт створено для практики з дисципліни ТРПЗ, де ми застосовуємо отримані знання на практиці та розвиваємо навички командної роботи. Більше інформації можна знайти на <a href="https://sites.google.com/polytechnic.co.cc/main/%D0%B0%D0%B1%D1%96%D1%82%D1%83%D1%80%D1%96%D1%94%D0%BD%D1%82%D0%B0%D0%BC/%D0%BE%D0%B3%D0%BB%D1%8F%D0%B4-%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9?authuser=0#h.ho48gail8chq">сайті коледжа </a></p>
+                                <br><p><b>Контактна інформація:</b>
+                                <p>Мобільний телефон: (+38)-099-782-40-90</p>
+                                <p>Ел. пошта: noteprosupport@gmail.com</p>
+                                <p>Вікі: <a href="https://github.com/vladagunchenko/PRACTICE_TRPZ/wiki">сторінка з вікі</a></p>
+                                <img src="img/images.png" id = "logo">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class ="task-empty" data-task-empty>
+            <p>Nothing</p>
+            ВАЖНО #665647 НЕУДАЛЯЙ
+        </div>-->
+
+        <div class="task-grid-wrapper">
+            <div class="ears-row">
+                <div class="left-ear"></div>
+                <div class = "container-top">
+                <div class = "menu-top-div">
+                    <ul class = "menu-top-ul">
+                        <li onclick="setGridViewMode('allCalendar')">
+                            <a href = "#">
+                            <img src="img/calendar.png" class = "icon">
+                            <span class = "text-top" data-lang="calendar">Calendar</span>
+                            </a>
+                        </li>
+                        <li onclick="setGridViewMode('today')">
+                            <a href = "#">
+                            <img src="img/clock.png"class = "icon">
+                            <span class = "text-top" data-lang="today">Today</span>
+                            </a>
+                        </li>
+                        <li onclick="exportAllTasks()">
+                            <a href = "#">
+                            <img src="img/expall.png"class = "icon">
+                            <span class = "text-top" data-lang="sorting">Export all task</span>
+                            </a>
+                        </li>
+                        <li onclick="setGridViewMode('done')">
+                            <a href = "#">
+                            <img src="img/done.png" class = "icon">
+                            <span class = "text-top" data-lang="donetask">Done task</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class = separator></div>
+                    <ul class = "menu-top-ul" onclick="addTaskCard()">
+                        <li >
+                            <a href = "#">
+                            <img src="img/add.png" class = "icon" id = "open">
+                            <span class = "text-top" data-lang="addtask">Add a task</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div class="right-ear"></div>
+            </div>
+            <div class="task-card-scroll-area">
+                <div class = "task-grid-container" id = "task-grid">
+                </div>
+            </div>
+        </div>
+</div>
+        <div id="editor-overlay" class="overlay none">
+            <div class="modal-content">
+                <div class = "text-edit" >
+                    <p data-lang="addtask" id="editor-mode">Adding a task</p>
+                    <div class="header-controls">
+                        <div id="io-buttons">
+                            <button id="btn-import"><img src="img/import.png" alt=" "></button>
+                            <button id="btn-export"><img src="img/export.png" alt=" "></button>
+                        </div>
+                        <button id="editor-mode-swap">RAW</button>
+                    </div>
+                </div>
+
+                <div class="editor-top">
+                    <input type="color" id="btn-task-color" class="color-circle" value="#7A6ED6">
+                    <input type="text" id="editor-title" data-lang-placeholder="tasktitle" placeholder="Task Title">
+                    <input type="datetime-local" id="editor-time" class="time-card"/>
+                </div>
+                <div class="editor-workspace-wrapper">
+                    <!--div class="line-wrapper">
+                        <div class="color-gradient-line"></div>
+                    </div -->
+                    <div class="editor-workspace">
+                        <div class="editor-toolbar">
+                            <button id="btn-bold"><img src="img/bold.png" alt=" "></button>
+                            <button id="btn-italic"><img src="img/italic.png" alt=" "></button>
+                            <button id="btn-underline"><img src="img/underline.png" alt=" "></button>
+                            <button id="btn-list"><img src="img/list.png" alt=" "></button>
+                        </div>
+                    
+                        <div id="edit-editor" contenteditable="true" data-lang-placeholder="enterdesc" data-placeholder="Enter description..."></div>
+                        <div id="edit-raw">
+                            <textarea id="raw-input" data-lang-placeholder="enterdesc" data-placeholder="Enter description..."></textarea>
+                            <div id="raw-preview"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button id="editor-cancel" data-lang="canceltask" >Cancel</button>
+                    <button id="editor-save" data-lang="savetask">Save Task</button>
+                </div>
+            </div>
+        </div>
+
+        <div class ="container-about">
+            <div class = "modal-about">
+            </div>
+        </div>
+        <script src="js/task_store.js"></script>
+        <script src="js/editor/task_render.js"></script>
+        <script src="js/navigation_bar.js"></script>
+        <script src="js/task_grid.js"></script>
+        <script src="js/task_edit.js"></script>
+         <script type="module" src="js/editor/firebaseauth.js"></script>
+</body>
+</html>

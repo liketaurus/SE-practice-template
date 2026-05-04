@@ -1,22 +1,63 @@
-# Практика ТРПЗ
+# 📝 NotePro
 
-<img src="https://github.com/liketaurus/SE-practice-template/blob/main/docs/images/resources/SE-logo-transparent.png" width="200" align="right" style="float:right;">
+<img src="https://github.com/liketaurus/SE-practice-template/blob/main/docs/images/resources/SE-logo-transparent.png" width="200" align="right">
 
-Репозиторій з матеріалами для практики з "Технологій розробки програмного забезпечення" (ІІ семестр 3 курсу навчання на спеціальності "Інженерія програмного забезпечення" (спеціалізація "Розробка програмного забезпечення") [ВСП "ППФК НТУ "ХПІ"](https://sites.google.com/polytechnic.co.cc/main))
+**NotePro** — це легкий та функціональний веб-застосунок для керування персональними завданнями з підтримкою форматування Markdown, автозбереженням та адаптивним інтерфейсом.
 
-## **Структура репозиторію**:
-* [docs](docs/README.md) - проектна документація для всіх етапів - з детальними поясненнями та шаблонами всіх документів
-* [src](src/README.md) - вихідний код проекту, юніт-тести, шаблони розгортання тощо
-* [misc](misc/README.md) - додаткові файли, які безпосередньо не стосуються коду чи документації (тут можуть зберігатись прес-релізи, статті, матеріали для рекламних кампаній - постери, зображення для повідомлень в соцмережах тощо)
+Репозиторій створено в межах навчальної практики з дисципліни **"Технології розробки програмного забезпечення"** (II семестр 3 курсу).
 
-**Веб-сайт репозиторію** знаходиться у гілці [web](https://github.com/liketaurus/SE-practice-template/tree/web) і доступний за [цим посиланням](https://liketaurus.github.io/SE-practice-template/) 
-
-*Календарний план* і статус проекту [переглядаємо](https://app.ganttlab.com/) з використанням [GanttLab](https://github.com/ganttlab/ganttlab). Завдання, відображені у плані беруться з [Issues](https://github.com/liketaurus/SE-practice-template/issues). 
-
-:bulb: **Cучасніший варіант для календарного планування і керування проектом** - це використання [Projects](https://github.com/liketaurus/SE-practice-template/projects) (знову ж таки - у тандемі з Issues) - тепер там є така функціональність, як [Roadmap](https://github.blog/changelog/2023-01-31-roadmap-in-projects-public-beta/) - по суті, діаграми Гантта на основі Issues. :triangular_flag_on_post: **УВАГА! Станом на 2023 рік ми радимо використовувати саме цей спосіб!**
-
-Не забуваємо також про [релізи](https://github.com/liketaurus/SE-practice-template/releases) (для публікації для кінцевих користувачів нових **збірок проекту**), [дискусії](https://github.com/liketaurus/SE-practice-template/discussions) (для **обговорення робочих питань** та **фіксації відповідей** на ці питання та вдалих проектних рішень) та [вікі](https://github.com/liketaurus/SE-practice-template/wiki) (для формування **бази знань** та створення **довідкової системи** для продуктк)!
+> **Навчальний заклад:** ВСП "ППФК НТУ "ХПІ"  
+> **Спеціальність:** 121 "Інженерія програмного забезпечення"  
+> **Команда:** Programists  
+> **Статус:** Завершено
 
 ---
 
-:triangular_flag_on_post: **УВАГА! Ви маєте змінити вміст цього файлу у відповідності до специфіки вашого проекту - додати назву команди, опис завдання тощо.**
+## 🚀 Про проект
+
+Застосунок розроблений для користувачів, яким потрібен швидкий доступ до своїх завдань та нотаток без необхідності встановлення додаткового ПЗ.
+
+### Ключові можливості:
+* ✅ **Task Management:** Повний цикл керування завданнями (створення, редагування, видалення).
+* 📝 **Markdown Support:** Використання мови розмітки для оформлення тексту нотаток.
+* 💾 **Smart Storage:** Надійне автозбереження даних у LocalStorage.
+* 🌓 **Themes:** Підтримка світлої та темної тем для зручності у будь-який час доби.
+* 📱 **Responsive Design:** Коректне відображення як на ПК, так і на мобільних пристроях.
+* 📥 **Export/Import:** Можливість збереження списків у файл `.md` та їх завантаження.
+
+---
+
+## 👥 Команда "Programists"
+
+| Роль у проекті | Прізвище та Ім'я |
+| :--- | :--- |
+| **Program Management** | [Гунченко Владислава](https://github.com/vladagunchenko) |
+| **Release Management** | [Бакулін Данііл](https://github.com/wukayy) |
+| **Product Management** | [Барай Максим](https://github.com/MaxXXxXXim), [Козлова Оксана](https://github.com/kkkseeekk) |
+| **Development** | [Левковська Марія](https://github.com/kachka16), [Єдалов Артем](https://github.com/Nic0ho) |
+| **Testing (QA)** | [Савеля Максим](https://github.com/twixu819), [Зорій Ярослав](https://github.com/Yarofff-07) |
+| **User Experience** | [Москов Іван](https://github.com/grumpiestjohn) |
+
+---
+
+## 🏗 Структура документації (MSF)
+
+Процес розробки розділений на 5 фаз згідно з методологією Microsoft Solutions Framework:
+
+1. **[📂 Envisioning](./docs/1.Envisioning/)** — Аналіз проекту, формування команди та візії.
+2. **[📂 Planning](./docs/2.Planning/)** — Проектування архітектури, планів тестування та графіку.
+3. **[📂 Developing](./docs/3.Developing/)** — Реалізація програмного коду та оновлення специфікацій.
+4. **[📂 Stabilizing](./docs/4.Stabilizing/)** — Тестування, виправлення дефектів та пілотне впровадження.
+5. **[📂 Deploying](./docs/5.Deploying/)** — Фінальна звітність, аналіз результатів та завершення проекту.
+
+---
+
+## 🔗 Корисні посилання
+
+* 🌐 **Product Release:** [NotePro Web App](https://login-form-ee124.web.app/index.html)
+* 📅 **Roadmap:** Статус задач у [GitHub Projects](https://github.com/vladagunchenko/PRACTICE_TRPZ/projects)
+* 💬 **Discussions:** Командні [обговорення та рішення](./discussions)
+* 📖 **Wiki:** Детальна [довідка користувача](https://github.com/vladagunchenko/PRACTICE_TRPZ/wiki)
+
+---
+© 2026 Команда Programists

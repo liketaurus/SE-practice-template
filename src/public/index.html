@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="css/navigation_bar.css">
+        <link rel = "stylesheet" href="css/navigation_top.css">
+        <link rel = "stylesheet" href="css/task_grid.css">
+        <link rel = "stylesheet" href="css/editor.css">
+        <link rel = "stylesheet" href="css/logform.css">
+        <title>FORM</title>
+    </head>
+    <body class="login-page">
+        <!--<a href="home.html">САЙТ</a>-->
+        <div class = "wrapper">
+        <div class = "form-box login">
+            <h2>Login</h2>
+            <form action="#">
+            <div class = "input-box">
+                <span class = "icon-form"><ion-icon name ="mail"></ion-icon></span>
+                <input type="email" id="login-email" required placeholder=" ">
+                <label>Email</label>
+            </div>    
+            <div class = "input-box">
+                <span class = "icon-form"><ion-icon name ="lock-closed"></ion-icon></span>
+                 <input type="password" id="login-password" required placeholder=" ">
+                <label>Password</label>
+            </div>           
+             <button id="submit-l" type="button" class="btn">Login</button>
+             <div class = "login-register">
+                <p>Don't have any account? <a href = "#" class = "register-link">Registre</a></p>
+             </div>
+         </form>
+        </div>
+
+        <div class = "form-box register">
+            <h2>Registration </h2>
+            <form action="#">
+            <div class = "input-box">
+                <span class = "icon-form"><ion-icon name ="person"></ion-icon></span>
+                <input type="text" id="user-register" required placeholder=" ">
+                <label>User name</label>
+            </div> 
+            <div class = "input-box">
+                <span class = "icon-form"><ion-icon name ="mail"></ion-icon></span>
+                <input type="email" id="email-register" required placeholder=" ">
+                <label>Email</label>
+            </div>    
+            <div class = "input-box">
+                <span class = "icon-form"><ion-icon name ="lock-closed"></ion-icon></span>
+                 <input type="password" id="password-register" required placeholder=" ">
+                <label>Password</label>
+            </div>           
+             <button id="submit-r" type="button" class="btn">Register</button>
+             <div class = "login-register">
+                <p>Already have an account? <a href = "#" class = "login-link">Login</a></p>
+             </div>
+         </form>
+        </div>
+
+        </div>
+        <script nomodule src="https://unpkg.com/ionicons@7/dist/ionicons/ionicons.js"></script>
+        <script src="js/loginform.js" defer></script>
+        <script type="module" src="js/editor/firebaseauth.js"></script>
+    </body>
+</html>
